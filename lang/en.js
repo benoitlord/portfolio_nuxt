@@ -1,0 +1,4 @@
+// English translation
+export default {
+  
+}
