@@ -1,8 +1,17 @@
 <template>
   <div>
     <langswitch />
+    <b-container>
+      <b-row align-h="center">
+        <b-col cols="4" sm="2" md="1">
+          <nuxt-link :to="localePath('/')"><img @mouseover="logoHover = true" @mouseleave="logoHover = false" class="img-fluid" alt="Logo" :src="require('~/assets/logo_' + (logoHover ? 'couleur' : 'nb') + '.png')" /></nuxt-link>
+        </b-col>
+      </b-row>
+    </b-container>
     <navigation />
-    <Nuxt />
+    <b-container>
+      <Nuxt />
+    </b-container>
   </div>
 </template>
 
@@ -15,7 +24,7 @@
   export default {
     data() {
       return {
-        
+        logoHover: false
       }
     },
 
