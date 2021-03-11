@@ -304,7 +304,7 @@
     z-index: 0;
     position: fixed;
     right: 20px;
-    top: 164px;
+    top: 171px;
     width: 264px;
     //width: 0px;
     height: 72px;
@@ -326,7 +326,7 @@
     
     a:not(.toggle){
       position: fixed;
-      top: 164px;
+      top: 171px;
       right: 20px;
       background-color:$vertFonce; 
       color: $noir;
@@ -389,7 +389,7 @@
   .bulle_2{
     width: 80px;
     right: 374px;
-    top: 180px;
+    top: 185px;
     
     &::after{
       left:100%;
@@ -457,9 +457,9 @@
   }
 
   .bulle_3{
-    width: 100px;
+    width: 120px;
     right: 90px;
-    top: 250px;
+    top: 260px;
     
     &::after{
       left:100%;
@@ -473,7 +473,7 @@
   .bulle_4{
     width: 120px;
     right: 88px;
-    top: 330px;
+    top: 340px;
     
     &::after{
       left:100%;
@@ -487,7 +487,7 @@
   .bulle_5{
     width: 160px;
     right: 90px;
-    top: 395px;
+    top: 415px;
     
     &::after{
       left:100%;
