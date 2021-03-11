@@ -1,5 +1,6 @@
 <template>
   <div>
+    <langswitch />
     <navigation />
     <Nuxt />
   </div>
@@ -8,6 +9,8 @@
 <script>
 
   import navigation from '~/components/nav';
+  import langswitch from '~/components/langswitch';
+
 
   export default {
     data() {
@@ -17,7 +20,8 @@
     },
 
     components: {
-      navigation
+      navigation,
+      langswitch
     },
 
     methods: {
