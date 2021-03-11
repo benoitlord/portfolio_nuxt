@@ -6,32 +6,32 @@
         <font-awesome-icon icon="bars" size="2x" role="presentation" class="menu" />
       </a>
       <div>
-        <nuxt-link :to="localePath('index')" class="lien1"><font-awesome-icon icon="home" size="2x" role="presentation" /></nuxt-link>
-        <nuxt-link :to="localePath('portfolio')" class="lien2"><font-awesome-icon icon="book" size="2x" role="presentation" /></nuxt-link>
-        <nuxt-link :to="localePath('contact')" class="lien3"><font-awesome-icon icon="envelope" size="2x" role="presentation" /></nuxt-link>
-        <nuxt-link :to="localePath('services')" class="lien4"><font-awesome-icon icon="thumbs-up" size="2x" role="presentation" /></nuxt-link>
-        <nuxt-link :to="localePath('competences')" class="lien5"><font-awesome-icon icon="chart-pie" size="2x" role="presentation" /></nuxt-link>
+        <nuxt-link :to="localePath('index')" class="lien1" aria-labelledby="bulle_1"><font-awesome-icon icon="home" size="2x" role="presentation" /><span class="v-inv" v-html="$t('home')"></span></nuxt-link>
+        <nuxt-link :to="localePath('portfolio')" class="lien2" aria-labelledby="bulle_2"><font-awesome-icon icon="book" size="2x" role="presentation" /><span class="v-inv" v-html="$t('portfolio')"></span></nuxt-link>
+        <nuxt-link :to="localePath('contact')" class="lien3" aria-labelledby="bulle_3"><font-awesome-icon icon="envelope" size="2x" role="presentation" /><span class="v-inv" v-html="$t('contact')"></span></nuxt-link>
+        <nuxt-link :to="localePath('services')" class="lien4" aria-labelledby="bulle_4"><font-awesome-icon icon="thumbs-up" size="2x" role="presentation" /><span class="v-inv" v-html="$t('services')"></span></nuxt-link>
+        <nuxt-link :to="localePath('competences')" class="lien5" aria-labelledby="bulle_5"><font-awesome-icon icon="chart-pie" size="2x" role="presentation" /><span class="v-inv" v-html="$t('competences')"></span></nuxt-link>
       </div>
     </nav>
 
     <!-- Div contenant les liens du sous-menu -->
     <div class="sous-liens">
-      <nuxt-link :to="localePath('portfolio')" class="lien2-1"><font-awesome-icon icon="code" size="2x" role="presentation" /></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-2"><font-awesome-icon icon="object-group" size="2x" role="presentation" /></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-3"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-4"><font-awesome-icon icon="image" size="2x" role="presentation" /></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-1" aria-labelledby="bulle_2-1"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-2" aria-labelledby="bulle_2-2"><font-awesome-icon icon="object-group" size="2x" role="presentation" /><span class="v-inv" v-html="$t('design')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-3" aria-labelledby="bulle_2-3"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustrations')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-4" aria-labelledby="bulle_2-4"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('autre')"></span></nuxt-link>
     </div>
 
     <!--Bulles pour indiquer les pages--> 
-    <div class="bulle bulle_1">{{ $t('home') }}</div>
-    <div class="bulle bulle_2">{{ $t('portfolio') }}</div>
-    <div class="bulle bulle_2-1">{{ $t('programmation') }}</div>
-    <div class="bulle bulle_2-2">{{ $t('design') }}</div>
-    <div class="bulle bulle_2-3">{{ $t('illustrations') }}</div>
-    <div class="bulle bulle_2-4">{{ $t('autre') }}</div>
-    <div class="bulle bulle_3">{{ $t('contact') }}</div>
-    <div class="bulle bulle_4">{{ $t('services') }}</div>
-    <div class="bulle bulle_5" >{{ $t('competences') }}</div>
+    <div class="bulle bulle_1" id="bulle_1">{{ $t('home') }}</div>
+    <div class="bulle bulle_2" id="bulle_2">{{ $t('portfolio') }}</div>
+    <div class="bulle bulle_2-1" id="bulle_2-1"> {{ $t('programmation') }}</div>
+    <div class="bulle bulle_2-2" id="bulle_2-2">{{ $t('design') }}</div>
+    <div class="bulle bulle_2-3" id="bulle_2-3">{{ $t('illustrations') }}</div>
+    <div class="bulle bulle_2-4" id="bulle_2-4">{{ $t('autre') }}</div>
+    <div class="bulle bulle_3" id="bulle_3">{{ $t('contact') }}</div>
+    <div class="bulle bulle_4" id="bulle_4">{{ $t('services') }}</div>
+    <div class="bulle bulle_5" id="bulle_5">{{ $t('competences') }}</div>
   </div>
 </template>
 
