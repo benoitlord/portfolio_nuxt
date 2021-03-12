@@ -8,31 +8,35 @@
       </a>
       <div>
         <nuxt-link :to="localePath('index')" class="lien1" aria-labelledby="bulle_1" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="home" size="2x" role="presentation" /><span class="v-inv" v-html="$t('home')"></span></nuxt-link>
-        <nuxt-link :to="localePath('portfolio')" class="lien2" aria-labelledby="bulle_2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="book" size="2x" role="presentation" /><span class="v-inv" v-html="$t('portfolio')"></span></nuxt-link>
-        <nuxt-link :to="localePath('contact')" class="lien3" aria-labelledby="bulle_3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="envelope" size="2x" role="presentation" /><span class="v-inv" v-html="$t('contact')"></span></nuxt-link>
-        <nuxt-link :to="localePath('services')" class="lien4" aria-labelledby="bulle_4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="thumbs-up" size="2x" role="presentation" /><span class="v-inv" v-html="$t('services')"></span></nuxt-link>
-        <nuxt-link :to="localePath('competences')" class="lien5" aria-labelledby="bulle_5" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="chart-pie" size="2x" role="presentation" /><span class="v-inv" v-html="$t('competences')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/miseEnPage')" class="lien2" aria-labelledby="bulle_2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="ruler-combined" size="2x" role="presentation" /><span class="v-inv" v-html="$t('miseEnPage')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/branding')" class="lien3" aria-labelledby="bulle_3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="fingerprint" size="2x" role="presentation" /><span class="v-inv" v-html="$t('branding')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/typo')" class="lien4" aria-labelledby="bulle_4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="text-height" size="2x" role="presentation" /><span class="v-inv" v-html="$t('typo')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/programmation')" class="lien5" aria-labelledby="bulle_5" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/illustration')" class="lien6" aria-labelledby="bulle_6" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustration')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/sign')" class="lien7" aria-labelledby="bulle_7" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="map-signs" size="2x" role="presentation" /><span class="v-inv" v-html="$t('sign')"></span></nuxt-link>
       </div>
     </nav>
 
     <!-- Div contenant les liens du sous-menu -->
-    <div class="sous-liens">
+    <!--<div class="sous-liens">
       <nuxt-link :to="localePath('portfolio')" class="lien2-1" aria-labelledby="bulle_2-1" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
       <nuxt-link :to="localePath('portfolio')" class="lien2-2" aria-labelledby="bulle_2-2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="object-group" size="2x" role="presentation" /><span class="v-inv" v-html="$t('design')"></span></nuxt-link>
       <nuxt-link :to="localePath('portfolio')" class="lien2-3" aria-labelledby="bulle_2-3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustrations')"></span></nuxt-link>
       <nuxt-link :to="localePath('portfolio')" class="lien2-4" aria-labelledby="bulle_2-4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('autre')"></span></nuxt-link>
-    </div>
+    </div>-->
 
     <!--Bulles pour indiquer les pages--> 
     <div class="bulle bulle_1" id="bulle_1">{{ $t('home') }}</div>
-    <div class="bulle bulle_2" id="bulle_2">{{ $t('portfolio') }}</div>
-    <div class="bulle bulle_2-1" id="bulle_2-1"> {{ $t('programmation') }}</div>
+    <div class="bulle bulle_2" id="bulle_2">{{ $t('miseEnPage') }}</div>
+    <!--<div class="bulle bulle_2-1" id="bulle_2-1"> {{ $t('programmation') }}</div>
     <div class="bulle bulle_2-2" id="bulle_2-2">{{ $t('design') }}</div>
     <div class="bulle bulle_2-3" id="bulle_2-3">{{ $t('illustrations') }}</div>
-    <div class="bulle bulle_2-4" id="bulle_2-4">{{ $t('autre') }}</div>
-    <div class="bulle bulle_3" id="bulle_3">{{ $t('contact') }}</div>
-    <div class="bulle bulle_4" id="bulle_4">{{ $t('services') }}</div>
-    <div class="bulle bulle_5" id="bulle_5">{{ $t('competences') }}</div>
+    <div class="bulle bulle_2-4" id="bulle_2-4">{{ $t('autre') }}</div>-->
+    <div class="bulle bulle_3" id="bulle_3">{{ $t('branding') }}</div>
+    <div class="bulle bulle_4" id="bulle_4">{{ $t('typo') }}</div>
+    <div class="bulle bulle_5" id="bulle_5">{{ $t('programmation') }}</div>
+    <div class="bulle bulle_6" id="bulle_6">{{ $t('illustration') }}</div>
+    <div class="bulle bulle_7" id="bulle_7">{{ $t('sign') }}</div>
   </div>
 </template>
 
@@ -44,30 +48,17 @@
         bulle_Ouvert_Right: "110px",
         bulle_Ferme_Right: "90px",
 
-        bulle_2_Ouvert_Right: "384px",
-        bulle_2_Ferme_Right: "374px",
+        /*bulle_2_Ouvert_Right: "384px",
+        bulle_2_Ferme_Right: "374px",*/
 
         bulle_sousLienOuvertTop: "255px",
         bulle_sousLienFermeTop: "235px",
 
-        lien2_1_Ouvert_Right: "90px",
+        /*lien2_1_Ouvert_Right: "90px",
         lien2_2_Ouvert_Right: "150px",
         lien2_3_Ouvert_Right: "210px",
         lien2_4_Ouvert_Right: "282px",
-        sousLien_Ferme_Right: "20px",
-
-        //Mobile
-        lien2_0_Ouvert_Right_Mobile: "90px",
-        lien2_1_Ouvert_Right_Mobile: "134px",
-        lien2_2_Ouvert_Right_Mobile: "178px",
-        lien2_3_Ouvert_Right_Mobile: "220px",
-        lien2_4_Ouvert_Right_Mobile: "264px",
-        sousLien_Ferme_Right_Mobile: "20px",
-
-        bulle_Ouvert_RightMobile: "110px",
-        bulle_Ferme_RightMobile: "100px",
-
-        bulle_2_sousMenuOuvert_RightMobile: "335px",
+        sousLien_Ferme_Right: "20px",*/
 
         navOpen: false
       }
@@ -104,24 +95,24 @@
       submenuClick(){
         var that = this;
 
-        $('.sous-liens').stop().hide(50).removeClass("shadow").animate({width: "0px"}, 300);
+        /*$('.sous-liens').stop().hide(50).removeClass("shadow").animate({width: "0px"}, 300);
         $('.lien2-1').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
         $('.lien2-2').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
         $('.lien2-3').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
-        $('.lien2-4').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
+        $('.lien2-4').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);*/
       },
 
 
 
       ouvrirDesktop(){
         $('.navigation').removeClass("fermee", 600, "easeOutElastic");
-        $('.bulle_1, .bulle_2, .bulle_2-1, .bulle_2-2, .bulle_2-3, .bulle_2-4, .bulle_3, .bulle_4, .bulle_5').show();
+        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').show();
 
         this.navOpen = true;
       },
       fermerDesktop(){        
         $('.navigation').addClass("fermee", 600, "easeOutBounce");
-        $('.bulle_1, .bulle_2, .bulle_2-1, .bulle_2-2, .bulle_2-3, .bulle_2-4, .bulle_3, .bulle_4, .bulle_5').hide();
+        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').hide();
         
         var that = this;
         $(document).one("click", that.fermerDesktop);
@@ -140,7 +131,7 @@
           }
         );
       },
-      hoverBullesSousLiens(num){   
+      /*hoverBullesSousLiens(num){   
         var that = this;
         
         $('.lien' + num).hover(
@@ -151,7 +142,7 @@
             $('.bulle_' + num).stop().animate({opacity: 0, top: that.bulle_sousLienFermeTop}, 300);
           }
         );
-      }
+      }*/
     },
 
     mounted(){
@@ -162,7 +153,7 @@
       if($(window).width() > 1366){
         that.hoverBulles("1");
 		
-        $('.navigation .lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
+        /*$('.navigation .lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
           function(){
             $('.bulle_2').stop().animate({opacity: 1, right: that.bulle_2_Ouvert_Right}, 300);
           },
@@ -173,13 +164,16 @@
         that.hoverBullesSousLiens("2-1");
         that.hoverBullesSousLiens("2-2");
         that.hoverBullesSousLiens("2-3");
-        that.hoverBullesSousLiens("2-4");
+        that.hoverBullesSousLiens("2-4");*/
         
+        that.hoverBulles("2");
         that.hoverBulles("3");
         that.hoverBulles("4");
         that.hoverBulles("5");
+        that.hoverBulles("6");
+        that.hoverBulles("7");
 
-        $('.lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
+        /*$('.lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
           function(){
             $('.sous-liens').stop().show();
             $('.lien2-1').stop().animate({right: that.lien2_1_Ouvert_Right}, 50, 'swing');
@@ -188,13 +182,13 @@
             $('.lien2-4').stop().animate({right: that.lien2_4_Ouvert_Right}, 50, 'swing');
           },
           function(){
-            $('.sous-liens').stop().hide(300)/*.removeClass("shadow").animate({width: "0px"}, 300)*/;
+            $('.sous-liens').stop().hide(300).removeClass("shadow").animate({width: "0px"}, 300);
             $('.lien2-1').stop().animate({right: that.sousLien_Ferme_Right}, 50);
             $('.lien2-2').stop().animate({right: that.sousLien_Ferme_Right}, 50);
             $('.lien2-3').stop().animate({right: that.sousLien_Ferme_Right}, 50);
             $('.lien2-4').stop().animate({right: that.sousLien_Ferme_Right}, 50);
           }
-        );
+        );*/
       }
     }
   }
@@ -304,7 +298,7 @@
       
       @include transition(0.3s);
       
-      &.nuxt-link-active{
+      &.nuxt-link-exact-active{
         border-left: 5px solid #48930d;
       }
 
@@ -414,8 +408,8 @@
   }
 
   .bulle_2{
-    width: 80px;
-    right: 374px;
+    width: 120px;
+    right: 90px;
     top: 185px;
     
     &::after{
@@ -427,7 +421,7 @@
     }
   }
 
-  .bulle_2-1{
+  /*.bulle_2-1{
     width: 140px;
     right: 75px;
     top: 235px;
@@ -481,10 +475,10 @@
       border-right: 10px solid transparent;
       border-bottom: 15px solid $vert;
     }
-  }
+  }*/
 
   .bulle_3{
-    width: 120px;
+    width: 160px;
     right: 90px;
     top: 260px;
     
@@ -512,9 +506,37 @@
   }
 
   .bulle_5{
-    width: 160px;
+    width: 140px;
     right: 90px;
     top: 415px;
+    
+    &::after{
+      left:100%;
+      top: 10px;
+      border-top: 10px solid transparent;
+      border-left: 15px solid $vert;
+      border-bottom: 10px solid transparent;
+    }
+  }
+
+  .bulle_6{
+    width: 100px;
+    right: 90px;
+    top: 485px;
+    
+    &::after{
+      left:100%;
+      top: 10px;
+      border-top: 10px solid transparent;
+      border-left: 15px solid $vert;
+      border-bottom: 10px solid transparent;
+    }
+  }
+
+  .bulle_7{
+    width: 110px;
+    right: 90px;
+    top: 560px;
     
     &::after{
       left:100%;
@@ -533,32 +555,12 @@
     "en":{
       "navLabel": "Navigation Menu",
       "navOpenLabel": "Expand navigation menu",
-      "navCloseLabel": "Collapse navigation menu",
-
-      "home": "Home",
-      "portfolio": "Portfolio",
-      "programmation": "Programming",
-      "design": "Graphic design",
-      "illustrations": "Illustrations",
-      "autre": "Others",
-      "contact": "Contact Me",
-      "services": "My Services",
-      "competences": "My Skills"
+      "navCloseLabel": "Collapse navigation menu"
     },
     "fr":{
       "navLabel": "Menu de navigation",
       "navOpenLabel": "Ouvrir le menu de navigation",
-      "navCloseLabel": "Fermer le menu de navigation",
-
-      "home": "Accueil",
-      "portfolio": "Portfolio",
-      "programmation": "Programmation",
-      "design": "Design graphique",
-      "illustrations": "Illustrations",
-      "autre": "Autres",
-      "contact": "Me contacter",
-      "services": "Mes services",
-      "competences": "Mes compétences"
+      "navCloseLabel": "Fermer le menu de navigation"
     }
   }
 
