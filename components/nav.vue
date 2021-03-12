@@ -1,25 +1,26 @@
 <template>
   <div>
     <!-- Navigation pour ordinateur -->
-    <nav class="navigation fermee">
+    <nav class="navigation fermee" :aria-label="$t('navLabel')">
       <a href="#" @click.stop.prevent="menuClick" class="toggle">
         <font-awesome-icon icon="bars" size="2x" role="presentation" class="menu" />
+        <span class="v-inv" v-html="navOpen ? $t('navCloseLabel') : $t('navOpenLabel')"></span>
       </a>
       <div>
-        <nuxt-link :to="localePath('index')" class="lien1" aria-labelledby="bulle_1"><font-awesome-icon icon="home" size="2x" role="presentation" /><span class="v-inv" v-html="$t('home')"></span></nuxt-link>
-        <nuxt-link :to="localePath('portfolio')" class="lien2" aria-labelledby="bulle_2"><font-awesome-icon icon="book" size="2x" role="presentation" /><span class="v-inv" v-html="$t('portfolio')"></span></nuxt-link>
-        <nuxt-link :to="localePath('contact')" class="lien3" aria-labelledby="bulle_3"><font-awesome-icon icon="envelope" size="2x" role="presentation" /><span class="v-inv" v-html="$t('contact')"></span></nuxt-link>
-        <nuxt-link :to="localePath('services')" class="lien4" aria-labelledby="bulle_4"><font-awesome-icon icon="thumbs-up" size="2x" role="presentation" /><span class="v-inv" v-html="$t('services')"></span></nuxt-link>
-        <nuxt-link :to="localePath('competences')" class="lien5" aria-labelledby="bulle_5"><font-awesome-icon icon="chart-pie" size="2x" role="presentation" /><span class="v-inv" v-html="$t('competences')"></span></nuxt-link>
+        <nuxt-link :to="localePath('index')" class="lien1" aria-labelledby="bulle_1" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="home" size="2x" role="presentation" /><span class="v-inv" v-html="$t('home')"></span></nuxt-link>
+        <nuxt-link :to="localePath('portfolio')" class="lien2" aria-labelledby="bulle_2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="book" size="2x" role="presentation" /><span class="v-inv" v-html="$t('portfolio')"></span></nuxt-link>
+        <nuxt-link :to="localePath('contact')" class="lien3" aria-labelledby="bulle_3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="envelope" size="2x" role="presentation" /><span class="v-inv" v-html="$t('contact')"></span></nuxt-link>
+        <nuxt-link :to="localePath('services')" class="lien4" aria-labelledby="bulle_4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="thumbs-up" size="2x" role="presentation" /><span class="v-inv" v-html="$t('services')"></span></nuxt-link>
+        <nuxt-link :to="localePath('competences')" class="lien5" aria-labelledby="bulle_5" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="chart-pie" size="2x" role="presentation" /><span class="v-inv" v-html="$t('competences')"></span></nuxt-link>
       </div>
     </nav>
 
     <!-- Div contenant les liens du sous-menu -->
     <div class="sous-liens">
-      <nuxt-link :to="localePath('portfolio')" class="lien2-1" aria-labelledby="bulle_2-1"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-2" aria-labelledby="bulle_2-2"><font-awesome-icon icon="object-group" size="2x" role="presentation" /><span class="v-inv" v-html="$t('design')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-3" aria-labelledby="bulle_2-3"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustrations')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-4" aria-labelledby="bulle_2-4"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('autre')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-1" aria-labelledby="bulle_2-1" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-2" aria-labelledby="bulle_2-2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="object-group" size="2x" role="presentation" /><span class="v-inv" v-html="$t('design')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-3" aria-labelledby="bulle_2-3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustrations')"></span></nuxt-link>
+      <nuxt-link :to="localePath('portfolio')" class="lien2-4" aria-labelledby="bulle_2-4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('autre')"></span></nuxt-link>
     </div>
 
     <!--Bulles pour indiquer les pages--> 
@@ -66,7 +67,28 @@
         bulle_Ouvert_RightMobile: "110px",
         bulle_Ferme_RightMobile: "100px",
 
-        bulle_2_sousMenuOuvert_RightMobile: "335px"
+        bulle_2_sousMenuOuvert_RightMobile: "335px",
+
+        navOpen: false
+      }
+    },
+
+    computed:{
+      navOpenString(){
+        if(this.navOpen){
+          return "true";
+        }
+        else{
+          return "false";
+        }
+      },
+      navClosedString(){
+        if(this.navOpen){
+          return "false";
+        }
+        else{
+          return "true";
+        }
       }
     },
 
@@ -94,6 +116,8 @@
       ouvrirDesktop(){
         $('.navigation').removeClass("fermee", 600, "easeOutElastic");
         $('.bulle_1, .bulle_2, .bulle_2-1, .bulle_2-2, .bulle_2-3, .bulle_2-4, .bulle_3, .bulle_4, .bulle_5').show();
+
+        this.navOpen = true;
       },
       fermerDesktop(){        
         $('.navigation').addClass("fermee", 600, "easeOutBounce");
@@ -101,6 +125,8 @@
         
         var that = this;
         $(document).one("click", that.fermerDesktop);
+
+        this.navOpen = true;
       },
       hoverBulles(num){       
         var that = this;
@@ -504,6 +530,10 @@
 
   {
     "en":{
+      "navLabel": "Navigation Menu",
+      "navOpenLabel": "Expand navigation menu",
+      "navCloseLabel": "Collapse navigation menu",
+
       "home": "Home",
       "portfolio": "Portfolio",
       "programmation": "Programming",
@@ -515,6 +545,10 @@
       "competences": "My Skills"
     },
     "fr":{
+      "navLabel": "Menu de navigation",
+      "navOpenLabel": "Ouvrir le menu de navigation",
+      "navCloseLabel": "Fermer le menu de navigation",
+
       "home": "Accueil",
       "portfolio": "Portfolio",
       "programmation": "Programmation",
