@@ -9,14 +9,16 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-regular-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/vue-fontawesome": "^0.1.10",
     "nuxt-i18n": "^6.13.1",
     "vue-i18n": "^8.18.1"
   },
