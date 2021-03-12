@@ -387,8 +387,9 @@
     opacity: 0;
     text-align: center;
     border-bottom: 5px solid $gris;
-      box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 2;
+    font-weight: 500;
     
     &::after{
       content:"";
