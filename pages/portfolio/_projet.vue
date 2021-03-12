@@ -14,7 +14,7 @@
   export default {
     head() {
       return {
-        title: this.$i18n.t("pageTitle") + " - Benoit Lord, " + this.$i18n.t("titre")
+        title: this.info.titre + " - Benoit Lord, " + this.$i18n.t("titre")
       }
     },
 
@@ -56,10 +56,10 @@
 
   {
     "en": {
-      "pageTitle" : "Portfolio"
+      
     },
     "fr": {
-      "pageTitle" : "Portfolio"
+      
     }
   }
 
