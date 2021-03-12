@@ -22,6 +22,13 @@
 
 
   export default {
+    head() {
+      return {
+        htmlAttrs: { lang: this.$i18n.locale},
+        title: "Benoit Lord, " + this.$i18n.t("titre")
+      }
+    },
+
     data() {
       return {
         logoHover: false
