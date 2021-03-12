@@ -17,21 +17,9 @@
       </div>
     </nav>
 
-    <!-- Div contenant les liens du sous-menu -->
-    <!--<div class="sous-liens">
-      <nuxt-link :to="localePath('portfolio')" class="lien2-1" aria-labelledby="bulle_2-1" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-2" aria-labelledby="bulle_2-2" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="object-group" size="2x" role="presentation" /><span class="v-inv" v-html="$t('design')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-3" aria-labelledby="bulle_2-3" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="pencil-alt" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustrations')"></span></nuxt-link>
-      <nuxt-link :to="localePath('portfolio')" class="lien2-4" aria-labelledby="bulle_2-4" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('autre')"></span></nuxt-link>
-    </div>-->
-
     <!--Bulles pour indiquer les pages--> 
     <div class="bulle bulle_1" id="bulle_1">{{ $t('home') }}</div>
     <div class="bulle bulle_2" id="bulle_2">{{ $t('miseEnPage') }}</div>
-    <!--<div class="bulle bulle_2-1" id="bulle_2-1"> {{ $t('programmation') }}</div>
-    <div class="bulle bulle_2-2" id="bulle_2-2">{{ $t('design') }}</div>
-    <div class="bulle bulle_2-3" id="bulle_2-3">{{ $t('illustrations') }}</div>
-    <div class="bulle bulle_2-4" id="bulle_2-4">{{ $t('autre') }}</div>-->
     <div class="bulle bulle_3" id="bulle_3">{{ $t('branding') }}</div>
     <div class="bulle bulle_4" id="bulle_4">{{ $t('typo') }}</div>
     <div class="bulle bulle_5" id="bulle_5">{{ $t('programmation') }}</div>
@@ -48,17 +36,8 @@
         bulle_Ouvert_Right: "110px",
         bulle_Ferme_Right: "90px",
 
-        /*bulle_2_Ouvert_Right: "384px",
-        bulle_2_Ferme_Right: "374px",*/
-
         bulle_sousLienOuvertTop: "255px",
         bulle_sousLienFermeTop: "235px",
-
-        /*lien2_1_Ouvert_Right: "90px",
-        lien2_2_Ouvert_Right: "150px",
-        lien2_3_Ouvert_Right: "210px",
-        lien2_4_Ouvert_Right: "282px",
-        sousLien_Ferme_Right: "20px",*/
 
         navOpen: false
       }
@@ -92,18 +71,6 @@
           this.fermerDesktop();
         }
       },
-      submenuClick(){
-        var that = this;
-
-        /*$('.sous-liens').stop().hide(50).removeClass("shadow").animate({width: "0px"}, 300);
-        $('.lien2-1').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
-        $('.lien2-2').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
-        $('.lien2-3').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);
-        $('.lien2-4').mouseout().stop().animate({right: that.sousLien_Ferme_Right}, 50);*/
-      },
-
-
-
       ouvrirDesktop(){
         $('.navigation').removeClass("fermee", 600, "easeOutElastic");
         $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').show();
@@ -130,19 +97,7 @@
             $('.bulle_' + num).stop().animate({opacity: 0, right: that.bulle_Ferme_Right}, 300);
           }
         );
-      },
-      /*hoverBullesSousLiens(num){   
-        var that = this;
-        
-        $('.lien' + num).hover(
-          function(){
-            $('.bulle_' + num).stop().animate({opacity: 1, top: that.bulle_sousLienOuvertTop}, 300);
-          },
-          function(){
-            $('.bulle_' + num).stop().animate({opacity: 0, top: that.bulle_sousLienFermeTop}, 300);
-          }
-        );
-      }*/
+      }
     },
 
     mounted(){
@@ -151,44 +106,13 @@
 
       //Afficher les bulles et les sous-menu au survol
       if($(window).width() > 1366){
-        that.hoverBulles("1");
-		
-        /*$('.navigation .lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
-          function(){
-            $('.bulle_2').stop().animate({opacity: 1, right: that.bulle_2_Ouvert_Right}, 300);
-          },
-          function(){
-            $('.bulle_2').stop().animate({opacity: 0, right: that.bulle_2_Ferme_Right}, 300);
-          }
-        );
-        that.hoverBullesSousLiens("2-1");
-        that.hoverBullesSousLiens("2-2");
-        that.hoverBullesSousLiens("2-3");
-        that.hoverBullesSousLiens("2-4");*/
-        
+        that.hoverBulles("1");        
         that.hoverBulles("2");
         that.hoverBulles("3");
         that.hoverBulles("4");
         that.hoverBulles("5");
         that.hoverBulles("6");
         that.hoverBulles("7");
-
-        /*$('.lien2, .lien2-1, .lien2-2, .lien2-3, .lien2-4, .sous-liens').hover(
-          function(){
-            $('.sous-liens').stop().show();
-            $('.lien2-1').stop().animate({right: that.lien2_1_Ouvert_Right}, 50, 'swing');
-            $('.lien2-2').stop().animate({right: that.lien2_2_Ouvert_Right}, 50, 'swing');
-            $('.lien2-3').stop().animate({right: that.lien2_3_Ouvert_Right}, 50, 'swing');
-            $('.lien2-4').stop().animate({right: that.lien2_4_Ouvert_Right}, 50, 'swing');
-          },
-          function(){
-            $('.sous-liens').stop().hide(300).removeClass("shadow").animate({width: "0px"}, 300);
-            $('.lien2-1').stop().animate({right: that.sousLien_Ferme_Right}, 50);
-            $('.lien2-2').stop().animate({right: that.sousLien_Ferme_Right}, 50);
-            $('.lien2-3').stop().animate({right: that.sousLien_Ferme_Right}, 50);
-            $('.lien2-4').stop().animate({right: that.sousLien_Ferme_Right}, 50);
-          }
-        );*/
       }
     }
   }
