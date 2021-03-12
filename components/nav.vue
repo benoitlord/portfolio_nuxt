@@ -471,6 +471,16 @@
     }
   }
 
+  html[lang="en"] .bulle_2{
+    width: 80px;
+  }
+  html[lang="en"] .bulle_3{
+    width: 90px;
+  }
+  html[lang="en"] .bulle_7{
+    width: 100px;
+  }
+
 </style>
 
 <i18n>
