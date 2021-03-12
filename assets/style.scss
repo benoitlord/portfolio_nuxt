@@ -7,6 +7,70 @@
     width: 1px;
 }
 
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,900;1,900&display=swap');
+
+@font-face{
+    font-family: "Renner";
+    font-weight: 200;
+    font-style: normal;
+    src: url("~assets/fonts/Renner/renner-light.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 200;
+    font-style: italic;
+    src: url("~assets/fonts/Renner/renner-lightitalic.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 300;
+    font-style: normal;
+    src: url("~assets/fonts/Renner/renner-book.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 300;
+    font-style: italic;
+    src: url("~assets/fonts/Renner/renner-bookitalic.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 500;
+    font-style: normal;
+    src: url("~assets/fonts/Renner/renner-medium.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 500;
+    font-style: italic;
+    src: url("~assets/fonts/Renner/renner-mediumitalic.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 700;
+    font-style: normal;
+    src: url("~assets/fonts/Renner/renner-bold.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 700;
+    font-style: italic;
+    src: url("~assets/fonts/Renner/renner-bolditalic.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 800;
+    font-style: normal;
+    src: url("~assets/fonts/Renner/renner-black.otf");
+}
+@font-face{
+    font-family: "Renner";
+    font-weight: 800;
+    font-style: italic;
+    src: url("~assets/fonts/Renner/renner-blackitalic.otf");
+}
+
 /* VARIABLES */
 
 	/* COULEURS */
@@ -65,7 +129,9 @@
         /* Mise en page de la page */
     
     body{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Renner';
+        font-weight: 200;
+        font-size: 16px;
         width: 100%;
         min-height: 100%;
         margin: 0px;
@@ -88,37 +154,22 @@
     
         /* Titres */
     
-    h1, h2, h3, h4, h5, h6{
-        font-family: 'Oswald', sans-serif;
-        font-style: normal!important;
-        font-weight: bold;
-        color: $vert;
-        border-bottom: 5px solid $gris;
-        display: table;
-    }
-    
     h1{
-        font-size: 38px;
+        font-family: 'Nunito Sans';
+        font-weight: 900;
+        color: $vert;
+        text-align: center;
+        font-size: 4em;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
-    
-    h2{
-        font-size: 28px;
-        
-        &.sous-titre{
-            color: $noir;
-            border: none;
-            font-family: 'Roboto', sans-serif;
-            width: inherit;
-            font-size: 24px;
-            clear: both;
-        }
+
+    h2, h3, h4, h5, h6{
+        font-family: 'Renner';
+        font-weight: 700;
     }
     
         /* Mise en forme du texte */
-    
-    p{
-        font-size: 18px;
-    }
     
     a{
         color: $vert;
