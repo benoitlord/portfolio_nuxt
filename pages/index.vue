@@ -43,7 +43,6 @@
         <nuxt-link :to="localePath('portfolio')" class="green-button">Venez voir mes projets&ThinSpace;!</nuxt-link>
       </b-col>
     </b-row>
-    <nuxt-link to="portfolio/test">Test</nuxt-link>
   </div>
 </template>
 
