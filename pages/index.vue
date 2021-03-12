@@ -40,7 +40,7 @@
       </b-col>
       <b-col v-if="$i18n.locale === 'fr'">
         <p style="font-weight: 500; font-size: 1.2em;">Assez parlé de moi, </p>
-        <nuxt-link :to="localePath('portfolio')" class="green-button">Venez voir mes projets&ThinSpace;!</nuxt-link>
+        <nuxt-link :to="localePath('/portfolio/miseEnPage')" class="green-button">Venez voir mes projets&ThinSpace;!</nuxt-link>
       </b-col>
     </b-row>
   </div>
