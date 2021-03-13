@@ -180,7 +180,7 @@
         -webkit-appearance: none;
         background-color: $vert;
         padding: 0px 35px;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 500;
         color: black!important;
         text-decoration: none!important;
@@ -189,6 +189,13 @@
         line-height: 60px;
         display: inline-block;
         @include transition(0.2s);
+
+        @media (min-width: 576px){
+            font-size: 1.3em;
+        }
+        @media (min-width: 768px){
+            font-size: 1.5em;
+        }
 
         &:before{
             content: "";
