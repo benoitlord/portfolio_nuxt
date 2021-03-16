@@ -1,6 +1,6 @@
 // English translation
 export default {
-  titre: "Graphic Designer and Frontend Developer",
+  titre: "Graphic Designer and Web Developer",
 
   home: "Home",
   miseEnPage: "Layout",
