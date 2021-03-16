@@ -86,7 +86,11 @@
     position: absolute;
     left: 20px;
     top: 20px;
-    
+
+    &:focus .language-toggle{
+      outline: 1px dashed black;
+    }
+
     .fr, .en{
       position: absolute;
       top: -3px;
