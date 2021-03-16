@@ -1,7 +1,8 @@
 <template>
   <div>
+    <bypass />
     <langswitch />
-    <b-container>
+    <b-container tag="header">
       <b-row align-h="center">
         <b-col cols="3" sm="2" lg="1">
           <nuxt-link :to="localePath('/')"><img @mouseover="logoHover = true" @mouseleave="logoHover = false" class="img-fluid" alt="Logo" :src="require('~/assets/logo_' + (logoHover ? 'couleur' : 'nb') + '.png')" /></nuxt-link>
@@ -9,7 +10,7 @@
       </b-row>
     </b-container>
     <navigation />
-    <b-container>
+    <b-container tag="main" id="mainContent">
       <Nuxt />
     </b-container>
     <b-container fluid tag="footer">
@@ -35,6 +36,7 @@
 
   import navigation from '~/components/nav';
   import langswitch from '~/components/langswitch';
+  import bypass from '~/components/bypass';
 
 
   export default {
@@ -53,7 +55,8 @@
 
     components: {
       navigation,
-      langswitch
+      langswitch,
+      bypass
     },
 
     methods: {
