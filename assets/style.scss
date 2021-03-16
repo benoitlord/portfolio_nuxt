@@ -451,36 +451,7 @@
             width: 90%;
             margin: 0;
         }
-    }    
-    
-    /* Bouton haut */
-    
-    #bouton-haut{
-        position: fixed;
-        bottom: 50px;
-        right: 0px;
-        padding: 10px 12px;
-        background-color: $vert;
-        font-size: 1.7em;
-        border-bottom: 5px solid $gris;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-        transform: translate(55px, 0px);
-        
-        transition: color 0.2s, transform 0.3s;
-        -webkit-transition: color 0.2s, transform 0.3s;
-        -moz-transition: color 0.2s, transform 0.3s;
-        -o-transition: color 0.2s, transform 0.3s;
-        -ms-transition: color 0.2s, transform 0.3s;
-        
-        &:hover{
-            color: $gris;
-            cursor: pointer;
-        }
-        
-        &.visible{
-            transform: translateX(0px);
-        }
-    }
+    }   
     
     /* Loader */
     
