@@ -1,6 +1,6 @@
 <template>
   <!-- Bouton pour remonter en haut de la page -->
-  <a id="bouton-haut" :class="visible ? 'visible' : ''" href="#" @click.prevent.stop="backTopTopClicked" role="complementary"><font-awesome-icon icon="chevron-up" size="lg" role="presentation" /></a>
+  <a id="bouton-haut" :class="visible ? 'visible' : ''" href="#" @click.prevent.stop="backTopTopClicked" role="complementary"><font-awesome-icon icon="chevron-up" size="lg" role="presentation" /><span class="v-inv" v-html="$t('label')"></span></a>
 </template>
 
 <script>
@@ -129,10 +129,10 @@
 
   {
     "en":{
-      
+      "label": "Scroll to the top of the page"
     },
     "fr":{
-      
+      "label": "Retourner au haut de la page"
     }
   }
 

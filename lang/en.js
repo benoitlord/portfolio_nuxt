@@ -125,7 +125,7 @@ export default {
       session: "Automne 2017",
       category: "programmation",
       desc: "<p>J’ai programmé ce site web avec des collègues de classe, Jean-Michel Dorais et Fabien Thérien-Prud’homme dans le cadre d'un cours collégial pour permettre à la Petite École Vision de Gatineau de gérer leur garderie et de marquer les présences et absences des enfants ainsi que de créer des fiches de résumé de la journée des enfants et certains rapports, le tout en HTML, CSS, JavaScript et PHP. Ce site est actuellement utilisé par plusieurs garderies du réseau Vision à-travers le Québec. Je me suis chargé principalement du côté de la programmation et non du visuel.</p>",
-      thumbnail: "prog_vision_3",
+      thumbnail: "prog_vision_3.jpg",
       images: ["prog_vision_1.jpg", "prog_vision_2.jpg", "prog_vision_3.jpg"]
     },
     atonal:{
