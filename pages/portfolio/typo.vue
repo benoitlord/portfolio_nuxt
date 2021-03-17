@@ -1,5 +1,6 @@
 <template>
   <div style="margin-top: 70px;">
+    <h1 style="margin-bottom: 100px;">{{ $t("typo") }}</h1>
     <projet v-for="value, index in info" :key="index" :info="value" :invert="index % 2 != 0"></projet>
   </div>
 </template>
