@@ -99,6 +99,7 @@ export default {
       category: "typo",
       desc: "<p>On peut ici voir quelques esquisses et concept menant à la réalisation de ce projet. Celui-ci, un spécimen typographique qui consiste en une affiche mettant en valeur les qualités de la police Exo 2 de Nathanael Gama est une réalisation que j’ai effectuées dans le cadre du cours de typo 2. S’inspirant de l’aspect se voulant futuriste de la police, elle explique comment voyager dans le futur, le tout d’une manière humoristique, tout en mettant en valeur les nombreuses graisses de la famille de polices.</p>",
       thumbnail: "typo-exo-3.jpg",
+      thumbnailPortrait: true,
       images: ["typo-exo-1.jpg", "typo-exo-2.jpg", "typo-exo-3.jpg"]
     },
     matthew_carter:{
@@ -135,6 +136,7 @@ export default {
       category: "illustration",
       desc: "<p>Dans le cadre de mon cours d'affiche, j'ai créé cette affiche comme proposition pour l'édition 2021 du festival Berlin Atonal, première édition après l'annulation de l'édition 2020 en raison de la situation sanitaire. Il s'agit d'un festival de musique électronique et d'art visuel qui se déroule dans une salle de Berlin qui est en fait une ancienne centrale électrique de l'Allemagne de l'Est, ce qui lui donne un aspect très industriel. C'est ce que j'ai voulu donner comme atmosphère à mon affiche, en plus d'éléments en aplat qui rappellent le côté technologique de la musique électronique.</p>",
       thumbnail: "illustration_atonal_4.jpg",
+      thumbnailPortrait: true,
       images: ["illustration_atonal_1.jpg", "illustration_atonal_2.jpg", "illustration_atonal_3.jpg", "illustration_atonal_4.jpg"]
     },
     calanca:{
@@ -144,6 +146,7 @@ export default {
       category: "illustration",
       desc: "<p>Voici deux affiches que j'ai soumises, dans le cadre de mon cours d'affiche, pour le concours de la Biennale d'affiche de Calanca en Suisse. Les affiches portent sur le sujet des changements climatiques et devaient inclure la mascotte de l'événement, un crocodile, ainsi que le slogan « Help! I'm burning! ».</p>",
       thumbnail: "illustration_calanca_4.jpg",
+      thumbnailPortrait: true,
       images: ["illustration_calanca_1.jpg", "illustration_calanca_2.jpg", "illustration_calanca_3.jpg", "illustration_calanca_4.jpg", "illustration_calanca_5.jpg"]
     },
     tous_des_oiseaux:{
@@ -153,6 +156,8 @@ export default {
       category: "illustration",
       desc: "<p>En hiver 2019, pour un projet du cours d’illustration, j’ai conçu cette affiche pour la pièce de théâtre Tous des oiseaux de Wajdi Mouawad. La classe n’a par contre pas eu l’occasion de créer l’illustration qui sera utilisée officiellement pour la pièce, mais le but était plutôt de s’imaginer comme si nous la réalisions pour vrai.</p>",
       thumbnail: "illustration_oiseaux_4.jpg",
+      thumbnailPortrait: true,
+      thumbnailAlignTopLeft: true,
       images: ["illustration_oiseaux_1.jpg", "illustration_oiseaux_2.jpg", "illustration_oiseaux_3.jpg", "illustration_oiseaux_4.jpg", "illustration_oiseaux_5.jpg"]
     },
     vegane:{
@@ -162,6 +167,7 @@ export default {
       category: "illustration",
       desc: "<p>Pour mon cours d’illustration, j’ai dessiné une série d’illustrations éditoriales pour mettre en valeur un article de magazine portant sur le sujet du véganisme. Le projet est composé de deux livrables, soit une illustration pour la double-page d’introduction de l’article ainsi qu’une plus petite dans le corps du texte. La typographie et le texte de l’article était déjà réalisé, de mon côté je seulement réalisé l’illustration.</p>",
       thumbnail: "illustration_vegane_4.jpg",
+      thumbnailAlignTopLeft: true,
       images: ["illustration_vegane_1.jpg", "illustration_vegane_2.jpg", "illustration_vegane_3.jpg", "illustration_vegane_4.jpg", "illustration_vegane_5.jpg"]
     },
     parking_challenge:{

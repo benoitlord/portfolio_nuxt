@@ -1,24 +1,14 @@
 <template>
   <div>
-    <nuxt-link :to="localePath('/portfolio/' + info.id)" class="projet">
-      <b-row v-if="!invert">
-        <b-col cols="12" md="8" class="thumbnail-container">
+    <nuxt-link :to="localePath('/portfolio/' + info.id)" :class="info.thumbnailPortrait ? ['projet', 'portrait'] : ['projet']">
+      <b-row>
+        <b-col cols="12" :md="info.thumbnailPortrait ? 4 : 7" :lg="info.thumbnailPortrait ? 4 : 8" :class="{ 'thumbnail-container': true, 'order-md-last': invert, 'alignTopLeft': info.thumbnailAlignTopLeft } ">
           <img :src="require('~/assets/' + info.thumbnail)" class="thumbnail" alt="">
           <div class="overlay"></div>
         </b-col>
-        <b-col cols="12" md="4" class="infos">
+        <b-col cols="12" :md="info.thumbnailPortrait ? 8 : 5" :lg="info.thumbnailPortrait ? 8 : 4" class="infos">
           <h2 v-html="info.titre"></h2>
           <h3 v-html="info.session"></h3>
-        </b-col>
-      </b-row>
-      <b-row v-if="invert">
-        <b-col cols="12" md="4" class="infos">
-          <h2 v-html="info.titre"></h2>
-          <h3 v-html="info.session"></h3>
-        </b-col>
-        <b-col ccols="12" md="8" class="thumbnail-container">
-          <img :src="require('~/assets/' + info.thumbnail)" class="thumbnail" alt="">
-          <div class="overlay"></div>
         </b-col>
       </b-row>
     </nuxt-link>
@@ -95,7 +85,21 @@
     }
 
     .row{
-      height: 600px;
+      margin-bottom: 15px;
+
+      @media (max-width: 767.9px){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (min-width: 768px){
+        height: 300px;
+      }
+      @media (min-width: 992px){
+        height: 450px;
+      }
+      @media (min-width: 1200px){
+        height: 550px;
+      }
     }
 
     .thumbnail-container{
@@ -107,18 +111,35 @@
       flex-flow: row wrap;
       overflow: hidden;
 
+      &.alignTopLeft{
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
       .thumbnail{
         position: absolute;
         flex: 0 0 auto;
-        width: 125%;
       }
       .overlay{
         flex: 0 0 auto;
         width: 100%;
-        height: 600px;
+        height: 220px;
         background-color: rgba(0, 0, 0, 0.1);
         z-index: 1;
         @include transition(0.3s);
+
+        @media (min-width: 576px){
+          height: 350px;
+        }
+        @media (min-width: 768px){
+          height: 300px;
+        }
+        @media (min-width: 992px){
+          height: 450px;
+        }
+        @media (min-width: 1200px){
+          height: 550px;
+        }
       }
     }
 
@@ -130,19 +151,67 @@
       flex-flow: row wrap;
       @include transition(0.3s);
 
+      @media (max-width: 767.9px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
       h2{
         text-align: center;
         @include transition(0.3s);
         margin-bottom: 15px;
         flex: 0 0 100%;
+
+        @media (max-width: 575.9px){
+          font-size: 1.5em;
+        }
       }
       h3{
-        font-size: 1em;
+        font-size: 0.8em;
         color: #555;
         text-align: center;
         @include transition(0.3s);
         flex: 0 0 100%;
+
+        @media (min-width: 576px){
+          font-size: 1em;
+        }
       }
+    }
+  }
+
+  .projet:not(.portrait){
+    .thumbnail{
+      width: 115%;
+    }
+  }
+  .projet.portrait{
+    .row{
+      @media (min-width: 768px) and (max-width: 991.9px){
+        height: 340px;
+      }
+    }
+
+    .overlay{
+      @media (max-width: 449.9px){
+        height: 400px;
+      }
+      @media (min-width: 450px) and (max-width: 499.9px){
+        height: 550px;
+      }
+      @media (min-width: 500px) and (max-width: 575.9px){
+        height: 650px;
+      }
+      @media (min-width: 576px) and (max-width: 767.9px){
+        height: 730px;
+      }
+      @media (min-width: 768px) and (max-width: 991.9px){
+        height: 340px;
+      }
+    }
+
+    .thumbnail{
+      width: 100%;
     }
   }
 

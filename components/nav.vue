@@ -184,7 +184,7 @@
     top: 20px;
     background-color: $vert;
     box-shadow:0px 3px 10px rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: 100000;
     overflow: hidden;
     border-bottom: 5px solid $gris;
     
