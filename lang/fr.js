@@ -49,7 +49,7 @@ export default {
       desc: "<p>En équipe avec Marc-André Chenard et Cédric Guèdègbé pour un projet de mon cours de graphisme synthèse I, nous avons créé l'image de marque de La Boutique Techno, une série de franchises des magasins Centre Hi-Fi dont les propriétaires souhaitaient se doter d'une image de marque et d'un nom séparé de la chaîne principale. Chacun des membres de notre équipe a créé une série de propositions pour l'image de marque et le client a finalement choisi l'une de celles créées par Marc-André. Voici deux de celles que j'ai réalisées. J'ai aussi contribué à créer les applications de l'image de marque, notamment en créant des modèles d'images pour des publications Facebook que voici.</p>",
       thumbnail: "branding_boutique-techno-8.jpg",
       images: ["branding_boutique-techno-1.png", "branding_boutique-techno-2.png", "branding_boutique-techno-3.png", "branding_boutique-techno-4.jpg", "branding_boutique-techno-5.jpg", "branding_boutique-techno-6.jpg", "branding_boutique-techno-7.jpg", "branding_boutique-techno-8.jpg", "branding_boutique-techno-9.jpg", "branding_boutique-techno-10.jpg", "branding_boutique-techno-11.jpg", "branding_boutique-techno-12.jpg"],
-      imagesLayout: ["4", "4", "4", "7", "5", "7", "5", "7", "5", "7", "5", "7"]
+      imagesLayout: ["5", "4", "3", "7", "5", "7", "5", "7", "5", "7", "5", "7"]
     },
     devil_bot:{
       id: "devil_bot",
@@ -59,7 +59,7 @@ export default {
       desc: "<p>Pour ce projet, j'ai créé de toute pièce l'identité d'une compagnie fictive qui produit des pédales de guitare. La compagnie que j’ai imaginée, Devil Bot, est une entreprise visionnaire créée par des ingénieurs passionnés d’électro-rock. Le but de la compagnie est de contribuer à l’essor de ce style en offrant des effets adaptés à celui-ci, totalement numériques. Les pédales de la compagnie sont également extrêmement innovatrices, du fait qu’elles offrent des capacités jamais vues, comme le fait de pouvoir se connecter à un téléphone intelligent, d’interagir ensemble, etc. Le design des pédales, tout comme l’image de marque de la compagnie, représente l’aspect futuriste de la compagnie. Dans le cadre du projet, j’ai créé le guide de norme de la compagnie. J’ai ainsi créé la philosophie et l’image de la marque, j’ai établi les règles d’utilisation des typographies, des couleurs et des éléments graphiques de l‘image de marque et j’ai également réalisé une multitude d’applications. J'ai aussi créé le design de trois pédales de la compagnie.</p>",
       thumbnail: "branding_pedales-2.png",
       images: ["branding_pedales-1.png", "branding_pedales-2.png", "branding_pedales-3.jpg", "branding_pedales-4.jpg", "branding_pedales-5.png", "branding_pedales-6.jpg", "branding_pedales-7.jpg", "branding_pedales-8.jpg", "branding_pedales-9.jpg", "branding_pedales-10.jpg", "branding_pedales-11.jpg"],
-      imagesLayout: ["4", "4", "4", "12", "4", "4", "4", "4", "4", "4", "4"]
+      imagesLayout: ["12", "6", "6", "12", "7", "5", "6", "6", "6", "6", "6"]
     },
     cowboys_fringants:{
       id: "cowboys_fringants",
@@ -89,7 +89,7 @@ export default {
       desc: "<p>En marge de mon cours d’images de marque, j’ai eu l’occasion de proposer un logo pour l’Association de Hockey de Gatineau, dans le but de remplacer les nombreux logos des diverses équipes de la régions et les regrouper sous le même nom et la même identité, les Chevaliers. Mon processus créatifs m’a amené à créer un logo composé de l’épée et du bouclier assorti d’une vague rappelant la rivière des Outaouais pour identifier la région. On retrouve ici des esquisses créées lors de mon processus initial ainsi que diverses variations que j’ai ensuite proposées au client. J’ai également décuplé l’image de marque sur un maillot et une tuque pour démontrer son application.</p>",
       thumbnail: "branding_hockey-5.jpg",
       images: ["branding_hockey-1.png", "branding_hockey-2.png", "branding_hockey-3.png", "branding_hockey-4.jpg", "branding_hockey-5.jpg"],
-      imagesLayout: ["6", "6", "6", "6", "12"]
+      imagesLayout: ["6", "6", "8", "4", "12"]
     },
     sagesse:{
       id: "sagesse",
@@ -110,7 +110,7 @@ export default {
       thumbnail: "typo-exo-3.jpg",
       thumbnailPortrait: true,
       images: ["typo-exo-1.jpg", "typo-exo-2.jpg", "typo-exo-3.jpg"],
-      imagesLayout: ["7", "4", "12"]
+      imagesLayout: ["7", "4", "6"]
     },
     matthew_carter:{
       id: "matthew_carter",
@@ -151,7 +151,7 @@ export default {
       thumbnail: "illustration_atonal_4.jpg",
       thumbnailPortrait: true,
       images: ["illustration_atonal_1.jpg", "illustration_atonal_2.jpg", "illustration_atonal_3.png", "illustration_atonal_4.jpg"],
-      imagesLayout: ["4", "4", "4", "12"]
+      imagesLayout: ["4", "4", "4", "6"]
     },
     calanca:{
       id: "calanca",
@@ -195,7 +195,7 @@ export default {
       desc: "<p>Dans le cadre de mon cours de signalisation et cartographie, le but de ce projet était de tenter de régler un problème récurrent dans le stationnement du pavillon Lucien-Brault de l’UQO, soit que les lignes des espaces de stationnement disparaissent sous la neige l’hiver et ainsi les gens ne savent plus comment se stationner correctement et le stationnement se retrouve bloqué. J’ai créé, en équipe avec André Engoué Tcheukam, une campagne sur divers médias, utilisant des pictogrammes simples et un texte accrocheur, qui explique rapidement et efficacement la solution aux utilisateurs, soit d’aligner le rétroviseur gauche de sa voiture avec le phare avant de celle à sa gauche.</p>",
       thumbnail: "sign_parking_3.png",
       images: ["sign_parking_1.jpg", "sign_parking_2.jpg", "sign_parking_3.png"],
-      imagesLayout: ["6", "6", "12"]
+      imagesLayout: ["4", "8", "12"]
     },
     carte:{
       id: "carte",

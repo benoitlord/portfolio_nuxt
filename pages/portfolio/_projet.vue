@@ -2,7 +2,7 @@
   <div>
     <b-row align-h="center">
       <b-col cols="12" md="10">
-        <h1>{{ info.titre }}</h1>
+        <h1 v-html="info.titre"></h1>
         </b-col>
     </b-row>
     <b-row align-h="center" style="margin-bottom: 50px;">
@@ -80,7 +80,9 @@
 
     img{
       flex: 0 0 auto;
+      object-fit: cover;
       width: 100%;
+      height: 100%;
     }
 
     /*&:not(.col-md-12){
