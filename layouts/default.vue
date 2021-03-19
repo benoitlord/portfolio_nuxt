@@ -29,7 +29,7 @@
           </b-col>
       </b-row>
     </b-container>
-    <BackToTop />
+    <backToTop />
   </div>
 </template>
 
@@ -38,7 +38,7 @@
   import navigation from '~/components/nav';
   import langswitch from '~/components/langswitch';
   import bypass from '~/components/bypass';
-  import BackToTop from '~/components/BackToTop';
+  import backToTop from '~/components/backToTop';
 
   export default {
     head() {
@@ -58,7 +58,7 @@
       navigation,
       langswitch,
       bypass,
-      BackToTop
+      backToTop
     },
 
     methods: {
