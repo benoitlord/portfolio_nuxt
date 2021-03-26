@@ -39,7 +39,9 @@
         bulle_sousLienOuvertTop: "255px",
         bulle_sousLienFermeTop: "235px",
 
-        navOpen: false
+        navOpen: false,
+
+        toutOuvert: false
       }
     },
 
@@ -65,10 +67,20 @@
     methods: {
       menuClick(){
         if($('.navigation').hasClass("fermee")){
-          this.ouvrirDesktop();
+          if(('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)){
+            this.ouvrirMobile();
+          }
+          else{
+            this.ouvrirDesktop();
+          }
         }
         else{
-          this.fermerDesktop();
+          if(('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)){
+            this.fermerMobile();
+          }
+          else{
+            this.fermerDesktop();
+          }
         }
       },
       ouvrirDesktop(){
@@ -77,6 +89,19 @@
 
         this.navOpen = true;
       },
+      ouvrirMobile(){
+        var that = this;
+
+        $('.navigation svg.menu').animate({color: "#dddddd"}, 300);
+        
+        $('.navigation').removeClass("fermee", 600, "easeOutElastic", function(){
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').show();
+
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').each(function(index){
+            $(this).delay(100*index).animate({opacity: 1, right: that.bulle_Ouvert_Right}, 150);
+          }).promise().done(function(){ that.toutOuvert = true; that.navOpen = true; });
+        });
+      },
       fermerDesktop(){        
         $('.navigation').addClass("fermee", 600, "easeOutBounce");
         $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').hide();
@@ -84,7 +109,25 @@
         var that = this;
         $(document).one("click", that.fermerDesktop);
 
-        this.navOpen = true;
+        this.navOpen = false;
+      },
+      fermerMobile(){
+        var that = this;
+
+        $('.navigation svg.menu').animate({color: "black"}, 300);
+        
+        $('.navigation').addClass("fermee", 600, "easeOutBounce", function(){
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').each(function(index){
+            $(this).delay(100*index).animate({opacity: 0, right: that.bulle_Ferme_Right}, 150);
+          }).promise().done(function(){
+            $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').hide(function(){
+              that.toutOuvert = false;
+              that.navOpen = false;
+            });
+          });
+        });
+
+        $(document).one("click", that.fermerMobile);
       },
       hoverBulles(num){       
         var that = this;
@@ -102,10 +145,13 @@
 
     mounted(){
       var that = this;
-      $(document).one("click", that.fermerDesktop);
 
-      //Afficher les bulles et les sous-menu au survol
-      if($(window).width() > 1366){
+      if(('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)){
+        $(document).one("click", that.fermerMobile);
+      }
+      else{
+        $(document).one("click", that.fermerDesktop);
+        
         that.hoverBulles("1");        
         that.hoverBulles("2");
         that.hoverBulles("3");
