@@ -13,7 +13,7 @@
     </b-row>
     <b-row class="gallery-row">
       <b-col class="gallery-image" style="margin-bottom: 15px;" v-for="value, index in info.images" :key="'image_' + index" cols="12" :md="info.imagesLayout[index]">
-        <img :src="require('~/assets/' + value)" alt="">
+        <a href="#" @click.prevent.stop="lbxIndex = index; showLbx = true; openDialog()" :title="$t('enlarge')" :aria-label="$t('enlarge')" :style="{ cursor: 'zoom-in' }"><img :src="require('~/assets/' + value)" alt=""></a>
       </b-col>
     </b-row>
     <b-row align-h="center" style="margin-top: 50px;">
@@ -21,6 +21,18 @@
         <nuxt-link :to="localePath('/portfolio/' + info.category)" class="green-button">{{ $t("back") + $t(info.category) }}</nuxt-link>
       </b-col>
     </b-row>
+    <transition name="lbxFade">
+      <div class="lbx" v-if="showLbx" @click.prevent.stop="showLbx = false; closeDialog()" tabindex="-1" role="dialog" aria-labelledby="imgDesc" @keypress.esc="showLbx = false; closeDialog()">
+        <div class="lbx-content" role="document">
+          <a href="#" class="closeLbx" @click.prevent.stop="showLbx = false; closeDialog()"><font-awesome-icon icon="times" size="2x" role="presentation" /><span class="v-inv">{{ $t("close") }}</span></a>
+
+          <a href="#" class="arrow-prev" @click.prevent.stop="(lbxIndex == 0) ? lbxIndex = info.images.length - 1 : lbxIndex--"><font-awesome-icon icon="chevron-left" size="3x" role="presentation" /><span class="v-inv">{{ $t("prev") }}</span></a>
+          <img :src="require('~/assets/' + info.images[lbxIndex])" alt="" @click.stop>
+          <a href="#" class="arrow-next" @click.prevent.stop="(lbxIndex == info.images.length - 1) ? lbxIndex = 0 : lbxIndex++"><font-awesome-icon icon="chevron-right" size="3x" role="presentation" /><span class="v-inv">{{ $t("next") }}</span></a>
+          <p id="imgDesc">{{  }}</p>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -40,7 +52,10 @@
 
     data() {
       return {
-        
+        lbxIndex: 0,
+        showLbx: false,
+        modalNodes: [],
+        nonModalNodes: []
       }
     },
 
@@ -55,13 +70,104 @@
     },
 
     methods: {
-      
+      openDialog() {    
+        this.modalNodes = Array.from( document.querySelectorAll('.lbx *') );
+
+        // by only finding elements that do not have tabindex="-1" we ensure we don't
+        // corrupt the previous state of the element if a modal was already open
+        this.nonModalNodes = document.querySelectorAll('body *:not(.lbx):not([tabindex="-1"])');
+
+        for (var i = 0; i < this.nonModalNodes.length; i++) {
+          var node = this.nonModalNodes[i];
+
+          if (!this.modalNodes.includes(node)) {
+
+            // save the previous tabindex state so we can restore it on close
+            node._prevTabindex = node.getAttribute('tabindex');
+            node.setAttribute('tabindex', -1);
+
+            // tabindex=-1 does not prevent the mouse from focusing the node (which
+            // would show a focus outline around the element). prevent this by disabling
+            // outline styles while the modal is open
+            // @see https://www.sitepoint.com/when-do-elements-take-the-focus/
+            node.style.outline = 'none';
+          }
+        }
+      },
+      closeDialog() {
+        // close the modal and restore tabindex
+        document.body.style.overflow = null;
+
+        // restore or remove tabindex from nodes
+        for (var i = 0; i < this.nonModalNodes.length; i++) {
+          var node = this.nonModalNodes[i];
+          if (node._prevTabindex) {
+            node.setAttribute('tabindex', node._prevTabindex);
+            node._prevTabindex = null;
+          }
+          else {
+            node.removeAttribute('tabindex');
+          }
+          node.style.outline = null;
+        }
+      }
     }
   }
 
 </script>
 
 <style lang="scss" scoped>
+
+  /* VARIABLES */
+
+    /* COULEURS */
+
+  $vert: #68b32d;
+  $vertFonce: #5AA91E;
+  $gris: #dddddd;
+  $grisFonce: #bbbbbb;
+  $grisFonceFonce: #aaaaaa;
+  $grisHautCTA: #333333;
+  $grisHautCTAFonce: #000000;
+  $noir: #000000;
+  $blanc: #ffffff;
+
+  /* MIXINS */
+
+  @mixin transition($vitesse, $easing: ease) {
+    transition: all $vitesse $easing;
+    -webkit-transition: all $vitesse $easing;
+    -moz-transition: all $vitesse $easing;
+    -o-transition: all $vitesse $easing;
+    -ms-transition: all $vitesse $easing;
+  }
+
+  @mixin spinKeyframes($nom, $debut, $fin){
+    @keyframes #{$nom} {
+      0% { transform: rotate($debut); }
+      100% { transform: rotate($fin); }
+    }
+    @-webkit-keyframes #{$nom} {
+      0% { transform: rotate($debut); }
+      100% { transform: rotate($fin); }
+    }
+    @-moz-keyframes #{$nom} {
+      0% { transform: rotate($debut); }
+      100% { transform: rotate($fin); }
+    }
+    @-o-keyframes #{$nom} {
+      0% { transform: rotate($debut); }
+      100% { transform: rotate($fin); }
+    }
+  }
+
+  @mixin spinAnimation($nom, $duree){
+    animation: $nom $duree linear infinite;
+    -webkit-animation: $nom $duree linear infinite;
+    -moz-animation: $nom $duree linear infinite;
+    -ms-animation: $nom $duree linear infinite;
+    -o-animation: $nom $duree linear infinite;
+  }
 
   .gallery-row{
     margin-left: -7.5px;
@@ -98,16 +204,109 @@
     }*/
   }
 
+  .lbx{
+    &.lbxFade-enter .lbx-content{
+      background-color: rgba(0, 0, 0, 0);
+    }
+    &.lbxFade-enter-to .lbx-content{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.lbxFade-leave .lbx-content{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.lbxFade-leave-to .lbx-content{
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.lbxFade-enter img{
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    &.lbxFade-enter-to img{
+      transform: scale(1);
+      opacity: 1;
+    }
+    &.lbxFade-leave img{
+      transform: scale(1);
+      opacity: 1;
+    }
+    &.lbxFade-leave-to img{
+      transform: scale(0.95);
+      opacity: 0;
+    }
+  }
+
+  .lbx-content{
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 100000;
+
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+
+      cursor: zoom-out;
+
+      @include transition(0.2s);
+
+      img{
+        width: 70%;
+        flex: 0 0 auto;
+        cursor: initial;
+        @include transition(0.2s);
+      }
+      .arrow-prev, .arrow-next{
+        flex: 0 0 15%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        @include transition(0.2s);
+
+        &:hover, &:focus{
+          color: $vert;
+        }
+      }
+      .closeLbx{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: white;
+        @include transition(0.2s);
+
+        &:hover, &:focus{
+          color: $vert;
+        }
+      }
+    }
+
 </style>
 
 <i18n>
 
   {
     "en": {
-      "back": "Back to "
+      "back": "Back to ",
+      "prev": "Show previous image",
+      "next": "Show next image",
+
+      "enlarge": "Enlarge image",
+      "close": "Close overlay (escape key)"
     },
     "fr": {
-      "back": "Retour à "
+      "back": "Retour à ",
+      "prev": "Afficher l'image précédente",
+      "next": "Afficher l'image suivante",
+
+      "enlarge": "Agrandir l'image",
+      "close": "Fermer la fenêtre superposée (touche d'échappement)"
     }
   }
 
