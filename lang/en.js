@@ -13,35 +13,35 @@ export default {
   projets: {
     john_cage:{
       id: "john_cage",
-      titre: "Mise en page de livre sur John Cage",
-      session: "Automne 2019",
+      titre: "Layout of a Book on John Cage",
+      session: "Fall 2019",
       category: "miseEnPage",
-      desc: "<p>Créé dans le cadre de mon cours de Typo 2, ce projet consistait à créer un mise en page pour un livre d’une vingtaine de pages portant sur John Cage, un compositeur atypique qui utilise divers objets pour créer sa musique. La mise en page s’inspire de son style unique dans la composition des éléments des pages, particulièrement des blocs de texte. J’ai aussi soigneusement sélectionné les polices de caractère pour représenter son style unique.</p>",
+      desc: "<p>Created as part of my Typography class, this project consisted of creating a layout for a twenty-page book about John Cage, an atypical composer who uses various objects to create his music. The layout is inspired by his unique style in the composition of the elements of the pages, particularly the blocks of text. I also carefully selected the fonts to represent his unique style.</p>",
       thumbnail: "mep_cage-1.jpg",
       images: ["mep_cage-1.jpg", "mep_cage-2.jpg", "mep_cage-3.jpg", "mep_cage-4.jpg", "mep_cage-5.jpg"],
-      imageDescs: ["Couverture du livre", "Mise en page du livre", "Mise en page du contenu du livre", "Mise en page du contenu du livre", "Mise en page du contenu du livre"],
+      imageDescs: ["Book Cover", "Book Layout", "Book Content Layout", "Book Content Layout", "Book Content Layout"],
       imagesLayout: ["6", "6", "12", "12", "12"]
     },
     randonnee:{
       id: "randonnee",
-      titre: "Guide d’organisation de randonnées",
-      session: "Automne 2019",
+      titre: "Hiking Organization Guide",
+      session: "Fall 2019",
       category: "miseEnPage",
-      desc: "<p>Ce projet, que j’ai réalisé dans le cadre de mon cours d'éléments typographique, édition et impression est composé de deux documents : premièrement, un guide pour permettre à des organisateurs de randonnées avec des enfants de savoir l’essentiel sur l’organisation de celles-ci et deuxièmement, un document d’accompagnement qui présente une série de parcours de randonnée potentiels. Pour la réalisation de ce projet, j’ai fait tout le montage du texte et des images, mais j’ai également fait la capture et la modification des photos, que j’ai prises lors d’une randonnée dans le Parc de la Gatineau.</p>",
+      desc: "<p>This project, which I carried out as part of my Typographic Elements, Editing and Printing course, is made up of two documents: first, a guide to enable organizers of hikes with children to know the essentials about the organization of these and secondly, an accompanying leaflet which presents a series of potential hiking routes. For this project, I did all the editing of the text and images and I also captured and edited the photos, which I took while hiking in Gatineau Park.</p>",
       thumbnail: "mep_randonnee-6.jpg",
       images: ["mep_randonnee-1.jpg", "mep_randonnee-2.jpg", "mep_randonnee-3.jpg", "mep_randonnee-4.jpg", "mep_randonnee-5.jpg", "mep_randonnee-6.jpg", "mep_randonnee-7.jpg"],
-      imageDescs: ["Couverture du guide", "Mise en page du contenu du guide", "Mise en page du contenu du guide", "Page d'introduction de section du guide", "Dépliant d'accompagnement", "Guide imprimé", "Dépliant d'accompagnement imprimé"],
+      imageDescs: ["Guide Cover", "Guide Content Layout", "Guide Content Layout", "Guide Section Intro Page", "Accompanying Leaflet", "Printed Guide", "Printed Accompanying Leaflet"],
       imagesLayout: ["4", "8", "6", "6", "6", "6", "6"]
     },
     alimentation:{
       id: "alimentation",
-      titre: "Guide et dépliant sur la saine alimentation",
+      titre: "Healthy Eating Guide and Leaflet",
       session: "Automne 2019",
       category: "miseEnPage",
-      desc: "<p>Le présent projet est une mise en page réalisée pour mon cours d’éléments typographiques, édition et impression. Il s’agit de la création d’un petit guide portant sur la saine alimentation chez les jeunes. J’y ai effectué la mise en page, les choix typographiques et les illustrations. J’ai également réalisé, dans le cadre du même projet, un petit dépliant sur le même sujet et dans la même identité visuelle.</p>",
+      desc: "<p>This project is a layout made for my Typography, Editing and Printing course. This is the creation of a short guide to healthy eating for young people. I did the layout, typographical choices and illustrations there. I also produced, as part of the same project, a small leaflet on the same subject and in the same visual identity.</p>",
       thumbnail: "mep_alimentation-4.jpg",
       images: ["mep_alimentation-1.jpg", "mep_alimentation-2.jpg", "mep_alimentation-3.jpg", "mep_alimentation-4.jpg"],
-      imageDescs: ["Couverture du guide", "Mise en page du contenu du guide", "Dépliant d'accompagnement", "Dépliant d'accompagnement"],
+      imageDescs: ["Guide Cover", "Guide Content Layout", "Accompanying Leaflet", "Accompanying Leaflet"],
       imagesLayout: ["4", "8", "6", "6"]
     },
     boutique_techno:{
