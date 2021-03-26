@@ -13,7 +13,8 @@
     </b-row>
     <b-row class="gallery-row">
       <b-col class="gallery-image" style="margin-bottom: 15px;" v-for="value, index in info.images" :key="'image_' + index" cols="12" :md="info.imagesLayout[index]">
-        <a href="#" @click.prevent.stop="lbxIndex = index; showLbx = true; openDialog()" :title="$t('enlarge')" :aria-label="$t('enlarge')" :style="{ cursor: 'zoom-in' }"><img :src="require('~/assets/' + value)" alt=""></a>
+        <a href="#" @click.prevent.stop="lbxIndex = index; showLbx = true; openDialog()" :title="$t('enlarge')" :aria-label="$t('enlarge')" :style="{ cursor: 'zoom-in' }"><img :src="require('~/assets/' + value)" :alt="info.imageDescs[index]"></a>
+        <div class="overlay"><p class="desc" v-html="info.imageDescs[index]"></p></div>
       </b-col>
     </b-row>
     <b-row align-h="center" style="margin-top: 50px;">
@@ -21,18 +22,20 @@
         <nuxt-link :to="localePath('/portfolio/' + info.category)" class="green-button">{{ $t("back") + $t(info.category) }}</nuxt-link>
       </b-col>
     </b-row>
-    <transition name="lbxFade">
-      <div class="lbx" v-if="showLbx" @click.prevent.stop="showLbx = false; closeDialog()" tabindex="-1" role="dialog" aria-labelledby="imgDesc" @keypress.esc="showLbx = false; closeDialog()">
-        <div class="lbx-content" role="document">
-          <a href="#" class="closeLbx" @click.prevent.stop="showLbx = false; closeDialog()"><font-awesome-icon icon="times" size="2x" role="presentation" /><span class="v-inv">{{ $t("close") }}</span></a>
+      <div class="lbx" @click.prevent.stop="showLbx = false; closeDialog()" tabindex="-1" role="dialog" aria-labelledby="imgDesc" @keydown.esc="showLbx = false; closeDialog()" :aria-hidden="!showLbx">
+        <transition name="lbxFade">
+          <div class="lbx-content" role="document" v-if="showLbx">
+            <a href="#" class="closeLbx" @click.prevent.stop="showLbx = false; closeDialog()" role="button"><font-awesome-icon icon="times" size="2x" role="presentation" /><span class="v-inv">{{ $t("close") }}</span></a>
 
-          <a href="#" class="arrow-prev" @click.prevent.stop="(lbxIndex == 0) ? lbxIndex = info.images.length - 1 : lbxIndex--"><font-awesome-icon icon="chevron-left" size="3x" role="presentation" /><span class="v-inv">{{ $t("prev") }}</span></a>
-          <img :src="require('~/assets/' + info.images[lbxIndex])" alt="" @click.stop>
-          <a href="#" class="arrow-next" @click.prevent.stop="(lbxIndex == info.images.length - 1) ? lbxIndex = 0 : lbxIndex++"><font-awesome-icon icon="chevron-right" size="3x" role="presentation" /><span class="v-inv">{{ $t("next") }}</span></a>
-          <p id="imgDesc">{{  }}</p>
-        </div>
+            <a href="#" class="arrow-prev" @click.prevent.stop="(lbxIndex == 0) ? lbxIndex = info.images.length - 1 : lbxIndex--" role="button"><font-awesome-icon icon="chevron-left" size="3x" role="presentation" /><span class="v-inv">{{ $t("prev") }}</span></a>
+            <transition name="imageFade" mode="out-in">
+              <img :src="require('~/assets/' + info.images[lbxIndex])" :alt="info.imageDescs[lbxIndex]" @click.stop :key="lbxIndex">
+            </transition>
+            <a href="#" class="arrow-next" @click.prevent.stop="(lbxIndex == info.images.length - 1) ? lbxIndex = 0 : lbxIndex++" role="button"><font-awesome-icon icon="chevron-right" size="3x" role="presentation" /><span class="v-inv">{{ $t("next") }}</span></a>
+            <p id="imgDesc" v-html="info.imageDescs[lbxIndex]"></p>
+          </div>
+        </transition>
       </div>
-    </transition>
   </div>
 </template>
 
@@ -93,6 +96,13 @@
             node.style.outline = 'none';
           }
         }
+
+        //Lock Scroll
+        this.disableScroll();
+
+        setTimeout(function(){
+          $(".lbx-content .closeLbx")[0].focus();
+        }, 300);
       },
       closeDialog() {
         // close the modal and restore tabindex
@@ -110,7 +120,41 @@
           }
           node.style.outline = null;
         }
+
+        //Unlock Scroll
+        this.enableScroll()
+      },
+      disableScroll() {
+        // Get the current page scroll position
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+      },
+      enableScroll() {
+        window.onscroll = function() {};
       }
+    },
+
+    mounted(){
+      $(".gallery-image a").hover(
+        function(){
+          $(this).siblings(".overlay").addClass("show");
+        },
+        function(){
+          $(this).siblings(".overlay").removeClass("show");
+        }
+      );
+
+      $(".gallery-image a").focus(function(){
+        $(this).siblings(".overlay").addClass("show");
+      });
+      $(".gallery-image a").blur(function(){
+        $(this).siblings(".overlay").removeClass("show");
+      });
     }
   }
 
@@ -184,55 +228,17 @@
     flex-flow: row wrap;
     overflow: hidden;
 
-    img{
-      flex: 0 0 auto;
+    a{
       object-fit: cover;
+      flex: 0 0 auto;
       width: 100%;
       height: 100%;
     }
-
-    /*&:not(.col-md-12){
-      @media (min-width: 768px){
-        height: 200px;
-      }
-      @media (min-width: 992px){
-        height: 300px;
-      }
-      @media (min-width: 1200px){
-        height: 450px;
-      }
-    }*/
-  }
-
-  .lbx{
-    &.lbxFade-enter .lbx-content{
-      background-color: rgba(0, 0, 0, 0);
-    }
-    &.lbxFade-enter-to .lbx-content{
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    &.lbxFade-leave .lbx-content{
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    &.lbxFade-leave-to .lbx-content{
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    &.lbxFade-enter img{
-      transform: scale(0.95);
-      opacity: 0;
-    }
-    &.lbxFade-enter-to img{
-      transform: scale(1);
-      opacity: 1;
-    }
-    &.lbxFade-leave img{
-      transform: scale(1);
-      opacity: 1;
-    }
-    &.lbxFade-leave-to img{
-      transform: scale(0.95);
-      opacity: 0;
+    img{
+      object-fit: cover;
+      flex: 0 0 auto;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -253,12 +259,58 @@
       cursor: zoom-out;
 
       @include transition(0.2s);
+      &.lbxFade-enter{
+        background-color: rgba(0, 0, 0, 0);
+      }
+      &.lbxFade-enter-to{
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &.lbxFade-leave{
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &.lbxFade-leave-to{
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      &.lbxFade-enter img{
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      &.lbxFade-enter-to img{
+        transform: scale(1);
+        opacity: 1;
+      }
+      &.lbxFade-leave img{
+        transform: scale(1);
+        opacity: 1;
+      }
+      &.lbxFade-leave-to img{
+        transform: scale(0.95);
+        opacity: 0;
+      }
 
       img{
         width: 70%;
         flex: 0 0 auto;
         cursor: initial;
         @include transition(0.2s);
+
+        @media(min-width: 1200px){
+          width: 60%;
+        }
+
+        &.imageFade-enter{
+          opacity: 0;
+        }
+        &.imageFade-enter-to{
+          opacity: 1;
+        }
+        &.imageFade-leave{
+          opacity: 1;
+        }
+        &.imageFade-leave-to{
+          opacity: 0;
+        }
       }
       .arrow-prev, .arrow-next{
         flex: 0 0 15%;
@@ -270,8 +322,12 @@
         color: white;
         @include transition(0.2s);
 
+        @media(min-width: 1200px){
+          width: 20%;
+        }
+
         &:hover, &:focus{
-          color: $vert;
+          color: #bbb;
         }
       }
       .closeLbx{
@@ -282,8 +338,62 @@
         @include transition(0.2s);
 
         &:hover, &:focus{
-          color: $vert;
+          color: #bbb;
         }
+      }
+      p{
+        position: absolute;
+        bottom: 0px;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2em;
+        background-color: black;
+        padding: 5px;
+        border-radius: 10px;
+
+        width: 300px;
+        left: calc(50% - 150px);
+
+        @media(min-width: 768px){
+          width: 500px;
+          left: calc(50% - 250px);
+        }
+        @media(min-width: 992px){
+          width: 600px;
+          left: calc(50% - 300px);
+        }
+      }
+    }
+
+    .overlay{
+      position: absolute;
+      left: 7.5px;
+      top: 0;
+      right: 7.5px;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0);
+      pointer-events: none;
+
+      @include transition(0.2s);
+
+      &.show{
+        background-color: rgba(0, 0, 0, 0.5);
+
+        .desc{
+          opacity: 1;
+        }
+      }
+
+      .desc{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        bottom: 0;
+        text-align: center;
+        font-size: 0.8em;
+        color: white;
+        opacity: 0;
       }
     }
 
