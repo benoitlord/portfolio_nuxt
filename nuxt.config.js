@@ -5,6 +5,50 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  generate: {
+    routes: [
+      'en/portfolio/john_cage',
+      'en/portfolio/randonnee',
+      'en/portfolio/alimentation',
+      'en/portfolio/boutique_techno',
+      'en/portfolio/devil_bot',
+      'en/portfolio/cowboys_fringants',
+      'en/portfolio/fast',
+      'en/portfolio/hockey',
+      'en/portfolio/sagesse',
+      'en/portfolio/exo',
+      'en/portfolio/matthew_carter',
+      'en/portfolio/guitarbox',
+      'en/portfolio/vision',
+      'en/portfolio/atonal',
+      'en/portfolio/calanca',
+      'en/portfolio/tous_des_oiseaux',
+      'en/portfolio/vegane',
+      'en/portfolio/parking_challenge',
+      'en/portfolio/carte',
+      
+      'fr/portfolio/john_cage',
+      'fr/portfolio/randonnee',
+      'fr/portfolio/alimentation',
+      'fr/portfolio/boutique_techno',
+      'fr/portfolio/devil_bot',
+      'fr/portfolio/cowboys_fringants',
+      'fr/portfolio/fast',
+      'fr/portfolio/hockey',
+      'fr/portfolio/sagesse',
+      'fr/portfolio/exo',
+      'fr/portfolio/matthew_carter',
+      'fr/portfolio/guitarbox',
+      'fr/portfolio/vision',
+      'fr/portfolio/atonal',
+      'fr/portfolio/calanca',
+      'fr/portfolio/tous_des_oiseaux',
+      'fr/portfolio/vegane',
+      'fr/portfolio/parking_challenge',
+      'fr/portfolio/carte'
+    ]
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'portfolio',
