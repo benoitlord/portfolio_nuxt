@@ -49,6 +49,12 @@
 <script>
   
   export default {
+
+    transition: {
+      name: "pageTransition",
+      mode: "out-in"
+    },
+
     head() {
       return {
         title: this.$i18n.t("pageTitle") + " - Benoit Lord, " + this.$i18n.t("titre")

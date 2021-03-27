@@ -10,6 +10,12 @@
   import projet from '~/components/projet.vue';
   
   export default {
+
+    transition: {
+      name: "pageTransition",
+      mode: "out-in"
+    },
+
     head() {
       return {
         title: this.$i18n.t("sign") + " - Benoit Lord, " + this.$i18n.t("titre")

@@ -71,6 +71,32 @@
     src: url("~assets/fonts/Renner/renner-blackitalic.otf");
 }
 
+//Page Transition
+.pageTransition-enter{
+    opacity: 0;
+    transform: translatex(-25px);
+}
+.pageTransition-enter-to{
+    opacity: 1;
+    transform: translatex(0px);
+}
+.pageTransition-leave{
+    opacity: 1;
+    transform: translatex(0px);
+}
+.pageTransition-leave-to{
+    opacity: 0;
+    transform: translatex(-25px);
+}
+
+.pageTransition-enter, .pageTransition-enter-to, .pageTransition-leave, .pageTransition-leave-to{
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, transform 0.5s;
+    -moz-transition: opacity 0.5s, transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    -ms-transition: opacity 0.5s, transform 0.5s;
+}
+
 /* VARIABLES */
 
 	/* COULEURS */
