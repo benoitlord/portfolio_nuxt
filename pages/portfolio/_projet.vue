@@ -13,7 +13,7 @@
     </b-row>
     <b-row class="gallery-row">
       <b-col class="gallery-image" style="margin-bottom: 15px;" v-for="value, index in info.images" :key="'image_' + index" cols="12" :md="info.imagesLayout[index]">
-        <a href="#" @click.prevent.stop="lbxIndex = index; showLbx = true; openDialog()" :title="$t('enlarge')" :aria-label="$t('enlarge')" :style="{ cursor: 'zoom-in' }"><img :src="require('~/assets/' + value)" :alt="info.imageDescs[index]"></a>
+        <a href="#" @click.prevent.stop="lbxIndex = index; showLbx = true; openDialog(); checkImageRatio()" :title="$t('enlarge')" :aria-label="$t('enlarge')" :style="{ cursor: 'zoom-in' }"><img :src="require('~/assets/' + value)" :alt="info.imageDescs[index]"></a>
         <div class="overlay"><p class="desc" v-html="info.imageDescs[index]"></p></div>
       </b-col>
     </b-row>
@@ -27,11 +27,11 @@
           <div class="lbx-content" role="document" v-if="showLbx">
             <a href="#" class="closeLbx" @click.prevent.stop="showLbx = false; closeDialog()" role="button"><font-awesome-icon icon="times" size="2x" role="presentation" /><span class="v-inv">{{ $t("close") }}</span></a>
 
-            <a href="#" class="arrow-prev" @click.prevent.stop="(lbxIndex == 0) ? lbxIndex = info.images.length - 1 : lbxIndex--" role="button"><font-awesome-icon icon="chevron-left" size="3x" role="presentation" /><span class="v-inv">{{ $t("prev") }}</span></a>
+            <a href="#" class="arrow-prev" @click.prevent.stop="(lbxIndex == 0) ? lbxIndex = info.images.length - 1 : lbxIndex--; checkImageRatio()" role="button"><font-awesome-icon icon="chevron-left" size="3x" role="presentation" /><span class="v-inv">{{ $t("prev") }}</span></a>
             <transition name="imageFade" mode="out-in">
               <img :src="require('~/assets/' + info.images[lbxIndex])" :alt="info.imageDescs[lbxIndex]" @click.stop :key="lbxIndex">
             </transition>
-            <a href="#" class="arrow-next" @click.prevent.stop="(lbxIndex == info.images.length - 1) ? lbxIndex = 0 : lbxIndex++" role="button"><font-awesome-icon icon="chevron-right" size="3x" role="presentation" /><span class="v-inv">{{ $t("next") }}</span></a>
+            <a href="#" class="arrow-next" @click.prevent.stop="(lbxIndex == info.images.length - 1) ? lbxIndex = 0 : lbxIndex++; checkImageRatio()" role="button"><font-awesome-icon icon="chevron-right" size="3x" role="presentation" /><span class="v-inv">{{ $t("next") }}</span></a>
             <p id="imgDesc" v-html="info.imageDescs[lbxIndex]"></p>
           </div>
         </transition>
@@ -136,6 +136,16 @@
       },
       enableScroll() {
         window.onscroll = function() {};
+      },
+      checkImageRatio(){
+        setInterval(function(){
+          if($(".lbx-content img").height() > $(".lbx-content img").width()){
+            $(".lbx-content").addClass("vertical");
+          }
+          else{
+            $(".lbx-content").removeClass("vertical");
+          }
+        }, 200);
       }
     },
 
@@ -243,159 +253,192 @@
   }
 
   .lbx-content{
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 100000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
 
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    cursor: zoom-out;
+
+    @include transition(0.2s);
+    &.lbxFade-enter{
+      background-color: rgba(0, 0, 0, 0);
+    }
+    &.lbxFade-enter-to{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.lbxFade-leave{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.lbxFade-leave-to{
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.lbxFade-enter img{
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    &.lbxFade-enter-to img{
+      transform: scale(1);
+      opacity: 1;
+    }
+    &.lbxFade-leave img{
+      transform: scale(1);
+      opacity: 1;
+    }
+    &.lbxFade-leave-to img{
+      transform: scale(0.95);
+      opacity: 0;
+    }
+
+    &.vertical img{
+      width: 60%;
+
+      @media(min-width: 768px){
+        width: 45%;
+      }
+      @media(min-width: 1200px){
+        width: 30%;
+      }
+    }
+    &.vertical .arrow-prev, &.vertical .arrow-next{
+      width: 20%;
+
+      @media(min-width: 768px){
+        width: 27.5%;
+      }
+      @media(min-width: 1200px){
+        width: 35%;
+      }
+    }
+
+    img{
+      width: 70%;
+      flex: 0 0 auto;
+      cursor: initial;
+
+      transition: opacity 0.2s, transform 0.2s;
+      -webkit-transition: opacity 0.2s, transform 0.2s;
+      -moz-transition: opacity 0.2s, transform 0.2s;
+      -o-transition: opacity 0.2s, transform 0.2s;
+      -ms-transition: opacity 0.2s, transform 0.2s;
+
+      @media(min-width: 1200px){
+        width: 60%;
+      }
+
+      &.imageFade-enter{
+        opacity: 0;
+      }
+      &.imageFade-enter-to{
+        opacity: 1;
+      }
+      &.imageFade-leave{
+        opacity: 1;
+      }
+      &.imageFade-leave-to{
+        opacity: 0;
+      }
+    }
+    .arrow-prev, .arrow-next{
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      color: white;
 
-      cursor: zoom-out;
+      transition: color 0.2s;
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      -ms-transition: color 0.2s;
 
-      @include transition(0.2s);
-      &.lbxFade-enter{
-        background-color: rgba(0, 0, 0, 0);
-      }
-      &.lbxFade-enter-to{
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      &.lbxFade-leave{
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      &.lbxFade-leave-to{
-        background-color: rgba(0, 0, 0, 0);
-      }
+      flex: 0 0 auto;
+      width: 15%;
 
-      &.lbxFade-enter img{
-        transform: scale(0.95);
-        opacity: 0;
-      }
-      &.lbxFade-enter-to img{
-        transform: scale(1);
-        opacity: 1;
-      }
-      &.lbxFade-leave img{
-        transform: scale(1);
-        opacity: 1;
-      }
-      &.lbxFade-leave-to img{
-        transform: scale(0.95);
-        opacity: 0;
+      @media(min-width: 1200px){
+        width: 20%;
       }
 
-      img{
-        width: 70%;
-        flex: 0 0 auto;
-        cursor: initial;
-        @include transition(0.2s);
-
-        @media(min-width: 1200px){
-          width: 60%;
-        }
-
-        &.imageFade-enter{
-          opacity: 0;
-        }
-        &.imageFade-enter-to{
-          opacity: 1;
-        }
-        &.imageFade-leave{
-          opacity: 1;
-        }
-        &.imageFade-leave-to{
-          opacity: 0;
-        }
-      }
-      .arrow-prev, .arrow-next{
-        flex: 0 0 15%;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: white;
-        @include transition(0.2s);
-
-        @media(min-width: 1200px){
-          width: 20%;
-        }
-
-        &:hover, &:focus{
-          color: #bbb;
-        }
-      }
-      .closeLbx{
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        color: white;
-        @include transition(0.2s);
-
-        &:hover, &:focus{
-          color: #bbb;
-        }
-      }
-      p{
-        position: absolute;
-        bottom: 0px;
-        color: white;
-        text-align: center;
-        font-weight: 500;
-        font-size: 1.2em;
-        background-color: black;
-        padding: 5px;
-        border-radius: 10px;
-
-        width: 300px;
-        left: calc(50% - 150px);
-
-        @media(min-width: 768px){
-          width: 500px;
-          left: calc(50% - 250px);
-        }
-        @media(min-width: 992px){
-          width: 600px;
-          left: calc(50% - 300px);
-        }
+      &:hover, &:focus{
+        color: #bbb;
       }
     }
-
-    .overlay{
+    .closeLbx{
       position: absolute;
-      left: 7.5px;
-      top: 0;
-      right: 7.5px;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0);
-      pointer-events: none;
-
+      left: 20px;
+      top: 20px;
+      color: white;
       @include transition(0.2s);
 
-      &.show{
-        background-color: rgba(0, 0, 0, 0.5);
-
-        .desc{
-          opacity: 1;
-        }
+      &:hover, &:focus{
+        color: #bbb;
       }
+    }
+    p{
+      position: absolute;
+      bottom: 0px;
+      color: white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2em;
+      background-color: black;
+      padding: 5px;
+      border-radius: 10px;
+
+      width: 300px;
+      left: calc(50% - 150px);
+
+      @media(min-width: 768px){
+        width: 500px;
+        left: calc(50% - 250px);
+      }
+      @media(min-width: 992px){
+        width: 600px;
+        left: calc(50% - 300px);
+      }
+    }
+  }
+
+  .overlay{
+    position: absolute;
+    left: 7.5px;
+    top: 0;
+    right: 7.5px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+
+    @include transition(0.2s);
+
+    &.show{
+      background-color: rgba(0, 0, 0, 0.5);
 
       .desc{
-        position: absolute;
-        width: 90%;
-        left: 5%;
-        bottom: 0;
-        text-align: center;
-        font-size: 0.8em;
-        color: white;
-        opacity: 0;
+        opacity: 1;
       }
     }
+
+    .desc{
+      position: absolute;
+      width: 90%;
+      left: 5%;
+      bottom: 0;
+      text-align: center;
+      font-size: 0.8em;
+      color: white;
+      opacity: 0;
+    }
+  }
 
 </style>
 
