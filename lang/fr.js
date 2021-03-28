@@ -181,10 +181,10 @@ export default {
     },
     tous_des_oiseaux:{
       id: "tous_des_oiseaux",
-      titre: "Affiche pour la pièce Tous des oiseaux",
+      titre: "Affiche pour la pièce <em>Tous des oiseaux</em>",
       session: "Hiver 2019",
       category: "illustration",
-      desc: "<p>En hiver 2019, pour un projet du cours d’illustration, j’ai conçu cette affiche pour la pièce de théâtre Tous des oiseaux de Wajdi Mouawad. La classe n’a par contre pas eu l’occasion de créer l’illustration qui sera utilisée officiellement pour la pièce, mais le but était plutôt de s’imaginer comme si nous la réalisions pour vrai.</p>",
+      desc: "<p>En hiver 2019, pour un projet du cours d’illustration, j’ai conçu cette affiche pour la pièce de théâtre <em>Tous des oiseaux</em> de Wajdi Mouawad. La classe n’a par contre pas eu l’occasion de créer l’illustration qui sera utilisée officiellement pour la pièce, mais le but était plutôt de s’imaginer comme si nous la réalisions pour vrai.</p>",
       thumbnail: "illustration_oiseaux_4.jpg",
       thumbnailPortrait: true,
       thumbnailAlignTopLeft: true,
@@ -194,7 +194,7 @@ export default {
     },
     vegane:{
       id: "vegane",
-      titre: "Illustrations pour l’article La révolution Végane",
+      titre: "Illustrations pour l’article <em>La révolution Végane</em>",
       session: "Hiver 2019",
       category: "illustration",
       desc: "<p>Pour mon cours d’illustration, j’ai dessiné une série d’illustrations éditoriales pour mettre en valeur un article de magazine portant sur le sujet du véganisme. Le projet est composé de deux livrables, soit une illustration pour la double-page d’introduction de l’article ainsi qu’une plus petite dans le corps du texte. La typographie et le texte de l’article était déjà réalisé, de mon côté je seulement réalisé l’illustration.</p>",
@@ -206,7 +206,7 @@ export default {
     },
     parking_challenge:{
       id: "parking_challenge",
-      titre: "Le «&ThinSpace;Parking Challenge&ThinSpace;»",
+      titre: "Le «&ThinSpace;<span lang\"en\">Parking Challenge</span>&ThinSpace;»",
       session: "Automne 2019",
       category: "sign",
       desc: "<p>Dans le cadre de mon cours de signalisation et cartographie, le but de ce projet était de tenter de régler un problème récurrent dans le stationnement du pavillon Lucien-Brault de l’UQO, soit que les lignes des espaces de stationnement disparaissent sous la neige l’hiver et ainsi les gens ne savent plus comment se stationner correctement et le stationnement se retrouve bloqué. J’ai créé, en équipe avec André Engoué Tcheukam, une campagne sur divers médias, utilisant des pictogrammes simples et un texte accrocheur, qui explique rapidement et efficacement la solution aux utilisateurs, soit d’aligner le rétroviseur gauche de sa voiture avec le phare avant de celle à sa gauche.</p>",
