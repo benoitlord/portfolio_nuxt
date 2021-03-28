@@ -50,7 +50,7 @@
 
     head() {
       return {
-        title: this.info.titre + " - Benoit Lord, " + this.$i18n.t("titre")
+        title: this.stripHTML(this.info.titre) + " - Benoit Lord, " + this.$i18n.t("titre")
       }
     },
 
@@ -152,6 +152,12 @@
             $(".lbx-content").removeClass("vertical");
           }
         }, 200);
+      },
+      stripHTML(value) {
+        var div = document.createElement("div");
+        div.innerHTML = value;
+        var text = div.textContent || div.innerText || "";
+        return text;
       }
     },
 
