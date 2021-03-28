@@ -5,7 +5,7 @@
     <b-container tag="header">
       <b-row align-h="center">
         <b-col cols="3" sm="2" lg="1">
-          <nuxt-link :to="localePath('/')"><img @mouseover="logoHover = true" @mouseleave="logoHover = false" class="img-fluid" alt="Logo" :src="require('~/assets/logo_' + (logoHover ? 'couleur' : 'nb') + '.png')" /></nuxt-link>
+          <nuxt-link :to="localePath('/')"><img @mouseover="logoHover = true" @mouseleave="logoHover = false" class="img-fluid" alt="Logo" :src="require('~/assets/logo_' + (logoHover ? 'couleur' : 'nb') + '.png')" /><span class="v-inv" v-html="$t('backToHome')"></span></nuxt-link>
         </b-col>
       </b-row>
     </b-container>
@@ -81,3 +81,16 @@
   }
 
 </style>
+
+<i18n>
+
+  {
+    "en":{
+      "backToHome": "Back to Home Page"
+    },
+    "fr":{
+      "backToHome": "Retourner à la page d'accueil"
+    }
+  }
+
+</i18n>
