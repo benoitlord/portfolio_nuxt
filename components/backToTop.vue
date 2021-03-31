@@ -1,7 +1,7 @@
 <template>
   <!-- Bouton pour remonter en haut de la page -->
   <div role="complementary">
-    <a id="bouton-haut" :class="visible ? 'visible' : ''" href="#" @click.prevent.stop="backTopTopClicked"><font-awesome-icon icon="chevron-up" size="lg" role="presentation" /><span class="v-inv" v-html="$t('label')"></span></a>
+    <a id="bouton-haut" :class="visible ? 'visible' : ''" href="#" @click.prevent.stop="backTopTopClicked" role="button"><font-awesome-icon icon="chevron-up" size="lg" role="presentation" /><span class="v-inv" v-html="$t('label')"></span></a>
   </div>
 </template>
 
