@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :target="(name == 'envelope') ? '_self' : '_blank'" class="social" :title="name == 'envelope' ? $t('email') : $t('linkTo') + $t(name) + $t('profile')"><font-awesome-icon :icon="[(notBrand ? 'fas' : 'fab'), name]" size="lg" role="presentation" prefix="fab" /><span class="v-inv">{{ name == "envelope" ? $t('email') : $t('linkTo') + $t(name) + $t('profile') }}</span></a>
+  <a :href="link" :target="(name == 'envelope') ? '_self' : '_blank'" class="social" :title="name == 'envelope' ? $t('email') : $t('linkTo') + $t(name) + (($i18n.locale=== 'en') ? ' profile' : '')"><font-awesome-icon :icon="[(notBrand ? 'fas' : 'fab'), name]" size="lg" role="presentation" prefix="fab" /><span class="v-inv">{{ name == "envelope" ? $t('email') : $t('linkTo') + $t(name) + (($i18n.locale=== 'en') ? ' profile' : '') }}</span></a>
 </template>
 
 <script>
@@ -101,7 +101,6 @@
   {
     "en":{
       "linkTo": "Link to my ",
-      "profile": " profile",
       "twitter": "Twitter",
       "behance": "Behance",
       "linkedin": "LinkedIn",
@@ -110,7 +109,6 @@
     },
     "fr":{
       "linkTo": "Lien vers mon profil ",
-      "profile": "",
       "twitter": "Twitter",
       "behance": "Behance",
       "linkedin": "LinkedIn",

@@ -8,7 +8,7 @@
     <b-row align-h="center" style="margin-bottom: 50px;">
       <b-col cols="12" md="6">
         <div v-html="info.desc" class="text-center"></div>
-        <p v-html="info.session" style="margin-top: 50px; font-size: 1.3em; font-weight: 700;" class="text-center"></p>
+        <h2 v-html="info.session" style="margin-top: 50px; font-size: 1.3em; font-weight: 700;" class="text-center"></h2>
       </b-col>
     </b-row>
     <b-row class="gallery-row">
@@ -22,7 +22,7 @@
         <nuxt-link :to="localePath('/portfolio/' + info.category)" class="green-button">{{ $t("back") + $t(info.category) }}</nuxt-link>
       </b-col>
     </b-row>
-      <div class="lbx" @click.prevent.stop="showLbx = false; closeDialog()" tabindex="-1" role="dialog" aria-labelledby="imgDesc" @keydown.esc="showLbx = false; closeDialog()" :aria-hidden="!showLbx">
+      <div class="lbx" @click.prevent.stop="showLbx = false; closeDialog()" tabindex="-1" role="dialog" :aria-labelledby="showLbx? 'imgDesc': false" @keydown.esc="showLbx = false; closeDialog()" :aria-hidden="!showLbx">
         <transition name="lbxFade">
           <div class="lbx-content" role="document" v-if="showLbx">
             <a href="#" class="closeLbx" @click.prevent.stop="showLbx = false; closeDialog()" role="button"><font-awesome-icon icon="times" size="2x" role="presentation" /><span class="v-inv">{{ $t("close") }}</span></a>

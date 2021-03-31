@@ -1,5 +1,7 @@
 <template>
-  <nuxt-link :to="switchLocalePath(otherLang)" :class="($i18n.locale === 'en' ? ['language-toggle-container', 'change'] : 'language-toggle-container')" :lang="otherLang" :aria-label="$t('label')"><span class="fr">Fr</span><div class="language-toggle fadedout"><div class="switch"></div></div><span class="en">En</span></nuxt-link>
+  <div role="navigation" :aria-label="$t('landmarkLabel')">
+    <nuxt-link :to="switchLocalePath(otherLang)" :class="($i18n.locale === 'en' ? ['language-toggle-container', 'change'] : 'language-toggle-container')" :lang="otherLang" :aria-label="$t('label')"><span class="fr">Fr</span><div class="language-toggle fadedout"><div class="switch"></div></div><span class="en">En</span></nuxt-link>
+  </div>
 </template>
 
 <script>
@@ -149,10 +151,12 @@
 
   {
     "en":{
-      "label": "Changer au français"
+      "label": "Changer au français",
+      "landmarkLabel": "Language Toggle"
     },
     "fr":{
-      "label": "Switch to English"
+      "label": "Switch to English",
+      "landmarkLabel": "Changement de langue"
     }
   }
 
