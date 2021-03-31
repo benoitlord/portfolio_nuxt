@@ -168,7 +168,7 @@
       }
       h3{
         font-size: 0.8em;
-        color: #555;
+        color: #444;
         text-align: center;
         @include transition(0.3s);
         flex: 0 0 100%;
