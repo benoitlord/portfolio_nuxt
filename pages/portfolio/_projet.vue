@@ -8,7 +8,7 @@
     <b-row align-h="center" style="margin-bottom: 50px;">
       <b-col cols="12" md="6">
         <div v-html="info.desc" class="text-center"></div>
-        <p v-html="info.session" style="margin-top: 50px; font-size: 1.3em; font-weight: 700;" class="text-center"></p>
+        <h2 v-html="info.session" style="margin-top: 50px; font-size: 1.3em; font-weight: 700;" class="text-center"></h2>
       </b-col>
     </b-row>
     <b-row class="gallery-row">
