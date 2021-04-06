@@ -6,7 +6,7 @@
         <h2 class="text-center" style="margin-bottom: 50px; font-size: 1.3em;">{{ $t('titre') }}</h2>
       </b-col>
     </b-row>
-    <b-row align-v="center">
+    <b-row align-v="center" style="margin-top: 50px; margin-bottom: 70px;">
       <b-col cols="12" lg="6">
         <img class="img-fluid" style="margin-top: 20px; margin-bottom: 20px;" src="~assets/accueil_moi_v2.jpg" :alt="(($i18n.locale === 'en') ? 'Image of ' : 'Image de ') + 'Benoit Lord'">
       </b-col>

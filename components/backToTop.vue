@@ -102,7 +102,7 @@
         border-bottom: 5px solid $gris;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
         transform: translateX(60px);
-        color: $gris!important;
+        color: black;
         z-index: 1000;
         
         transition: color 0.2s, transform 0.3s, background-color 0.2s;
@@ -111,17 +111,13 @@
         -o-transition: color 0.2s, transform 0.3s, background-color 0.2s;
         -ms-transition: color 0.2s, transform 0.3s, background-color 0.2s;
         
-        &:hover{
-            color: $gris;
-            cursor: pointer;
-        }
-        
         &.visible{
             transform: translateX(0px);
         }
 
         &:hover, &:focus{
-          background-color: darken($vert, 5%);
+          color: $gris;
+          cursor: pointer;
         }
     }
 
