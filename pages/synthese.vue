@@ -113,7 +113,7 @@
         adobeDCView.previewFile({
           content:{ location: { url: "/guide_2021-04-02.pdf" } },
           metaData:{ fileName: "guide_2021-04-02.pdf" }
-        }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false });
+        }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
       });
     }
   }
