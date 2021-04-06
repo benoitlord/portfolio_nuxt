@@ -14,6 +14,7 @@
         <nuxt-link :to="localePath('/portfolio/programmation')" class="lien5" aria-labelledby="bulle_5" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="code" size="2x" role="presentation" /><span class="v-inv" v-html="$t('programmation')"></span></nuxt-link>
         <nuxt-link :to="localePath('/portfolio/illustration')" class="lien6" aria-labelledby="bulle_6" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="image" size="2x" role="presentation" /><span class="v-inv" v-html="$t('illustration')"></span></nuxt-link>
         <nuxt-link :to="localePath('/portfolio/sign')" class="lien7" aria-labelledby="bulle_7" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="map-signs" size="2x" role="presentation" /><span class="v-inv" v-html="$t('sign')"></span></nuxt-link>
+        <nuxt-link :to="localePath('/synthese')" class="lien8" aria-labelledby="bulle_8" :aria-hidden="navClosedString" :tabindex="navOpen ? '0': '-1'"><font-awesome-icon icon="project-diagram" size="2x" role="presentation" /><span class="v-inv" v-html="$t('synthese')"></span></nuxt-link>
       </div>
     </nav>
 
@@ -25,6 +26,7 @@
     <div class="bulle bulle_5" id="bulle_5">{{ $t('programmation') }}</div>
     <div class="bulle bulle_6" id="bulle_6">{{ $t('illustration') }}</div>
     <div class="bulle bulle_7" id="bulle_7">{{ $t('sign') }}</div>
+    <div class="bulle bulle_8" id="bulle_8">{{ $t('synthese') }}</div>
   </div>
 </template>
 
@@ -85,7 +87,7 @@
       },
       ouvrirDesktop(){
         $('.navigation').removeClass("fermee", 600, "easeOutElastic");
-        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').show();
+        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').show();
 
         this.navOpen = true;
       },
@@ -95,16 +97,16 @@
         $('.navigation svg.menu').animate({color: "#dddddd"}, 300);
         
         $('.navigation').removeClass("fermee", 600, "easeOutElastic", function(){
-          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').show();
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').show();
 
-          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').each(function(index){
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').each(function(index){
             $(this).delay(100*index).animate({opacity: 1, right: that.bulle_Ouvert_Right}, 150);
           }).promise().done(function(){ that.toutOuvert = true; that.navOpen = true; });
         });
       },
       fermerDesktop(){        
         $('.navigation').addClass("fermee", 600, "easeOutBounce");
-        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').hide();
+        $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').hide();
         
         var that = this;
         $(document).one("click", that.fermerDesktop);
@@ -117,10 +119,10 @@
         $('.navigation svg.menu').animate({color: "black"}, 300);
         
         $('.navigation').addClass("fermee", 600, "easeOutBounce", function(){
-          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').each(function(index){
+          $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').each(function(index){
             $(this).delay(100*index).animate({opacity: 0, right: that.bulle_Ferme_Right}, 150);
           }).promise().done(function(){
-            $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7').hide(function(){
+            $('.bulle_1, .bulle_2, .bulle_3, .bulle_4, .bulle_5, .bulle_6, .bulle_7, .bulle_8').hide(function(){
               that.toutOuvert = false;
               that.navOpen = false;
             });
@@ -159,6 +161,7 @@
         that.hoverBulles("5");
         that.hoverBulles("6");
         that.hoverBulles("7");
+        that.hoverBulles("8");
       }
     }
   }
@@ -516,6 +519,20 @@
       border-bottom: 10px solid transparent;
     }
   }
+  
+  .bulle_8{
+    width: 130px;
+    right: 90px;
+    top: 635px;
+    
+    &::after{
+      left:100%;
+      top: 10px;
+      border-top: 10px solid transparent;
+      border-left: 15px solid $vert;
+      border-bottom: 10px solid transparent;
+    }
+  }
 
   html[lang="en"] .bulle_2{
     width: 80px;
@@ -525,6 +542,9 @@
   }
   html[lang="en"] .bulle_7{
     width: 100px;
+  }
+  html[lang="en"] .bulle_8{
+    width: 140px;
   }
 
 </style>

@@ -9,6 +9,7 @@ export default {
   programmation: "Programmation",
   illustration: "Illustration",
   sign: "Signalétique",
+  synthese: "Projet synthèse",
 
   projets: {
     john_cage:{
