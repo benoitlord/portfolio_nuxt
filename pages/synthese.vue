@@ -12,40 +12,40 @@
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="6">
-        <h2 style="margin-bottom: 30px;"><span class="number">1</span> Recherche/Analyse</h2>
+      <b-col cols="12" md="7" lg="6">
+        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
       </b-col>
-      <b-col cols="12" md="6">
+      <b-col cols="12" md="5" lg="6">
         <img class="img-fluid" src="https://picsum.photos/700/500" alt="" />
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="7">
-        <img class="img-fluid" src="https://picsum.photos/700/900" alt="" />
-      </b-col>
-      <b-col cols="12" md="5">
-        <h2 style="margin-bottom: 30px;"><span class="number">2</span> Affiche informative</h2>
+      <b-col cols="12" md="7" lg="5" order-md="last">
+        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Affiche informative</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+      </b-col>
+      <b-col cols="12" md="5" lg="7">
+        <img class="img-fluid" src="https://picsum.photos/700/900" alt="" />
       </b-col>
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="8" class="text-center">
-        <h2 style="margin-bottom: 30px;"><span class="number">3</span> Projet</h2>
+      <b-col cols="12" md="10" lg="8" class="text-center">
+        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Projet</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum?</p>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="5">
+      <b-col cols="12" md="6" lg="5">
         <h3>Développement de la notation</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
       </b-col>
-      <b-col cols="12" md="7">
+      <b-col cols="12" md="6" lg="7">
         <img class="img-fluid" src="https://picsum.photos/700/500" alt="" />
       </b-col>
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="8" class="text-center">
+      <b-col cols="12" md="10" lg="8" class="text-center">
         <h3>Création du guide explicatif</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
       </b-col>
@@ -54,11 +54,11 @@
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="5">
+      <b-col cols="12" md="6" lg="5">
         <h3>Conception de l'affiche informative pour la notation</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
       </b-col>
-      <b-col cols="12" md="7">
+      <b-col cols="12" md="6" lg="7">
         <img class="img-fluid" src="https://picsum.photos/700/900" alt="" />
       </b-col>
     </b-row>
@@ -175,13 +175,29 @@
   
   .number{
     background-color: $vert;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: inline-block;
-    font-size: 1.1em;
-    line-height: 70px;
+    font-size: 0.9em;
+    line-height: 60px;
     text-align: center;
+
+    @media(min-width: 768px){
+      font-size: 1.1em;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+    }
+  }
+
+  @media(max-width: 767.9px){
+    .number-title{
+      font-size: 1.6rem;
+    }
+    img.img-fluid{
+      margin-top: 10px;
+    }
   }
 
   #adobe-dc-view{
