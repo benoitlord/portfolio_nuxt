@@ -71,7 +71,10 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
       </b-col>
       <b-col cols="12">
-        <div id="adobe-dc-view" class="box-shadow" style="width: 100%; margin-top: 30px;"></div>
+        <figure class="figure" style="width: 100%;">
+          <div id="adobe-dc-view" class="box-shadow figure-img" style="width: 100%; margin-top: 30px;"  aria-labelledby="img-caption_6"></div>
+          <figcaption class="figure-caption" id="img-caption_6">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale du guide explicatif" )}}</figcaption>
+        </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
@@ -81,14 +84,14 @@
       </b-col>
       <b-col cols="12" md="6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="~assets/synthese_menuet-bach.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_6" />
-          <figcaption class="figure-caption" id="img-caption_6" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
+          <img class="figure-img img-fluid" src="~assets/synthese_menuet-bach.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_7" />
+          <figcaption class="figure-caption" id="img-caption_7" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
         </figure>
       </b-col>
       <b-col cols="12" md="6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="~assets/synthese_imagine.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_7" />
-          <figcaption class="figure-caption" id="img-caption_7" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
+          <img class="figure-img img-fluid" src="~assets/synthese_imagine.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_8" />
+          <figcaption class="figure-caption" id="img-caption_8" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
         </figure>
       </b-col>
     </b-row>
@@ -99,8 +102,8 @@
       </b-col>
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="https://picsum.photos/700/900" :alt="$t('captionBelow')" aria-labelledby="img-caption_8" />
-          <figcaption class="figure-caption" id="img-caption_8">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative pour la notation" )}}</figcaption>
+          <img class="figure-img img-fluid" src="https://picsum.photos/700/900" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
+          <figcaption class="figure-caption" id="img-caption_9">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative pour la notation" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
@@ -154,7 +157,7 @@
         var adobeDCView = new AdobeDC.View({ clientId: "16f2a1cd95ee44bc90dc8b16d04be388", divId: "adobe-dc-view" });
         adobeDCView.previewFile({
           content:{ location: { url: "/guide_2021-04-09.pdf" } },
-          metaData:{ fileName: "guide_2021-04-02.pdf" }
+          metaData:{ fileName: "Guide explicatif de la notation musicale graphique" }
         }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
       });
     }
