@@ -521,7 +521,7 @@
   }
   
   .bulle_8{
-    width: 130px;
+    width: 135px;
     right: 90px;
     top: 650px;
     
