@@ -378,7 +378,7 @@
   }
 
   .bulle_2{
-    width: 120px;
+    width: 125px;
     right: 90px;
     top: 185px;
     
