@@ -523,7 +523,7 @@
   .bulle_8{
     width: 135px;
     right: 90px;
-    top: 635px;
+    top: 650px;
     
     &::after{
       left:100%;
