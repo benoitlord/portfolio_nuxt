@@ -7,26 +7,52 @@
     </b-row>
     <b-row align-h="center">
       <b-col cols="12" md="10" class="text-center">
-        <p v-if="$i18n.locale === 'en'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui velit aliquam a, eum unde iusto ullam non numquam. Veritatis nulla fuga eius odit quibusdam est, deserunt dicta sit in ducimus suscipit sunt minima sint voluptatem atque exercitationem alias! Obcaecati saepe voluptates pariatur! Sed, praesentium maiores eius molestias et suscipit explicabo esse molestiae fugit modi dolor enim neque saepe sequi quos in perspiciatis, quis nesciunt magni! Aliquid quis eos atque tempore?</p>
-        <p v-if="$i18n.locale === 'fr'">Réalisé dans le cadre du cours «&ThinSpace;Graphisme synthèse II&nbsp;: recherche et innovation&ThinSpace;» du baccalauréat en design graphique de l’École multidisciplinaire de l’image de l’Université du Québec en Outaouais, ce projet se veut une application concrète des notions apprises tout au long du programme. Il a aussi comme objectif de favoriser l’innovation en permettant d’explorer un sujet dans un angle nouveau et d’utiliser le graphisme afin d’améliorer un aspect de la société.</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maiores numquam unde sint quo ipsum optio recusandae amet similique provident, expedita inventore natus esse delectus beatae sapiente eaque ab deserunt eligendi architecto ullam minus voluptatum! Recusandae beatae error quos necessitatibus.</p>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis libero nam, ullam, totam esse maiores id doloribus necessitatibus dolores rem blanditiis rerum non? Adipisci, minus quisquam unde voluptas, numquam officia dolor magni quia praesentium cumque quaerat tempore itaque porro quidem! Iusto laudantium eligendi inventore! Perspiciatis nostrum minima rerum quisquam temporibus?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam quia praesentium quod voluptas delectus aliquam? Cumque, rem! Delectus ad fugiat necessitatibus, inventore, non blanditiis accusantium debitis minus facilis earum illum laborum eos velit autem aliquam nostrum veritatis nobis provident quidem?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, hic soluta id dolorem consequuntur vero amet magni odio. Iusto eum nam error nisi eos reiciendis optio. Dolore explicabo tempore ab dignissimos exercitationem, natus perferendis quia esse eligendi blanditiis, eius itaque.</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h2>Contexte du projet</h2>
+          <p>Réalisé dans le cadre du cours «&ThinSpace;Graphisme synthèse II&nbsp;: recherche et innovation&ThinSpace;» du baccalauréat en design graphique de l’École multidisciplinaire de l’image de l’Université du Québec en Outaouais, ce projet se veut une application concrète des notions apprises tout au long du programme. Il a aussi comme objectif de favoriser l’innovation en permettant d’explorer un sujet dans un angle nouveau et d’utiliser le graphisme afin d’améliorer un aspect de la société.</p>
+          <h2>But du projet</h2>
+          <p>Le but de ce projet est de tenter de renouveler la façon d’écrire la musique afin de remédier à un problème de longue date. En effet, les partitions de musique ont depuis presque toujours eu la même allure : une feuille blanche avec des lignes de portée, des notes et des inscriptions noires, toujours dessinée de la même manière. De plus, l’apprentissage de la musique est souvent compliqué pour les débutants en raison de cette notation très technique qui prend du temps à comprendre et maîtriser et n’est pas très représentative visuellement.</p>
+          <p>Le premier objectif pour remédier à cela est de créer une nouvelle version de la notation musicale traditionnelle dont le but premier serait de rendre plus accessible, pour les débutants, l’apprentissage de la musique grâce à un système de notation plus visuel qui permet de saisir plus facilement l’aspect d’une pièce de musique, ainsi que ses notes, son rythme, ses nuances, etc.</p>
+          <p>Une autre approches est d’explorer comment intégrer divers éléments visuels afin de dynamiser la mise en page et ainsi exprimer l’esprit de la musique écrite tout en rendant plus riche et attrayante les pages. Ce projet explore ainsi comment intégrer différents aspect du design graphique dans l’écriture de la musique et la création de partitions et de livres de musique.</p>
+        </div>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="7" lg="6">
-        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati! Neque culpa pariatur aliquam deserunt consequuntur nobis nam, fugit quibusdam dolore reprehenderit soluta corporis inventore debitis eligendi alias voluptatibus id optio? Quis placeat quas assumenda qui sunt voluptates consectetur reiciendis.</p>
+        </div>
+        <div  v-if="$i18n.locale === 'fr'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
+          <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondies autour du sujet et des expérimentations déjà réalisée dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
+        </div>
       </b-col>
       <b-col cols="12" md="5" lg="6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="https://picsum.photos/700/500" :alt="$t('captionBelow')" aria-labelledby="img-caption_1" />
-          <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Lorem ipsum dolor sit amet consectetur adipisicing." )}}</figcaption>
+          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_recherche.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_1" />
+          <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Brainstorm pour la recherche des éléments de notation" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="7" lg="5" order-md="last">
-        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Affiche informative</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Lorem ipsum</h2>
+          <p v-if="$i18n.locale === 'en'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores ea, voluptatem non ipsam itaque ducimus deleniti, temporibus voluptates est libero quia fugit reprehenderit suscipit, quaerat aperiam? Voluptas, maxime! Nam.</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Affiche informative</h2>
+          <p>La prochaine phase de mon projet a été de réaliser une affiche informative qui a pour but de retracer l'histoire de la notation musicale et des éléments des différents systèmes de notation de l'Histoire. Elle montre aussi les quelques récentes expérimentations semblables à la mienne réalisées par diverses personnes.</p>
+        </div>
       </b-col>
       <b-col cols="12" md="5" lg="7">
         <figure class="figure">
@@ -35,16 +61,42 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="10" lg="8" class="text-center">
-        <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Projet</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum?</p>
+    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+      <b-col cols="12" md="10" lg="8">
+        <div v-if="$i18n.locale === 'en'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Lorem</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatibus tenetur aliquam ab molestiae tempore.</p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laudantium!</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quidem?</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste.</li>
+          </ul>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Projet</h2>
+          <p>Suite à tout cela, je me suis lancé dans la réalisation concrète de mon projet. Les étapes que j'ai suivies sont les suivantes&nbsp;:</p>
+          <ul>
+            <li>Élaborer les solutions graphiques qui composent la notation</li>
+            <li>Créer le guide explicatif et une image graphique autour du tout</li>
+            <li>Développer un système pour les éléments graphiques autour de la partition</li>
+            <li>Réaliser des exemples de partitions transformées</li>
+            <li>Créer une affiche explicative sur les avantages de la notation</li>
+          </ul>
+        </div>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="6" lg="5">
-        <h3>Développement de la notation</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h3>Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor. Quidem odio, libero eius officiis quod odit suscipit magni accusamus at qui fuga reprehenderit rem aut aliquam soluta dolor minima exercitationem ea optio quos. Natus!</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h3>Développement de la notation</h3>
+          <p>Pour élaborer ma notation musicale, j'ai tout d'abord utilisé la liste d'éléments à représenter que j'avais produite lors de ma recherche et je l'ai séparée en trois grandes catégories d'éléments&nbsp;: La hauteur des notes, le rythme et l'expression. J'ai ensuite commencé à associer à chaque élément une solution graphique pour finalement mettre le tout en commun sur une partition commune.</p>
+        </div>
       </b-col>
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
@@ -67,8 +119,14 @@
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="10" lg="8" class="text-center">
-        <h3>Création du guide explicatif</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h3>Lorem ipsum dolor sit</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum a neque iure perspiciatis quae voluptates, ab itaque error sint nam commodi reprehenderit consectetur dolores quos! Quam sit modi illum illo ea obcaecati temporibus aut nisi omnis a non tempora, rerum ratione eos. Quae aspernatur explicabo expedita modi saepe vitae!</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h3>Création du guide explicatif</h3>
+          <p>Ma prochaine étape a été de mettre en page le guide explicatif qui permettra aux utilisateurs de comprendre l'utilisation de ma notation. J'ai donc aussi en même temps commencé à développer une image graphique qui permet d'identifier mon projet, comme une sorte d'image de marque. Pour expliquer en détail le fonctionnement de la notation, j'ai choisi de réutiliser les trois grandes catégories d'éléments énumérées précédemment et de construire progressivement la notation en ajoutant une à la fois les solutions que j'ai développées.</p>
+        </div>
       </b-col>
       <b-col cols="12">
         <figure class="figure" style="width: 100%;">
@@ -77,33 +135,63 @@
         </figure>
       </b-col>
     </b-row>
+    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+      <b-col cols="12" md="6" lg="5">
+        <div v-if="$i18n.locale === 'en'">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor. Quidem odio, libero eius officiis quod odit suscipit magni accusamus at qui fuga reprehenderit rem aut aliquam soluta dolor minima exercitationem ea optio quos. Natus!</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h3>Développement du système d'éléments graphiques</h3>
+          <p>J'ai ensuite commencé à élaborer le système permettant d'ajouter des éléments de mise en page autour de la paritions pour dynamiser le tout exprimer visuellement l'atmosphère d'une pièce.</p>
+        </div>
+      </b-col>
+      <b-col cols="12" md="6" lg="7">
+        <figure class="figure">
+          <img class="figure-img img-fluid" src="~assets/synthese_mep.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_7" />
+          <figcaption class="figure-caption" id="img-caption_7">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Exemple du système d'éléments de mise en page" )}}</figcaption>
+        </figure>
+      </b-col>
+    </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="10" lg="8" class="text-center">
-        <h3>Création d'exemples de partitions</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h3>Lorem ipsum dolor sit</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod necessitatibus, odit delectus facere ab laudantium, optio voluptate, aspernatur a rem? Eius earum ducimus dolores?</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h3>Création d'exemples de partitions</h3>
+          <p>Ensuite, je me suis affairé à créer des exemples de partitions qui mettent en valeur la notation que j'ai conçue. Pour ce faire, j'ai choisi deux pièces connues, dans deux styles différents afin d'offrir une familiarité au lecteur.</p>
+        </div>
       </b-col>
       <b-col cols="12" md="6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="~assets/synthese_menuet-bach.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_7" />
-          <figcaption class="figure-caption" id="img-caption_7" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
+          <img class="figure-img img-fluid" src="~assets/synthese_menuet-bach.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_8" />
+          <figcaption class="figure-caption" id="img-caption_8" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
         </figure>
       </b-col>
       <b-col cols="12" md="6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="~assets/synthese_imagine.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_8" />
-          <figcaption class="figure-caption" id="img-caption_8" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
+          <img class="figure-img img-fluid" src="~assets/synthese_imagine.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
+          <figcaption class="figure-caption" id="img-caption_9" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="6" lg="5">
-        <h3>Conception de l'affiche explicative pour la notation</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim iure sed assumenda alias voluptate, blanditiis et expedita deserunt iusto maxime. Velit repudiandae ut porro repellendus voluptatum tempore eveniet ipsa! A qui porro repellat alias temporibus ex iure tenetur optio incidunt quisquam sit nemo doloribus facere aliquam debitis iusto, assumenda magni dolorum? Sit consectetur fugit nostrum quis delectus dolore distinctio saepe unde minus provident? Quam earum iusto perferendis cupiditate doloribus ullam. Debitis nesciunt quam cum harum ipsam facere, quibusdam quia eligendi aliquam perferendis in exercitationem dolore voluptatum. Amet id illo nam adipisci alias. Quod alias error qui inventore eius, tenetur maiores?</p>
+        <div v-if="$i18n.locale === 'en'">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni cum ratione non illum ipsam nulla. Adipisci unde quasi blanditiis tempore.</p>
+        </div>
+        <div v-if="$i18n.locale === 'fr'">
+          <h3>Conception d'une affiche montrant les avantages de la notation</h3>
+          <p>Finalement, je me suis lancé dans le création d'une affiche qui permet de récapituler les grands avantages du système de notation que j'ai créé.</p>
+        </div>
       </b-col>
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
-          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-explicative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
-          <figcaption class="figure-caption" id="img-caption_9">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative pour la notation" )}}</figcaption>
+          <img class="figure-img img-fluid" src="~assets/synthese_affiche-explicative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_10" />
+          <figcaption class="figure-caption" id="img-caption_10">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
