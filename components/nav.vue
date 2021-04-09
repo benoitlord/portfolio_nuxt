@@ -366,7 +366,7 @@
   .bulle_1{
     width: 80px;
     right: 90px;
-    top: 110px;
+    top: 115px;
     
     &::after{
       left:100%;
@@ -380,7 +380,7 @@
   .bulle_2{
     width: 125px;
     right: 90px;
-    top: 185px;
+    top: 190px;
     
     &::after{
       left:100%;
@@ -450,7 +450,7 @@
   .bulle_3{
     width: 160px;
     right: 90px;
-    top: 260px;
+    top: 265px;
     
     &::after{
       left:100%;
@@ -464,7 +464,7 @@
   .bulle_4{
     width: 120px;
     right: 88px;
-    top: 340px;
+    top: 345px;
     
     &::after{
       left:100%;
@@ -478,7 +478,7 @@
   .bulle_5{
     width: 140px;
     right: 90px;
-    top: 415px;
+    top: 420px;
     
     &::after{
       left:100%;
@@ -492,7 +492,7 @@
   .bulle_6{
     width: 100px;
     right: 90px;
-    top: 485px;
+    top: 500px;
     
     &::after{
       left:100%;
@@ -506,7 +506,7 @@
   .bulle_7{
     width: 110px;
     right: 90px;
-    top: 560px;
+    top: 570px;
     
     &::after{
       left:100%;
