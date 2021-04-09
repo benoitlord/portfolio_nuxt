@@ -521,7 +521,7 @@
   }
   
   .bulle_8{
-    width: 130px;
+    width: 135px;
     right: 90px;
     top: 635px;
     
@@ -544,7 +544,7 @@
     width: 100px;
   }
   html[lang="en"] .bulle_8{
-    width: 140px;
+    width: 145px;
   }
 
 </style>
