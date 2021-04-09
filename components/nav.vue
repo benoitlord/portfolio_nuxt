@@ -492,7 +492,7 @@
   .bulle_6{
     width: 100px;
     right: 90px;
-    top: 500px;
+    top: 495px;
     
     &::after{
       left:100%;
