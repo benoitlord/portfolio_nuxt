@@ -495,7 +495,7 @@
   .bulle_6{
     width: 100px;
     right: 90px;
-    top: 500px;
+    top: 495px;
     
     &::after{
       left:100%;
@@ -521,7 +521,7 @@
   }
   
   .bulle_8{
-    width: 135px;
+    width: 130px;
     right: 90px;
     top: 650px;
     
