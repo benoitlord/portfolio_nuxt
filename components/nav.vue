@@ -225,7 +225,7 @@
       /* Mise en forme globale */
 
   .navigation{
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 20px;
     background-color: $vert;
@@ -347,7 +347,7 @@
     background-color: $vert;
     padding: 10px;
     display: none;
-    position: fixed;
+    position: absolute;
     opacity: 0;
     text-align: center;
     border-bottom: 5px solid $gris;

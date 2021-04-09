@@ -155,9 +155,9 @@
         /* Mise en page de la page */
     
     body{
-        font-family: 'Renner';
+        font-family: 'Futura PT', 'Renner';
         font-weight: 200;
-        font-size: 16px;
+        font-size: 17px;
         width: 100%;
         min-height: 100%;
         margin: 0px;
@@ -177,7 +177,7 @@
         /* Titres */
     
     h1{
-        font-family: 'Nunito Sans';
+        font-family: 'Urbane', 'Nunito Sans';
         font-weight: 900;
         color: $vert;
         text-align: center;
@@ -191,7 +191,7 @@
     }
 
     h2, h3, h4, h5, h6{
-        font-family: 'Renner';
+        font-family: 'Futura PT', 'Renner';
         font-weight: 700;
     }
     
