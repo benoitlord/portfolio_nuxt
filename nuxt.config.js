@@ -62,6 +62,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'stylesheet', href: 'https://use.typekit.net/bhq7awz.css' },
     ],
     script: [
       {
