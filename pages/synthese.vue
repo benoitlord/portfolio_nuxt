@@ -102,7 +102,7 @@
       </b-col>
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="https://picsum.photos/700/900" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
+          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-explicative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
           <figcaption class="figure-caption" id="img-caption_9">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative pour la notation" )}}</figcaption>
         </figure>
       </b-col>
