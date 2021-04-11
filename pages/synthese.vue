@@ -8,12 +8,12 @@
     <b-row align-h="center">
       <b-col cols="12" md="10" class="text-center">
         <div v-if="$i18n.locale === 'en'">
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maiores numquam unde sint quo ipsum optio recusandae amet similique provident, expedita inventore natus esse delectus beatae sapiente eaque ab deserunt eligendi architecto ullam minus voluptatum! Recusandae beatae error quos necessitatibus.</p>
-          <h2>Lorem, ipsum dolor.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis libero nam, ullam, totam esse maiores id doloribus necessitatibus dolores rem blanditiis rerum non? Adipisci, minus quisquam unde voluptas, numquam officia dolor magni quia praesentium cumque quaerat tempore itaque porro quidem! Iusto laudantium eligendi inventore! Perspiciatis nostrum minima rerum quisquam temporibus?</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam quia praesentium quod voluptas delectus aliquam? Cumque, rem! Delectus ad fugiat necessitatibus, inventore, non blanditiis accusantium debitis minus facilis earum illum laborum eos velit autem aliquam nostrum veritatis nobis provident quidem?</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, hic soluta id dolorem consequuntur vero amet magni odio. Iusto eum nam error nisi eos reiciendis optio. Dolore explicabo tempore ab dignissimos exercitationem, natus perferendis quia esse eligendi blanditiis, eius itaque.</p>
+          <h2>Context of the Project</h2>
+          <p>Carried out as part of the course "Grsphic Design Synthesis II: research and innovation" of the bachelor's degree in graphic design from the Multidisciplinary School of Image of the University of Quebec in Outaouais, this project is intended to be a concrete application of the concepts learned throughout the program. It also aims to foster innovation by making it possible to explore a subject from a new angle and to use graphic design to improve an aspect of society.</p>
+          <h2>Goal of the Project</h2>
+          <p>The aim of this project is to try to renew the way of writing music in order to remedy a long-standing problem. In fact, sheet music has almost always looked the same: a white sheet with staff lines, notes and black inscriptions, always drawn in the same way. In addition, learning music is often complicated for beginners due to this very technical notation which takes time to understand and master and is not very visually representative.</p>
+          <p>The first way to remedy this is to create a new version of traditional musical notation, the primary purpose of which would be to make learning music more accessible for beginners thanks to a more visual notation system that allows you to grasp more easily the appearance of a piece of music, as well as its notes, rhythm, nuances, etc.</p>
+          <p>Another approach is to explore how to integrate various visual elements in order to dynamise the layout and thus express the spirit of the written music while making the pages richer and more attractive. This project thus explores how to integrate different aspects of graphic design in the writing of music and the creation of sheet music and music books.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h2>Contexte du projet</h2>
@@ -28,8 +28,8 @@
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="7" lg="6">
         <div v-if="$i18n.locale === 'en'">
-          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, obcaecati! Neque culpa pariatur aliquam deserunt consequuntur nobis nam, fugit quibusdam dolore reprehenderit soluta corporis inventore debitis eligendi alias voluptatibus id optio? Quis placeat quas assumenda qui sunt voluptates consectetur reiciendis.</p>
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Research/Analysis</h2>
+          <p>The first step in the realization of my project was to carry out in-depth research around the subject and the experiments already carried out in the field. I also started to lay the foundations of my graphic notation by making a list of the elements that I should create in order to obtain a musical notation which contains all the elements necessary to represent musical pieces correctly.</p>
         </div>
         <div  v-if="$i18n.locale === 'fr'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
@@ -39,15 +39,15 @@
       <b-col cols="12" md="5" lg="6">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_recherche.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_1" />
-          <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Brainstorm pour la recherche des éléments de notation" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Brainstorm on the research for notation elements" : "Brainstorm pour la recherche des éléments de notation" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="7" lg="5" order-md="last">
         <div v-if="$i18n.locale === 'en'">
-          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Lorem ipsum</h2>
-          <p v-if="$i18n.locale === 'en'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores ea, voluptatem non ipsam itaque ducimus deleniti, temporibus voluptates est libero quia fugit reprehenderit suscipit, quaerat aperiam? Voluptas, maxime! Nam.</p>
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Informative Poster</h2>
+          <p v-if="$i18n.locale === 'en'">The next phase of my project was to produce an informative poster which aims to retrace the history of musical notation and the elements of the different notation systems in history. It also shows the few recent experiments similar to mine carried out by various people.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Affiche informative</h2>
@@ -57,21 +57,21 @@
       <b-col cols="12" md="5" lg="7">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-informative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_2" />
-          <figcaption class="figure-caption" id="img-caption_2">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche informative" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_2">{{ (($i18n.locale === 'en') ? "Final version of the informative poster" : "Version finale de l'affiche informative" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="10" lg="8">
         <div v-if="$i18n.locale === 'en'">
-          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Lorem</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatibus tenetur aliquam ab molestiae tempore.</p>
+          <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Project</h2>
+          <p>Following all this, I embarked on the concrete realization of my project. The steps I took are as follows:</p>
           <ul>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laudantium!</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quidem?</li>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste.</li>
+            <li>Develop the graphic solutions that make up the notation</li>
+            <li>Create the explanatory guide and a graphic identity around the whole project</li>
+            <li>Develop a system for the graphic elements around the score</li>
+            <li>Create examples of transformed scores</li>
+            <li>Create an explanatory poster on the benefits of my notation</li>
           </ul>
         </div>
         <div v-if="$i18n.locale === 'fr'">
@@ -90,8 +90,8 @@
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="6" lg="5">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor. Quidem odio, libero eius officiis quod odit suscipit magni accusamus at qui fuga reprehenderit rem aut aliquam soluta dolor minima exercitationem ea optio quos. Natus!</p>
+          <h3>Development of the Notation</h3>
+          <p>To develop my musical notation, I first used the list of elements to be represented that I had produced during my research and I separated it into three main categories of: The pitch of the notes, rhythm and expression. I then started to associate each element with a graphic solution to finally put everything in common on a test score.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h3>Développement de la notation</h3>
@@ -101,27 +101,27 @@
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
           <img class="figure-img img-fluid" src="~assets/synthese_post-it-notation.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_3" />
-          <figcaption class="figure-caption" id="img-caption_3">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Planification des solutions pour la notation" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_3">{{ (($i18n.locale === 'en') ? "Planification of the  solutions for the notation" : "Planification des solutions pour la notation" )}}</figcaption>
         </figure>
       </b-col>
       <b-col cols="12" md="6" style="margin-top: 30px;">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_esquisse_notation.jpg" :alt="$t('captionBelow')" aria-labelledby="img-caption_4" />
-          <figcaption class="figure-caption" id="img-caption_4">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Esquisse préliminaire de la notation" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_4">{{ (($i18n.locale === 'en') ? "Preliminary sketch of the notation" : "Esquisse préliminaire de la notation" )}}</figcaption>
         </figure>
       </b-col>
       <b-col cols="12" md="6" style="margin-top: 30px;">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_esquisse-partition.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_5" />
-          <figcaption class="figure-caption" id="img-caption_5">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Premier test de partition" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_5">{{ (($i18n.locale === 'en') ? "First test with a score" : "Premier test de partition" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum a neque iure perspiciatis quae voluptates, ab itaque error sint nam commodi reprehenderit consectetur dolores quos! Quam sit modi illum illo ea obcaecati temporibus aut nisi omnis a non tempora, rerum ratione eos. Quae aspernatur explicabo expedita modi saepe vitae!</p>
+          <h3>Creation of the Explanatory Guide</h3>
+          <p>My next step was to lay out the explanatory guide which will allow users to understand the use of my notation. At the same time, I also started to develop a graphic identity that allows me to identify my project, as a sort of brand image. To explain in detail how the notation works, I chose to reuse the three main categories of elements listed previously and gradually build the notation by adding the solutions I developed one at a time.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h3>Création du guide explicatif</h3>
@@ -131,33 +131,33 @@
       <b-col cols="12">
         <figure class="figure" style="width: 100%;">
           <div id="adobe-dc-view" class="box-shadow figure-img" style="width: 100%; margin-top: 30px;"  aria-labelledby="img-caption_6"></div>
-          <figcaption class="figure-caption" id="img-caption_6">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale du guide explicatif" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_6">{{ (($i18n.locale === 'en') ? "Final version of the explanatory guide" : "Version finale du guide explicatif" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="6" lg="5">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor. Quidem odio, libero eius officiis quod odit suscipit magni accusamus at qui fuga reprehenderit rem aut aliquam soluta dolor minima exercitationem ea optio quos. Natus!</p>
+          <h3>Development of the Graphic Element System</h3>
+          <p>I then started to develop the system allowing to add elements of layout around the scores to energize the whole and visually express the atmosphere of a song.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h3>Développement du système d'éléments graphiques</h3>
-          <p>J'ai ensuite commencé à élaborer le système permettant d'ajouter des éléments de mise en page autour de la paritions pour dynamiser le tout exprimer visuellement l'atmosphère d'une pièce.</p>
+          <p>J'ai ensuite commencé à élaborer le système permettant d'ajouter des éléments de mise en page autour de la partitions pour dynamiser le tout et exprimer visuellement l'atmosphère d'une pièce.</p>
         </div>
       </b-col>
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
           <img class="figure-img img-fluid" src="~assets/synthese_mep.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_7" />
-          <figcaption class="figure-caption" id="img-caption_7">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Exemple du système d'éléments de mise en page" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_7">{{ (($i18n.locale === 'en') ? "Exemple of the graphic element system" : "Exemple du système d'éléments de mise en page" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Lorem ipsum dolor sit</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod necessitatibus, odit delectus facere ab laudantium, optio voluptate, aspernatur a rem? Eius earum ducimus dolores?</p>
+          <h3>Creation of sample scores</h3>
+          <p>Then I worked on creating sample scores that showcase the notation I designed. To do this, I chose two well-known pieces, in two different styles in order to offer familiarity to the reader.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h3>Création d'exemples de partitions</h3>
@@ -167,21 +167,21 @@
       <b-col cols="12" md="6">
         <figure class="figure">
           <img class="figure-img img-fluid" src="~assets/synthese_menuet-bach.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_8" />
-          <figcaption class="figure-caption" id="img-caption_8" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
+          <figcaption class="figure-caption" id="img-caption_8" v-html="(($i18n.locale === 'en') ? 'First sample score: <em>Minuet</em>, by Johann Sebastian Bach' : 'Premier exemple de partition transformée&nbsp;: <em>Menuet</em>, de Johann Sebastian Bach')"></figcaption>
         </figure>
       </b-col>
       <b-col cols="12" md="6">
         <figure class="figure">
           <img class="figure-img img-fluid" src="~assets/synthese_imagine.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_9" />
-          <figcaption class="figure-caption" id="img-caption_9" v-html="(($i18n.locale === 'en') ? 'Lorem ipsum dolor sit amet consectetur adipisicing.' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
+          <figcaption class="figure-caption" id="img-caption_9" v-html="(($i18n.locale === 'en') ? 'Second sample score: <em>Imagine</em>, by John Lennon' : 'Deuxième exemple de partition transformée&nbsp;: <em lang=\'en\'>Imagine</em>, de John Lennon')"></figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
       <b-col cols="12" md="6" lg="5">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni cum ratione non illum ipsam nulla. Adipisci unde quasi blanditiis tempore.</p>
+          <h3>Design of a poster showing the benefits of rating</h3>
+          <p>Finally, I set out to create a poster that recaps the benefits of the scoring system I created.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
           <h3>Conception d'une affiche montrant les avantages de la notation</h3>
@@ -191,7 +191,7 @@
       <b-col cols="12" md="6" lg="7">
         <figure class="figure">
           <img class="figure-img img-fluid" src="~assets/synthese_affiche-explicative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_10" />
-          <figcaption class="figure-caption" id="img-caption_10">{{ (($i18n.locale === 'en') ? "Lorem ipsum dolor sit amet consectetur adipisicing." : "Version finale de l'affiche explicative" )}}</figcaption>
+          <figcaption class="figure-caption" id="img-caption_10">{{ (($i18n.locale === 'en') ? "Final version of the explanatory poster" : "Version finale de l'affiche explicative" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
