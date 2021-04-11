@@ -11,6 +11,39 @@ export default {
   sign: "Signaletic",
 
   projets: {
+    asDesJeux:{
+      id: "asDesJeux",
+      titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour l'As de Jeux",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Réalisé dans le cadre de mon cours Documents et procédés d'impression, ce projet consistait à créer un dépliant de type «&ThinSpace;pop-up&ThinSpace;» fictif pour une entreprise locale. Dans mon cas, j'ai choisi l'As des Jeux, une boutique qui vend et loue des jeux de société dans la région de Gatineau. Le dépliant met en valeur une promotion pour les clients qui achètent en ligne durant la pandémie.</p>",
+      thumbnail: "mep_as-des-jeux_3.jpeg",
+      images: ["mep_as-des-jeux_1.jpeg", "mep_as-des-jeux_2.jpeg", "mep_as-des-jeux_3.jpeg"],
+      imageDescs: ["Couverture du dépliant", "Arrière du dépliant", "Intérieur du dépliant"],
+      imagesLayout: ["6", "6", "8"]
+    },
+    ordi:{
+      id: "ordi",
+      titre: "Livre expérimental sur la vie virtuelle",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Ceci est un livre expérimental que j'ai créé dans mon cours de projet d'édition interdisciplinaire. Son format particulier s'aligne avec le sujet qu'il aborde, soit le fait que durant la pandémie de COVID-19, nos vies sont devenues de plus en plus virtuelles et nous passons de plus en plus de temps devant un ordinateur. Il sensibilise à cette réalité grâce à quelques statistiques et témoignages.</p>",
+      thumbnail: "mep_ordi_2.jpeg",
+      images: ["mep_ordi_1.png", "mep_ordi_2.jpeg", "mep_ordi_3.jpeg", "mep_ordi_4.jpeg", "mep_ordi_5.jpeg"],
+      imageDescs: ["Mise en page du livre", "Couverture du livre imprimé", "Mise en page du contenu du livre imprimé", "Mise en page du contenu du livre imprimé", "Mise en page du contenu du livre imprimé"],
+      imagesLayout: ["5", "7", "6", "6", "6"]
+    },
+    accordeon:{
+      id: "accordeon",
+      titre: "Livre-accordéon hommage à <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span>",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Ce livre-accordéon que j'ai créé dans mon cours de projet d'édition interdisciplinaire ce veut un hommage à la chanson <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span> en mettant en vedette les tablatures de guitare ainsi que les paroles de la chanson, le tout dans un style qui rappelle l'aspect de l'album sur lequel la chanson a originalement parue.</p>",
+      thumbnail: "mep_accordeon_5.jpeg",
+      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
+      imageDescs: ["Esquisse préliminaire", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
+      imagesLayout: ["4", "8", "12", "4", "8", "6"]
+    },
     john_cage:{
       id: "john_cage",
       titre: "Layout of a Book on John Cage",
@@ -154,6 +187,18 @@ export default {
       images: ["prog_vision_1.jpg", "prog_vision_2.jpg", "prog_vision_3.jpg"],
       imageDescs: ["App Interface", "App Interface", "App Interface"],
       imagesLayout: ["6", "6", "12"]
+    },
+    paixConfiance:{
+      id: "paixConfiance",
+      titre: "Affiche pour la Bourse Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\" lang=\"fr\">SDGQ</abbr> 2020-2021",
+      session: "Automne 2020",
+      category: "illustration",
+      desc: "<p>Cette affiche a été réalisée dans mon cours d'affiche pour la Bourse Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\">SDGQ</abbr> 2020-2021, un concours ouvert à tous les étudiants en design graphique du Québec. Le sujet était l'année de la paix et confiance décrétée en 2021 par l'<abbr title=\"Organisation des Nations Unies\">ONU</abbr>. L'affiche met aussi en valeur une exposition dans le cadre du concours, au musée McCord.</p>",
+      thumbnail: "illustration_paix-et-confiance_3.jpg",
+      thumbnailPortrait: true,
+      images: ["illustration_paix-et-confiance_1.jpg", "illustration_paix-et-confiance_2.jpg", "illustration_paix-et-confiance_3.jpg"],
+      imageDescs: ["Esquisse préliminaire", "Version préliminaire de l'affiche", "Affiche finale"],
+      imagesLayout: ["6", "6", "6"]
     },
     atonal:{
       id: "atonal",
