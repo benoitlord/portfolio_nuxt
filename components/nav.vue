@@ -476,7 +476,7 @@
   }
 
   .bulle_5{
-    width: 140px;
+    width: 125px;
     right: 90px;
     top: 420px;
     
