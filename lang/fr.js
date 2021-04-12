@@ -6,7 +6,7 @@ export default {
   miseEnPage: "Mise en page",
   branding: "Images de marque",
   typo: "Typographie",
-  programmation: "Programmation",
+  programmation: "Web/Mobile",
   illustration: "Illustration",
   sign: "Signalétique",
 
@@ -165,6 +165,17 @@ export default {
       images: ["typo-portrait-1.jpg", "typo-portrait-2.jpg"],
       imageDescs: ["Premières versions de l'affiche, guidant mon processus créatif", "Version finale de l'affiche"],
       imagesLayout: ["12", "12"]
+    },
+    timeline:{
+      id: "timeline",
+      titre: "La chronologie des femmes autochtones influentes",
+      session: "Hiver 2021",
+      category: "programmation",
+      desc: "<p>Dans le cadre de mon emploi à l'École de la fonction publique du Canada, j'ai entièrement conçu le design graphique de cet outil de travail dont le but est de mettre en valeur le travail et les réalisations de plus de 150 femmes autochtones influentes canadiennes de toutes les périodes de l'Histoire. J'ai également réalisé toute la programmation du site web et ce, grâce à HTML, SCSS, Vue.js et Nuxt.js. Comme tous les produits du gouvernement du Canada, cet outil respecte aussi toutes les normes d'accessbilité web WCAG 2.0 AA.</p>",
+      thumbnail: "prog_women-timeline_4.png",
+      images: ["prog_women-timeline_1.png", "prog_women-timeline_2.png", "prog_women-timeline_3.png", "prog_women-timeline_4.png"],
+      imageDescs: ["Content of the Tool", "Content of the Tool", "Content of the Tool", "Content of the Tool"],
+      imagesLayout: ["12", "12", "12", "12"]
     },
     guitarbox:{
       id: "guitarbox",

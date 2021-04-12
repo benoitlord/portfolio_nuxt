@@ -6,14 +6,14 @@ export default {
   miseEnPage: "Layout",
   branding: "Branding",
   typo: "Typography",
-  programmation: "Programming",
+  programmation: "Web/Mobile",
   illustration: "Illustration",
   sign: "Signaletic",
 
   projets: {
     asDesJeux:{
       id: "asDesJeux",
-      titre: "Fictitious &ldquo;pop-up&rdquo; Leaflet for  <span lang\"fr\">L'As de Jeux</span>",
+      titre: "Fictitious &ldquo;pop-up&rdquo; Leaflet for <span lang\"fr\">L'As de Jeux</span>",
       session: "Winter 2021",
       category: "miseEnPage",
       desc: "<p>Carried out as part of my Documents and Printing Processes course, this project consisted of creating a fictitious &ldquo;pop-up&rdquo; type leaflet for a local business. In my case, I chose <span lang\"fr\">L'As des Jeux</span>, a store that sells and rents board games in the Gatineau region. The flyer showcases a promotion for customers who shop online during the pandemic.</p>",
@@ -165,6 +165,17 @@ export default {
       images: ["typo-portrait-1.jpg", "typo-portrait-2.jpg"],
       imageDescs: ["Preliminary Versions, Guiding my Creative Process", "Final Version of the Poster"],
       imagesLayout: ["12", "12"]
+    },
+    timeline:{
+      id: "timeline",
+      titre: "The Timeline of Influential Indigenous Women",
+      session: "Winter 2021",
+      category: "programmation",
+      desc: "<p>As part of my job at the Canada School of Public Service, I enterly created the graphic design of this job aid whose goal is to showcase the work and achievements of more than 150 influential Indigenous women from Canada, from all periods of History. I was also in charge of all the programming of the website, with to HTML, SCSS, Vue.js and Nuxt.js. Like all Government of Canada products, this tool also meets all WCAG 2.0 AA web accessibility standards.</p>",
+      thumbnail: "prog_women-timeline_4.png",
+      images: ["prog_women-timeline_1.png", "prog_women-timeline_2.png", "prog_women-timeline_3.png", "prog_women-timeline_4.png"],
+      imageDescs: ["Content of the Tool", "Content of the Tool", "Content of the Tool", "Content of the Tool"],
+      imagesLayout: ["12", "12", "12", "12"]
     },
     guitarbox:{
       id: "guitarbox",
