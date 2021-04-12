@@ -19,7 +19,7 @@ export default {
       desc: "<p>Carried out as part of my Documents and Printing Processes course, this project consisted of creating a fictitious &ldquo;pop-up&rdquo; type leaflet for a local business. In my case, I chose <span lang\"fr\">L'As des Jeux</span>, a store that sells and rents board games in the Gatineau region. The flyer showcases a promotion for customers who shop online during the pandemic.</p>",
       thumbnail: "mep_as-des-jeux_3.jpeg",
       images: ["mep_as-des-jeux_1.jpeg", "mep_as-des-jeux_2.jpeg", "mep_as-des-jeux_3.jpeg"],
-      imageDescs: ["Leaflet Cover", "Leaflet Back", "Leaflet Interior"],
+      imageDescs: ["Leaflet cover", "Leaflet back", "Leaflet interior"],
       imagesLayout: ["6", "6", "8"]
     },
     ordi:{
@@ -30,7 +30,7 @@ export default {
       desc: "<p>This is an experimental book that I created in my Interdisciplinary Publishing Project course. Its particular format aligns with the subject it addresses, which is the fact that during the COVID-19 pandemic, our lives have become more and more virtual and we spend more and more time in front of a computer. It raises awareness of this reality thanks to some statistics and testimonials.</p>",
       thumbnail: "mep_ordi_2.jpeg",
       images: ["mep_ordi_1.png", "mep_ordi_2.jpeg", "mep_ordi_3.jpeg", "mep_ordi_4.jpeg", "mep_ordi_5.jpeg"],
-      imageDescs: ["Book Layout", "Cover of the Printed Book", "Content Layout of the Printed Book", "Content Layout of the Printed Book", "Content Layout of the Printed Book"],
+      imageDescs: ["Book layout", "Cover of the printed book", "Content layout of the printed book", "Content layout of the printed book", "Content layout of the printed book"],
       imagesLayout: ["5", "7", "6", "6", "6"]
     },
     accordeon:{
@@ -41,7 +41,7 @@ export default {
       desc: "<p>This accordion book that I created in my interdisciplinary publishing project course is a tribute to the song <em>Back in Black</em> by AC/DC featuring the guitar tabs as well as the lyrics of the song, all in a style reminiscent of the look of the album the song was originally released on.</p>",
       thumbnail: "mep_accordeon_5.jpeg",
       images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
-      imageDescs: ["Preliminary Sketches", "Book Layout", "Book Layout", "Cover of the Printed Book", "Content of the Printed Book", "Content of the Printed Book"],
+      imageDescs: ["Preliminary sketches", "Book layout", "Book layout", "Cover of the printed book", "Content of the printed book", "Content of the printed book"],
       imagesLayout: ["4", "8", "12", "4", "8", "6"]
     },
     john_cage:{
@@ -52,7 +52,7 @@ export default {
       desc: "<p>Created as part of my Typography class, this project consisted of creating a layout for a twenty-page book about John Cage, an atypical composer who uses various objects to create his music. The layout is inspired by his unique style in the composition of the elements of the pages, particularly the blocks of text. I also carefully selected the fonts to represent his unique style.</p>",
       thumbnail: "mep_cage-1.jpg",
       images: ["mep_cage-1.jpg", "mep_cage-2.jpg", "mep_cage-3.jpg", "mep_cage-4.jpg", "mep_cage-5.jpg"],
-      imageDescs: ["Book Cover", "Book Layout", "Book Content Layout", "Book Content Layout", "Book Content Layout"],
+      imageDescs: ["Book cover", "Book layout", "Book content layout", "Book content layout", "Book content layout"],
       imagesLayout: ["6", "6", "12", "12", "12"]
     },
     randonnee:{
@@ -63,7 +63,7 @@ export default {
       desc: "<p>This project, which I carried out as part of my Typographic Elements, Editing and Printing course, is made up of two documents: first, a guide to enable organizers of hikes with children to know the essentials about the organization of these and secondly, an accompanying leaflet which presents a series of potential hiking routes. For this project, I did all the editing of the text and images and I also captured and edited the photos, which I took while hiking in Gatineau Park.</p>",
       thumbnail: "mep_randonnee-6.jpg",
       images: ["mep_randonnee-1.jpg", "mep_randonnee-2.jpg", "mep_randonnee-3.jpg", "mep_randonnee-4.jpg", "mep_randonnee-5.jpg", "mep_randonnee-6.jpg", "mep_randonnee-7.jpg"],
-      imageDescs: ["Guide Cover", "Guide Content Layout", "Guide Content Layout", "Guide Section Intro Page", "Accompanying Leaflet", "Printed Guide", "Printed Accompanying Leaflet"],
+      imageDescs: ["Guide cover", "Guide content layout", "Guide content layout", "Guide section intro page", "Accompanying leaflet", "Printed guide", "Printed accompanying leaflet"],
       imagesLayout: ["4", "8", "6", "6", "6", "6", "6"]
     },
     alimentation:{
@@ -74,7 +74,7 @@ export default {
       desc: "<p>This project is a layout made for my Typography, Editing and Printing course. This is the creation of a short guide to healthy eating for young people. I did the layout, typographical choices and illustrations there. I also produced, as part of the same project, a small leaflet on the same subject and in the same visual identity.</p>",
       thumbnail: "mep_alimentation-4.jpg",
       images: ["mep_alimentation-1.jpg", "mep_alimentation-2.jpg", "mep_alimentation-3.jpg", "mep_alimentation-4.jpg"],
-      imageDescs: ["Guide Cover", "Guide Content Layout", "Accompanying Leaflet", "Accompanying Leaflet"],
+      imageDescs: ["Guide cover", "Guide content layout", "Accompanying leaflet", "Accompanying leaflet"],
       imagesLayout: ["4", "8", "6", "6"]
     },
     boutique_techno:{
@@ -85,7 +85,7 @@ export default {
       desc: "<p>As a team with Marc-André Chenard and Cédric Guèdègbé for a project of my Graphic Design Synthesis I course, we created the brand image of <span lang=\"fr\">La Boutique Techno</span>, a series of franchises of <span lang=\"fr\">Centre Hi-Fi</span> whose owners wanted to acquire a brand image and a name separate from the main chain. Each of our team members created a series of branding proposals and the client ultimately chose one of those created by Marc-André. Here are two of the ones I made. I also helped create the branding applications, including creating image templates for Facebook posts here.</p>",
       thumbnail: "branding_boutique-techno-8.jpg",
       images: ["branding_boutique-techno-1.png", "branding_boutique-techno-2.png", "branding_boutique-techno-3.png", "branding_boutique-techno-4.jpg", "branding_boutique-techno-5.jpg", "branding_boutique-techno-6.jpg", "branding_boutique-techno-7.jpg", "branding_boutique-techno-8.jpg", "branding_boutique-techno-9.jpg", "branding_boutique-techno-10.jpg", "branding_boutique-techno-11.jpg", "branding_boutique-techno-12.jpg"],
-      imageDescs: ["My Logo Proposition #1", "My Logo Proposition #2", "Marc-André's Proposal Chosen by the Client", "Branding Application on Facebook Post Templates (Black Friday Sale)", "Branding Application on Facebook Post Templates (Black Friday Sale)", "Branding Application on Facebook Post Templates (Summer Sale)", "Branding Application on Facebook Post Templates (Free Delivery Pormotion)", "Branding Application on Facebook Post Templates (Product Feature)", "Branding Application on Facebook Post Templates (Product Feature)", "Branding Application on Facebook Post Templates (Product Feature)", "Branding Application on Facebook Post Templates (Back to School Sale)", "Branding Application on Facebook Post Templates (Back to School Sale)"],
+      imageDescs: ["My logo proposition #1", "My logo proposition #2", "Marc-André's proposal chosen by the client", "Branding application on Facebook post templates (Black Friday sale)", "Branding application on Facebook post templates (Boxing Day sale)", "Branding application on Facebook post templates (summer sale)", "Branding application on Facebook post templates (free delivery promotion)", "Branding application on Facebook post templates (product feature)", "Branding application on Facebook post templates (product feature)", "Branding application on Facebook post templates (product feature)", "Branding application on Facebook post templates (back to school sale)", "Branding application on Facebook post templates (back to school sale)"],
       imagesLayout: ["5", "4", "3", "7", "5", "7", "5", "7", "5", "7", "5", "7"]
     },
     devil_bot:{
@@ -96,7 +96,7 @@ export default {
       desc: "<p>For this project, I created from scratch the identity of a fictitious company that produces guitar pedals. The company I imagined, Devil Bot, is a visionary company created by engineers passionate about electro-rock. The company's goal is to contribute to the development of this style by offering effects adapted to it, totally digital. The company's pedals are also extremely innovative, offering unprecedented capabilities, such as being able to connect to a smartphone, interact with each other, and more. The design of the pedals, like the company's branding, represents the futuristic aspect of the company. As part of the project, I created the company's standard guide. I thus created the philosophy and the image of the brand, I established the rules for the use of typographies, colors and graphic elements of the brand image and I also carried out a multitude of applications. I also created the design for three of the company's pedals.</p>",
       thumbnail: "branding_pedales-2.png",
       images: ["branding_pedales-1.png", "branding_pedales-2.png", "branding_pedales-3.jpg", "branding_pedales-4.jpg", "branding_pedales-5.png", "branding_pedales-6.jpg", "branding_pedales-7.jpg", "branding_pedales-8.jpg", "branding_pedales-9.jpg", "branding_pedales-10.jpg", "branding_pedales-11.jpg"],
-      imageDescs: ["Logo", "Pedal Models", "Layout of the Standard Guide", "Layout of the Standard Guide", "Icons System", "Stationery", "Website and Mobile Application", "Mobile Application", "&ldquo;Roll-up&rdquo Banner", "Advertising Billboard", "Web Advertisements"],
+      imageDescs: ["Logo", "Pedal models", "Layout of the standard guide", "Layout of the standard guide", "Icons system", "Stationery", "Website and mobile application", "Mobile application", "&ldquo;Roll-up&rdquo banner", "Advertising billboard", "Web advertisements"],
       imagesLayout: ["12", "6", "6", "12", "7", "5", "6", "6", "6", "6", "6"]
     },
     cowboys_fringants:{
@@ -107,7 +107,7 @@ export default {
       desc: "<p>As part of the Branding course, I created a brand image for a real client, the <span lang=\"fr\">Cowboys Fringant</span> Foundation, whose goal is to support the fight against climate change through a multitude of initiatives, such as tree planting and fundraising from concerts. Representing both the environmental and musical aspects of the foundation, the brand image clearly identifies the organization.</p>",
       thumbnail: "branding_cowboys-4.jpg",
       images: ["branding_cowboys-1.jpg", "branding_cowboys-2.jpg", "branding_cowboys-3.png", "branding_cowboys-4.jpg", "branding_cowboys-5.jpg", "branding_cowboys-6.jpg"],
-      imageDescs: ["First Sketches for the Logo", "First Sketches for the Logo", "Final Logo", "Branding Application on a cap", "Branding Application on a Pass", "Branding Application on a T-Shirt"],
+      imageDescs: ["First sketches for the logo", "First sketches for the logo", "Final logo", "Branding application on a cap", "Branding application on a pass", "Branding application on a t-shirt"],
       imagesLayout: ["6", "6", "12", "7", "5", "12"]
     },
     fast:{
@@ -118,7 +118,7 @@ export default {
       desc: "<p>Created as part of a project of the process, concept and methodology course, this project is the creation of a brand image for a perfume that I imagined and of which I created the concept, all based on a country that I chose, Denmark. The concept is a sports perfume that uses the cold found in Greenland to create an association with the refreshment it provides to users. I also created the actual applications for the bottle, packaging and promotional item for the perfume.</p>",
       thumbnail: "branding_fast-4.jpg",
       images: ["branding_fast-1.jpg", "branding_fast-2.png", "branding_fast-3.jpg", "branding_fast-4.jpg", "branding_fast-5.jpg"],
-      imageDescs: ["First Sketches for the Branding", "Final Version of the Logo", "Branding Application on a Promotional Item", "Branding Application on the Packaging and a Promotional Item", "Branding Application on the Packaging and the Bottle"],
+      imageDescs: ["First sketches for the branding", "Final version of the logo", "Branding application on a promotional item", "Branding application on the packaging and a promotional item", "Branding application on the packaging and the bottle"],
       imagesLayout: ["7", "5", "6", "6", "12"]
     },
     hockey:{
@@ -129,7 +129,7 @@ export default {
       desc: "<p>On the sidelines of my branding course, I had the opportunity to propose a logo for the Gatineau Hockey Association, in order to replace the numerous logos of the various teams in the region and group them under the same name and same identity, the Knights. My creative process led me to create a logo consisting of the sword and shield with a wave reminiscent of the Ottawa River to identify the region. Here are sketches created during my initial process as well as various variations that I then offered to the client. I also increased the branding image on a jersey and toque to demonstrate its application.</p>",
       thumbnail: "branding_hockey-5.jpg",
       images: ["branding_hockey-1.png", "branding_hockey-2.png", "branding_hockey-3.png", "branding_hockey-4.jpg", "branding_hockey-5.jpg"],
-      imageDescs: ["First Sketches for the Logo", "Variations Proposed to the Client", "Final Version of the Logo", "Branding Application on a Jersey", "Branding Application on a Toque"],
+      imageDescs: ["First sketches for the logo", "Variations proposed to the client", "Final version of the logo", "Branding application on a jersey", "Branding application on a toque"],
       imagesLayout: ["6", "6", "8", "4", "12"]
     },
     sagesse:{
@@ -140,7 +140,7 @@ export default {
       desc: "<p>As part of my branding course, we had the chance, as a class, to create the brand image of the International Committee of Friends of Wisdom, an organization that aims to promote the values of Wisdom of Montfort, like cooperation, mutual aid, peace and freedom. Here you can see some of the many sketches I made before arriving at the final concept as well as my first typographic tests. The final logo, which can be seen here applied with the brand image on various objects, expresses the values of the group through the links of chains which signify cooperation and mutual aid, and the bird which expresses peace and freedom.</p>",
       thumbnail: "branding_sagesse-3.jpg",
       images: ["branding_sagesse-1.jpg", "branding_sagesse-2.jpg", "branding_sagesse-3.jpg", "branding_sagesse-4.jpg", "branding_sagesse-5.jpg"],
-      imageDescs: ["First Sketches for the logo", "Typographic Tests for the Logo", "Branding Application on Banners", "Branding Application on a Bag", "Branding Application on a Pin"],
+      imageDescs: ["First sketches for the logo", "Typographic tests for the logo", "Branding application on banners", "Branding application on a bag", "Branding application on a pin"],
       imagesLayout: ["6", "6", "12", "6", "6"]
     },
     exo:{
@@ -152,7 +152,7 @@ export default {
       thumbnail: "typo-exo-3.jpg",
       thumbnailPortrait: true,
       images: ["typo-exo-1.jpg", "typo-exo-2.jpg", "typo-exo-3.jpg"],
-      imageDescs: ["First Sketches for design of the project", "Preliminary Version of the Poster", "Final Version of the Poster"],
+      imageDescs: ["First sketches for the design of the project", "Preliminary version of the poster", "Final version of the poster"],
       imagesLayout: ["7", "4", "6"]
     },
     matthew_carter:{
@@ -163,7 +163,7 @@ export default {
       desc: "<p>For my Typography 1 class, I created this typographic portrait in poster form to pay tribute to the famous typographer Matthew Carter, creator of many typefaces that were instrumental in the transition to digital typography as we know it. It is this transition that I wanted to represent through my poster, highlighting several of his most famous fonts. While creating this poster, I researched several concepts, to finally arrive at the final realization.</p>",
       thumbnail: "typo-portrait-2.jpg",
       images: ["typo-portrait-1.jpg", "typo-portrait-2.jpg"],
-      imageDescs: ["Preliminary Versions, Guiding my Creative Process", "Final Version of the Poster"],
+      imageDescs: ["Preliminary versions, guiding my creative process", "Final version of the poster"],
       imagesLayout: ["12", "12"]
     },
     timeline:{
@@ -174,7 +174,7 @@ export default {
       desc: "<p>As part of my job at the Canada School of Public Service, I enterly created the graphic design of this job aid whose goal is to showcase the work and achievements of more than 150 influential Indigenous women from Canada, from all periods of History. I was also in charge of all the programming of the website, with to HTML, SCSS, Vue.js and Nuxt.js. Like all Government of Canada products, this tool also meets all WCAG 2.0 AA web accessibility standards.</p>",
       thumbnail: "prog_women-timeline_4.png",
       images: ["prog_women-timeline_1.png", "prog_women-timeline_2.png", "prog_women-timeline_3.png", "prog_women-timeline_4.png"],
-      imageDescs: ["Content of the Tool", "Content of the Tool", "Content of the Tool", "Content of the Tool"],
+      imageDescs: ["Content of the tool", "Content of the tool", "Content of the tool", "Content of the tool"],
       imagesLayout: ["12", "12", "12", "12"]
     },
     guitarbox:{
@@ -185,7 +185,7 @@ export default {
       desc: "<p>I created this app for iOS which offers various useful tools for a guitarist. I created it using the Swift programming language and the Xcode tool, all to learn on my own how to create a mobile app. It is available on the Apple App Store.</p>",
       thumbnail: "prog_guitarbox_4.png",
       images: ["prog_guitarbox_1.jpg", "prog_guitarbox_2.jpg", "prog_guitarbox_3.jpg", "prog_guitarbox_4.png"],
-      imageDescs: ["Home Page of the App", "Chord Book Tool", "Metronom Tool", "App Logo"],
+      imageDescs: ["Home page of the app", "Chord book tool", "Metronom tool", "App logo"],
       imagesLayout: ["4", "4", "4", "12"]
     },
     vision:{
@@ -196,7 +196,7 @@ export default {
       desc: "<p>I programmed this website with classmates, Jean-Michel Dorais and Fabien Thérien-Prud'homme as part of a college course to allow the <span lang=\"fr\">Petite École Vision</span> of Gatineau to manage their daycare and mark attendances and absences of the children as well as to create summary sheets of the children's day and certain reports, all in HTML, CSS, JavaScript and PHP. This site is currently used by several <span lang=\"fr\">Vision</span> network daycares across Quebec. I was mainly responsible for the programming and not the visual.</p>",
       thumbnail: "prog_vision_3.jpg",
       images: ["prog_vision_1.jpg", "prog_vision_2.jpg", "prog_vision_3.jpg"],
-      imageDescs: ["App Interface", "App Interface", "App Interface"],
+      imageDescs: ["App interface", "App interface", "App interface"],
       imagesLayout: ["6", "6", "12"]
     },
     paixConfiance:{
@@ -208,7 +208,7 @@ export default {
       thumbnail: "illustration_paix-et-confiance_3.jpg",
       thumbnailPortrait: true,
       images: ["illustration_paix-et-confiance_1.jpg", "illustration_paix-et-confiance_2.jpg", "illustration_paix-et-confiance_3.jpg"],
-      imageDescs: ["Preliminary Sketch", "Early Version of the Poster", "Final Poster"],
+      imageDescs: ["Preliminary sketch", "Early version of the poster", "Final poster"],
       imagesLayout: ["6", "6", "6"]
     },
     atonal:{
@@ -220,7 +220,7 @@ export default {
       thumbnail: "illustration_atonal_4.jpg",
       thumbnailPortrait: true,
       images: ["illustration_atonal_1.jpg", "illustration_atonal_2.jpg", "illustration_atonal_3.png", "illustration_atonal_4.jpg"],
-      imageDescs: ["Preliminary Sketches", "Sketches for the Positionning of Elements", "Preliminary Version of the Poster", "Final Version"],
+      imageDescs: ["Preliminary sketches", "Sketches for the positionning of elements", "Preliminary version of the poster", "Final version"],
       imagesLayout: ["4", "4", "4", "6"]
     },
     calanca:{
@@ -245,7 +245,7 @@ export default {
       thumbnailPortrait: true,
       thumbnailAlignTopLeft: true,
       images: ["illustration_oiseaux_1.jpg", "illustration_oiseaux_2.jpg", "illustration_oiseaux_3.jpg", "illustration_oiseaux_4.jpg", "illustration_oiseaux_5.jpg"],
-      imageDescs: ["Preliminary Version of the Poster", "Preliminary Version of the Poster", "Preliminary Version of the Poster", "Final Version of the Poster", "Final Printed Poster"],
+      imageDescs: ["Preliminary version of the poster", "Preliminary version of the poster", "Preliminary version of the poster", "Final version of the poster", "Final printed poster"],
       imagesLayout: ["4", "4", "4", "6", "6",]
     },
     vegane:{
@@ -257,7 +257,7 @@ export default {
       thumbnail: "illustration_vegane_4.jpg",
       thumbnailAlignTopLeft: true,
       images: ["illustration_vegane_1.jpg", "illustration_vegane_2.jpg", "illustration_vegane_3.jpg", "illustration_vegane_4.jpg", "illustration_vegane_5.jpg"],
-      imageDescs: ["Preliminary Version of the Double-Page", "Preliminary Version of the Double-Page", "Preliminary Version of the Double-Page", "Final Version of the Double-Page", "Smaller Illustration in the Body of the Text"],
+      imageDescs: ["Preliminary version of the double-page", "Preliminary version of the double-page", "Preliminary version of the double-page", "Final version of the double-page", "Smaller illustration in the body of the text"],
       imagesLayout: ["6", "6", "6", "6", "12"]
     },
     parking_challenge:{
@@ -268,7 +268,7 @@ export default {
       desc: "<p>As part of my Signage and Mapping course, the goal of this project was to try to resolve a recurring problem in the parking lot of the <span lang\"fr\">Lucien-Brault</span> pavilion at UQO, namely that the lines of parking spaces disappear under the snow. winter and thus people no longer know how to park properly and the parking lot is blocked. I created, in a team with André Engoué Tcheukam, a campaign on various media, using simple pictograms and catchy text, which quickly and effectively explains the solution to users, namely to align the left mirror of his car with the headlight before the one to his left.</p>",
       thumbnail: "sign_parking_3.png",
       images: ["sign_parking_1.jpg", "sign_parking_2.jpg", "sign_parking_3.png"],
-      imageDescs: ["Informative Poster", "Email", "Instagram Post"],
+      imageDescs: ["Informative poster", "Email", "Instagram post"],
       imagesLayout: ["4", "8", "12"]
     },
     carte:{
@@ -279,7 +279,7 @@ export default {
       desc: "<p>Made as part of my Signage and Cartography course, this symbolic map is a representation of my personal space, my &ldquo;bubble&rdquo; which is my room. Filled with personal items with a variety of levels of emotional and symbolic importance to me, my bedroom is both a place of work and relaxation for me. This is all that I wanted to represent here with different levels of information.</p>",
       thumbnail: "sign_carte_5.png",
       images: ["sign_carte_1.png", "sign_carte_2.png", "sign_carte_3.png", "sign_carte_4.png", "sign_carte_5.png", "sign_carte_6.png"],
-      imageDescs: ["Front of the Map", "Back of the Map", "Front of the Map", "Introduction of the Map", "Printed Version of the Map", "Printed Version of the Map"],
+      imageDescs: ["Front of the map", "Back of the map", "Front of the map", "Introduction of the map", "Printed Version of the map", "Printed Version of the map"],
       imagesLayout: ["12", "6", "6", "12", "12", "12"]
     }
   }
