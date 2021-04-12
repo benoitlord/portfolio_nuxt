@@ -13,10 +13,10 @@ export default {
   projets: {
     asDesJeux:{
       id: "asDesJeux",
-      titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour l'As de Jeux",
+      titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour L'As de Jeux",
       session: "Hiver 2021",
       category: "miseEnPage",
-      desc: "<p>Réalisé dans le cadre de mon cours Documents et procédés d'impression, ce projet consistait à créer un dépliant de type «&ThinSpace;pop-up&ThinSpace;» fictif pour une entreprise locale. Dans mon cas, j'ai choisi l'As des Jeux, une boutique qui vend et loue des jeux de société dans la région de Gatineau. Le dépliant met en valeur une promotion pour les clients qui achètent en ligne durant la pandémie.</p>",
+      desc: "<p>Réalisé dans le cadre de mon cours Documents et procédés d'impression, ce projet consistait à créer un dépliant de type «&ThinSpace;pop-up&ThinSpace;» fictif pour une entreprise locale. Dans mon cas, j'ai choisi L'As des Jeux, une boutique qui vend et loue des jeux de société dans la région de Gatineau. Le dépliant met en valeur une promotion pour les clients qui achètent en ligne durant la pandémie.</p>",
       thumbnail: "mep_as-des-jeux_3.jpeg",
       images: ["mep_as-des-jeux_1.jpeg", "mep_as-des-jeux_2.jpeg", "mep_as-des-jeux_3.jpeg"],
       imageDescs: ["Couverture du dépliant", "Arrière du dépliant", "Intérieur du dépliant"],
@@ -41,7 +41,7 @@ export default {
       desc: "<p>Ce livre-accordéon que j'ai créé dans mon cours de projet d'édition interdisciplinaire ce veut un hommage à la chanson <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span> en mettant en vedette les tablatures de guitare ainsi que les paroles de la chanson, le tout dans un style qui rappelle l'aspect de l'album sur lequel la chanson a originalement parue.</p>",
       thumbnail: "mep_accordeon_5.jpeg",
       images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
-      imageDescs: ["Esquisse préliminaire", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
+      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
       imagesLayout: ["4", "8", "12", "4", "8", "6"]
     },
     john_cage:{
