@@ -11,8 +11,8 @@ export default {
   sign: "Signalétique",
 
   projets: {
-    asDesJeux:{
-      id: "asDesJeux",
+    as_des_jeux:{
+      id: "as_des_jeux",
       titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour L'As de Jeux",
       session: "Hiver 2021",
       category: "miseEnPage",
@@ -199,8 +199,8 @@ export default {
       imageDescs: ["Interface de l'application", "Interface de l'application", "Interface de l'application"],
       imagesLayout: ["6", "6", "12"]
     },
-    paixConfiance:{
-      id: "paixConfiance",
+    paix_confiance:{
+      id: "paix_confiance",
       titre: "Affiche pour la Bourse Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\">SDGQ</abbr> 2020-2021",
       session: "Automne 2020",
       category: "illustration",

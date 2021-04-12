@@ -7,7 +7,7 @@ export default {
 
   generate: {
     routes: [
-      'en/portfolio/asDesJeux',
+      'en/portfolio/as_des_jeux',
       'en/portfolio/ordi',
       'en/portfolio/accordeon',
       'en/portfolio/john_cage',
@@ -24,7 +24,7 @@ export default {
       'en/portfolio/timeline',
       'en/portfolio/guitarbox',
       'en/portfolio/vision',
-      'en/portfolio/paixConfiance',
+      'en/portfolio/paix_confiance',
       'en/portfolio/atonal',
       'en/portfolio/calanca',
       'en/portfolio/tous_des_oiseaux',
@@ -32,7 +32,7 @@ export default {
       'en/portfolio/parking_challenge',
       'en/portfolio/carte',
       
-      'fr/portfolio/asDesJeux',
+      'fr/portfolio/as_des_jeux',
       'fr/portfolio/ordi',
       'fr/portfolio/accordeon',
       'fr/portfolio/john_cage',
@@ -49,7 +49,7 @@ export default {
       'fr/portfolio/timeline',
       'fr/portfolio/guitarbox',
       'fr/portfolio/vision',
-      'fr/portfolio/paixConfiance',
+      'fr/portfolio/paix_confiance',
       'fr/portfolio/atonal',
       'fr/portfolio/calanca',
       'fr/portfolio/tous_des_oiseaux',

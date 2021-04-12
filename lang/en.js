@@ -11,8 +11,8 @@ export default {
   sign: "Signaletic",
 
   projets: {
-    asDesJeux:{
-      id: "asDesJeux",
+    as_des_jeux:{
+      id: "as_des_jeux",
       titre: "Fictitious &ldquo;pop-up&rdquo; Leaflet for <span lang\"fr\">L'As de Jeux</span>",
       session: "Winter 2021",
       category: "miseEnPage",
@@ -199,8 +199,8 @@ export default {
       imageDescs: ["App interface", "App interface", "App interface"],
       imagesLayout: ["6", "6", "12"]
     },
-    paixConfiance:{
-      id: "paixConfiance",
+    paix_confiance:{
+      id: "paix_confiance",
       titre: "Poster for the Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\" lang=\"fr\">SDGQ</abbr> Poster Contest 2020-2021",
       session: "Fall 2020",
       category: "illustration",
