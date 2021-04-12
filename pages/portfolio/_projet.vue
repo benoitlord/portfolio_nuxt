@@ -2,7 +2,7 @@
   <div>
     <b-row align-h="center">
       <b-col cols="12" md="10">
-        <h1 v-html="info.titre"></h1>
+        <h1 v-html="info.titre" style="font-size: 2.7em;"></h1>
         </b-col>
     </b-row>
     <b-row align-h="center" style="margin-bottom: 50px;">

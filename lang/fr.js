@@ -6,12 +6,45 @@ export default {
   miseEnPage: "Mise en page",
   branding: "Images de marque",
   typo: "Typographie",
-  programmation: "Programmation",
+  programmation: "Web/Mobile",
   illustration: "Illustration",
   sign: "Signalétique",
   synthese: "Projet synthèse",
 
   projets: {
+    as_des_jeux:{
+      id: "as_des_jeux",
+      titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour L'As de Jeux",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Réalisé dans le cadre de mon cours Documents et procédés d'impression, ce projet consistait à créer un dépliant de type «&ThinSpace;pop-up&ThinSpace;» fictif pour une entreprise locale. Dans mon cas, j'ai choisi L'As des Jeux, une boutique qui vend et loue des jeux de société dans la région de Gatineau. Le dépliant met en valeur une promotion pour les clients qui achètent en ligne durant la pandémie.</p>",
+      thumbnail: "mep_as-des-jeux_3.jpeg",
+      images: ["mep_as-des-jeux_1.jpeg", "mep_as-des-jeux_2.jpeg", "mep_as-des-jeux_3.jpeg"],
+      imageDescs: ["Couverture du dépliant", "Arrière du dépliant", "Intérieur du dépliant"],
+      imagesLayout: ["6", "6", "8"]
+    },
+    ordi:{
+      id: "ordi",
+      titre: "Livre expérimental sur la vie virtuelle",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Ceci est un livre expérimental que j'ai créé dans mon cours de projet d'édition interdisciplinaire. Son format particulier s'aligne avec le sujet qu'il aborde, soit le fait que durant la pandémie de COVID-19, nos vies sont devenues de plus en plus virtuelles et nous passons de plus en plus de temps devant un ordinateur. Il sensibilise à cette réalité grâce à quelques statistiques et témoignages.</p>",
+      thumbnail: "mep_ordi_2.jpeg",
+      images: ["mep_ordi_1.png", "mep_ordi_2.jpeg", "mep_ordi_3.jpeg", "mep_ordi_4.jpeg", "mep_ordi_5.jpeg"],
+      imageDescs: ["Mise en page du livre", "Couverture du livre imprimé", "Mise en page du contenu du livre imprimé", "Mise en page du contenu du livre imprimé", "Mise en page du contenu du livre imprimé"],
+      imagesLayout: ["5", "7", "6", "6", "6"]
+    },
+    accordeon:{
+      id: "accordeon",
+      titre: "Livre-accordéon hommage à <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span>",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Ce livre-accordéon que j'ai créé dans mon cours de projet d'édition interdisciplinaire ce veut un hommage à la chanson <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span> en mettant en vedette les tablatures de guitare ainsi que les paroles de la chanson, le tout dans un style qui rappelle l'aspect de l'album sur lequel la chanson a originalement parue.</p>",
+      thumbnail: "mep_accordeon_5.jpeg",
+      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
+      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
+      imagesLayout: ["4", "8", "12", "4", "8", "6"]
+    },
     john_cage:{
       id: "john_cage",
       titre: "Mise en page de livre sur John Cage",
@@ -134,6 +167,17 @@ export default {
       imageDescs: ["Premières versions de l'affiche, guidant mon processus créatif", "Version finale de l'affiche"],
       imagesLayout: ["12", "12"]
     },
+    timeline:{
+      id: "timeline",
+      titre: "La chronologie des femmes autochtones influentes",
+      session: "Hiver 2021",
+      category: "programmation",
+      desc: "<p>Dans le cadre de mon emploi à l'École de la fonction publique du Canada, j'ai entièrement conçu le design graphique de cet outil de travail dont le but est de mettre en valeur le travail et les réalisations de plus de 150 femmes autochtones influentes canadiennes de toutes les périodes de l'Histoire. J'ai également réalisé toute la programmation du site web et ce, grâce à HTML, SCSS, Vue.js et Nuxt.js. Comme tous les produits du gouvernement du Canada, cet outil respecte aussi toutes les normes d'accessbilité web WCAG 2.0 AA.</p>",
+      thumbnail: "prog_women-timeline_4.png",
+      images: ["prog_women-timeline_1.png", "prog_women-timeline_2.png", "prog_women-timeline_3.png", "prog_women-timeline_4.png"],
+      imageDescs: ["Content of the Tool", "Content of the Tool", "Content of the Tool", "Content of the Tool"],
+      imagesLayout: ["12", "12", "12", "12"]
+    },
     guitarbox:{
       id: "guitarbox",
       titre: "GuitarBox",
@@ -155,6 +199,18 @@ export default {
       images: ["prog_vision_1.jpg", "prog_vision_2.jpg", "prog_vision_3.jpg"],
       imageDescs: ["Interface de l'application", "Interface de l'application", "Interface de l'application"],
       imagesLayout: ["6", "6", "12"]
+    },
+    paix_confiance:{
+      id: "paix_confiance",
+      titre: "Affiche pour la Bourse Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\">SDGQ</abbr> 2020-2021",
+      session: "Automne 2020",
+      category: "illustration",
+      desc: "<p>Cette affiche a été réalisée dans mon cours d'affiche pour la Bourse Marc H. Choko&nbsp;/&nbsp;<abbr title=\"Société des designer graphiques du Québec\">SDGQ</abbr> 2020-2021, un concours ouvert à tous les étudiants en design graphique du Québec. Le sujet était l'année de la paix et confiance décrétée en 2021 par l'<abbr title=\"Organisation des Nations Unies\">ONU</abbr>. L'affiche met aussi en valeur une exposition dans le cadre du concours, au musée McCord.</p>",
+      thumbnail: "illustration_paix-et-confiance_3.jpg",
+      thumbnailPortrait: true,
+      images: ["illustration_paix-et-confiance_1.jpg", "illustration_paix-et-confiance_2.jpg", "illustration_paix-et-confiance_3.jpg"],
+      imageDescs: ["Esquisse préliminaire", "Version préliminaire de l'affiche", "Affiche finale"],
+      imagesLayout: ["6", "6", "6"]
     },
     atonal:{
       id: "atonal",
@@ -221,7 +277,7 @@ export default {
       titre: "Carte symbolique de ma chambre",
       session: "Automne 2019",
       category: "sign",
-      desc: "<p>Réalisée dans le cadre de mon cours de signalisation et cartographie, cette carte symbolique est une représentation de mon espace personnel, ma « bulle » qu’est ma chambre. Remplie d’objets personnels avec une variété de niveaux d’importance émotionnelle et symbolique pour moi, ma chambre est à la fois un endroit de travail et de relaxation pour moi. C’est tout ceci que j’ai voulu représenter ici avec différents niveaux d’information.</p>",
+      desc: "<p>Réalisée dans le cadre de mon cours de signalisation et cartographie, cette carte symbolique est une représentation de mon espace personnel, ma «&ThinSpace;bulle&ThinSpace;» qu’est ma chambre. Remplie d’objets personnels avec une variété de niveaux d’importance émotionnelle et symbolique pour moi, ma chambre est à la fois un endroit de travail et de relaxation pour moi. C’est tout ceci que j’ai voulu représenter ici avec différents niveaux d’information.</p>",
       thumbnail: "sign_carte_5.png",
       images: ["sign_carte_1.png", "sign_carte_2.png", "sign_carte_3.png", "sign_carte_4.png", "sign_carte_5.png", "sign_carte_6.png"],
       imageDescs: ["Recto de la carte", "Verso de la carte", "Recto de la carte", "Introduction de la carte", "Version imprimée de la carte", "Version imprimée de la carte"],
