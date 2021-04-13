@@ -175,7 +175,7 @@ export default {
       desc: "<p>Dans le cadre de mon emploi à l'École de la fonction publique du Canada, j'ai entièrement conçu le design graphique de cet outil de travail dont le but est de mettre en valeur le travail et les réalisations de plus de 150 femmes autochtones influentes canadiennes de toutes les périodes de l'Histoire. J'ai également réalisé toute la programmation du site web et ce, grâce à HTML, SCSS, Vue.js et Nuxt.js. Comme tous les produits du gouvernement du Canada, cet outil respecte aussi toutes les normes d'accessbilité web WCAG 2.0 AA.</p>",
       thumbnail: "prog_women-timeline_4.png",
       images: ["prog_women-timeline_1.png", "prog_women-timeline_2.png", "prog_women-timeline_3.png", "prog_women-timeline_4.png"],
-      imageDescs: ["Content of the Tool", "Content of the Tool", "Content of the Tool", "Content of the Tool"],
+      imageDescs: ["Contenu de l'outil", "Contenu de l'outil", "Contenu de l'outil", "Contenu de l'outil"],
       imagesLayout: ["12", "12", "12", "12"]
     },
     guitarbox:{
