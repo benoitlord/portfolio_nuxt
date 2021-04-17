@@ -2,7 +2,7 @@
   <div>
     <b-row>
       <b-col>
-        <h1 style="font-size: 2.7em;">{{ $t('pageTitle') }}</h1>
+        <h1 class="smaller-title">{{ $t('pageTitle') }}</h1>
       </b-col>
     </b-row>
     <b-row align-h="center">
