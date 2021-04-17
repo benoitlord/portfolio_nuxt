@@ -33,7 +33,7 @@
         </div>
         <div  v-if="$i18n.locale === 'fr'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
-          <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondies autour du sujet et des expérimentations déjà réalisée dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
+          <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondie autour du sujet et des expérimentations déjà réalisées dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
         </div>
       </b-col>
       <b-col cols="12" md="5" lg="6">
