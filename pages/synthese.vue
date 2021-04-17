@@ -2,11 +2,11 @@
   <div>
     <b-row>
       <b-col>
-        <h1 style="font-size: 2.7em;">{{ $t('pageTitle') }}</h1>
+        <h1 class="smaller-title">{{ $t('pageTitle') }}</h1>
       </b-col>
     </b-row>
     <b-row align-h="center">
-      <b-col cols="12" md="10" class="text-center">
+      <b-col cols="12" sm="10" md="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h2>Context of the Project</h2>
           <p>Carried out as part of the course "Grsphic Design Synthesis II: research and innovation" of the bachelor's degree in graphic design from the Multidisciplinary School of Image of the University of Quebec in Outaouais, this project is intended to be a concrete application of the concepts learned throughout the program. It also aims to foster innovation by making it possible to explore a subject from a new angle and to use graphic design to improve an aspect of society.</p>
@@ -33,7 +33,7 @@
         </div>
         <div  v-if="$i18n.locale === 'fr'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Recherche/Analyse</h2>
-          <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondies autour du sujet et des expérimentations déjà réalisée dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
+          <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondie autour du sujet et des expérimentations déjà réalisées dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
         </div>
       </b-col>
       <b-col cols="12" md="5" lg="6">
@@ -43,8 +43,8 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="7" lg="5" order-md="last">
+    <b-row align-v="center" align-h="end" style="margin-top: 100px; margin-bottom: 100px;">
+      <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Informative Poster</h2>
           <p v-if="$i18n.locale === 'en'">The next phase of my project was to produce an informative poster which aims to retrace the history of musical notation and the elements of the different notation systems in history. It also shows the few recent experiments similar to mine carried out by various people.</p>
@@ -54,15 +54,27 @@
           <p>La prochaine phase de mon projet a été de réaliser une affiche informative qui a pour but de retracer l'histoire de la notation musicale et des éléments des différents systèmes de notation de l'Histoire. Elle montre aussi les quelques récentes expérimentations semblables à la mienne réalisées par diverses personnes.</p>
         </div>
       </b-col>
-      <b-col cols="12" md="5" lg="7">
+      <b-col cols="12">
         <figure class="figure">
-          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-informative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_2" />
+          <img class="figure-img img-fluid" src="~assets/synthese_affiche-informative.jpg" :alt="$t('captionBelow')" aria-labelledby="img-caption_2" />
+          <figcaption class="figure-caption" id="img-caption_2">{{ (($i18n.locale === 'en') ? "Final version of the informative poster" : "Version finale de l'affiche informative" )}}</figcaption>
+        </figure>
+      </b-col>
+      <b-col cols="12" md="6">
+        <figure class="figure">
+          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-informative-zoom-1.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_2" />
+          <figcaption class="figure-caption" id="img-caption_2">{{ (($i18n.locale === 'en') ? "Final version of the informative poster" : "Version finale de l'affiche informative" )}}</figcaption>
+        </figure>
+      </b-col>
+      <b-col cols="12" md="6">
+        <figure class="figure">
+          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-informative-zoom-2.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_2" />
           <figcaption class="figure-caption" id="img-caption_2">{{ (($i18n.locale === 'en') ? "Final version of the informative poster" : "Version finale de l'affiche informative" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="10" lg="8">
+      <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Project</h2>
           <p>Following all this, I embarked on the concrete realization of my project. The steps I took are as follows:</p>
@@ -136,7 +148,7 @@
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="6" lg="5">
+      <b-col cols="12" md="6" lg="5" order-md="last">
         <div v-if="$i18n.locale === 'en'">
           <h3>Development of the Graphic Element System</h3>
           <p>I then started to develop the system allowing to add elements of layout around the scores to energize the whole and visually express the atmosphere of a song.</p>
@@ -178,7 +190,7 @@
       </b-col>
     </b-row>
     <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
-      <b-col cols="12" md="6" lg="5">
+      <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h3>Design of a poster showing the benefits of rating</h3>
           <p>Finally, I set out to create a poster that recaps the benefits of the scoring system I created.</p>
@@ -188,9 +200,15 @@
           <p>Finalement, je me suis lancé dans le création d'une affiche qui permet de récapituler les grands avantages du système de notation que j'ai créé.</p>
         </div>
       </b-col>
-      <b-col cols="12" md="6" lg="7">
+      <b-col cols="12">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="~assets/synthese_affiche-explicative.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_10" />
+          <img class="figure-img img-fluid" src="~assets/synthese_affiche-explicative.jpg" :alt="$t('captionBelow')" aria-labelledby="img-caption_10" />
+          <figcaption class="figure-caption" id="img-caption_10">{{ (($i18n.locale === 'en') ? "Final version of the explanatory poster" : "Version finale de l'affiche explicative" )}}</figcaption>
+        </figure>
+      </b-col>
+      <b-col cols="12" md="8" offset-md="4" lg="7" offset-lg="5">
+        <figure class="figure">
+          <img class="figure-img img-fluid box-shadow" src="~assets/synthese_affiche-explicative-zoom.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_10" />
           <figcaption class="figure-caption" id="img-caption_10">{{ (($i18n.locale === 'en') ? "Final version of the explanatory poster" : "Version finale de l'affiche explicative" )}}</figcaption>
         </figure>
       </b-col>
@@ -244,7 +262,7 @@
       document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
         var adobeDCView = new AdobeDC.View({ clientId: "16f2a1cd95ee44bc90dc8b16d04be388", divId: "adobe-dc-view" });
         adobeDCView.previewFile({
-          content:{ location: { url: "/guide_2021-04-09.pdf" } },
+          content:{ location: { url: "/guide_2021-04-17.pdf" } },
           metaData:{ fileName: "Guide explicatif de la notation musicale graphique" }
         }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
       });
