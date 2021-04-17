@@ -262,7 +262,7 @@
       document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
         var adobeDCView = new AdobeDC.View({ clientId: "16f2a1cd95ee44bc90dc8b16d04be388", divId: "adobe-dc-view" });
         adobeDCView.previewFile({
-          content:{ location: { url: "/guide_2021-04-09.pdf" } },
+          content:{ location: { url: "/guide_2021-04-17.pdf" } },
           metaData:{ fileName: "Guide explicatif de la notation musicale graphique" }
         }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
       });
