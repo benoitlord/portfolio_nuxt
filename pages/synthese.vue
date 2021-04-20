@@ -36,7 +36,7 @@
           <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondie autour du sujet et des expérimentations déjà réalisées dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
         </div>
       </b-col>
-      <b-col cols="12" md="5" lg="6">
+      <b-col cols="12" lg="6">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_recherche.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_1" />
           <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Brainstorm on the research for notation elements" : "Brainstorm pour la recherche des éléments de notation" )}}</figcaption>
@@ -256,7 +256,7 @@
         var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
         var top_of_screen = $(window).scrollTop();
 
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+        if ((bottom_of_screen - 200 > top_of_element) && (top_of_screen + 200 < bottom_of_element)){
           $el.addClass("visible");
         } else {
           $el.removeClass("visible");
@@ -374,6 +374,9 @@
   }
 
   .content-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+
     transition: transform 1s, opacity 1s;
     -webkit-transition: transform 1s, opacity 1s;
     -moz-transition: transform 1s, opacity 1s;
@@ -381,12 +384,12 @@
     -ms-transition: transform 1s, opacity 1s;
 
     @media(min-width: 768px){
-      margin-top: 250px;
-      margin-bottom: 250px;
+      margin-top: 300px;
+      margin-bottom: 300px;
     }
 
     &:not(.visible){
-      transform: scale(0.95);
+      transform: scale(0.98);
       opacity: 0;
     }
     &.visible{
