@@ -9,7 +9,7 @@
       <b-col cols="12" sm="10" md="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h2>Context of the Project</h2>
-          <p>Carried out as part of the course "Grsphic Design Synthesis II: research and innovation" of the bachelor's degree in graphic design from the Multidisciplinary School of Image of the University of Quebec in Outaouais, this project is intended to be a concrete application of the concepts learned throughout the program. It also aims to foster innovation by making it possible to explore a subject from a new angle and to use graphic design to improve an aspect of society.</p>
+          <p>Carried out as part of the course "Graphic Design Synthesis II: research and innovation" of the bachelor's degree in graphic design from the Multidisciplinary School of Image of the University of Quebec in Outaouais, this project is intended to be a concrete application of the concepts learned throughout the program. It also aims to foster innovation by making it possible to explore a subject from a new angle and to use graphic design to improve an aspect of society.</p>
           <h2>Goal of the Project</h2>
           <p>The aim of this project is to try to renew the way of writing music in order to remedy a long-standing problem. In fact, sheet music has almost always looked the same: a white sheet with staff lines, notes and black inscriptions, always drawn in the same way. In addition, learning music is often complicated for beginners due to this very technical notation which takes time to understand and master and is not very visually representative.</p>
           <p>The first way to remedy this is to create a new version of traditional musical notation, the primary purpose of which would be to make learning music more accessible for beginners thanks to a more visual notation system that allows you to grasp more easily the appearance of a piece of music, as well as its notes, rhythm, nuances, etc.</p>
@@ -168,7 +168,7 @@
     <b-row align-v="center" align-h="center" class="content-section">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Creation of sample scores</h3>
+          <h3>Creation of Sample Scores</h3>
           <p>Then I worked on creating sample scores that showcase the notation I designed. To do this, I chose two well-known pieces, in two different styles in order to offer familiarity to the reader.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
@@ -192,7 +192,7 @@
     <b-row align-v="center" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
-          <h3>Design of a poster showing the benefits of rating</h3>
+          <h3>Design of a Poster Showing the Benefits My Notation</h3>
           <p>Finally, I set out to create a poster that recaps the benefits of the scoring system I created.</p>
         </div>
         <div v-if="$i18n.locale === 'fr'">
