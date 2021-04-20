@@ -25,7 +25,7 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="7" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Research/Analysis</h2>
@@ -43,7 +43,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="end" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="end" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Informative Poster</h2>
@@ -73,7 +73,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Project</h2>
@@ -99,7 +99,7 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="6" lg="5">
         <div v-if="$i18n.locale === 'en'">
           <h3>Development of the Notation</h3>
@@ -129,7 +129,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="center" class="content-section">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h3>Creation of the Explanatory Guide</h3>
@@ -147,7 +147,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="6" lg="5" order-md="last">
         <div v-if="$i18n.locale === 'en'">
           <h3>Development of the Graphic Element System</h3>
@@ -165,7 +165,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="center" class="content-section">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h3>Creation of sample scores</h3>
@@ -189,7 +189,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h3>Design of a poster showing the benefits of rating</h3>
@@ -249,6 +249,18 @@
         var width = $("#adobe-dc-view").outerWidth();
         var height = width * 10.8333 / 16.25;
         $("#adobe-dc-view").css({ height: height });
+      },
+      checkIfVisible($el){
+        var top_of_element = $el.offset().top;
+        var bottom_of_element = $el.offset().top + $el.outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+          $el.addClass("visible");
+        } else {
+          $el.removeClass("visible");
+        }
       }
     },
 
@@ -265,6 +277,12 @@
           content:{ location: { url: "/guide_2021-04-17.pdf" } },
           metaData:{ fileName: "Guide explicatif de la notation musicale graphique" }
         }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
+      });
+
+      $(window).scroll(function(){
+        $(".content-section").each(function(){
+          that.checkIfVisible($(this));
+        });
       });
     }
   }
@@ -354,6 +372,29 @@
   .box-shadow{
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.05);
   }
+
+  .content-section{
+    transition: transform 1s, opacity 1s;
+    -webkit-transition: transform 1s, opacity 1s;
+    -moz-transition: transform 1s, opacity 1s;
+    -o-transition: transform 1s, opacity 1s;
+    -ms-transition: transform 1s, opacity 1s;
+
+    @media(min-width: 768px){
+      margin-top: 250px;
+      margin-bottom: 250px;
+    }
+
+    &:not(.visible){
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    &.visible{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
 
 </style>
 
