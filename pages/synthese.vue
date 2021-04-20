@@ -25,7 +25,7 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="7" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">1</span> Research/Analysis</h2>
@@ -36,14 +36,14 @@
           <p>La premère étape dans la réalisation de mon projet fût d'effectuer une recherche approfondie autour du sujet et des expérimentations déjà réalisées dans le domaine. J'ai aussi commencé à jeter les bases de ma notation graphique en relevant la liste des éléments que je devrais créer afin d'obtenir une notation musicale qui contient tous les éléments nécessaires pour représenter correctement des pièces musicales.</p>
         </div>
       </b-col>
-      <b-col cols="12" md="5" lg="6">
+      <b-col cols="12" lg="6">
         <figure class="figure">
           <img class="figure-img img-fluid box-shadow" src="~assets/synthese_recherche.png" :alt="$t('captionBelow')" aria-labelledby="img-caption_1" />
           <figcaption class="figure-caption" id="img-caption_1">{{ (($i18n.locale === 'en') ? "Brainstorm on the research for notation elements" : "Brainstorm pour la recherche des éléments de notation" )}}</figcaption>
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="end" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="end" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">2</span> Informative Poster</h2>
@@ -73,7 +73,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h2 style="margin-bottom: 30px;" class="number-title"><span class="number">3</span> Project</h2>
@@ -99,7 +99,7 @@
         </div>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="6" lg="5">
         <div v-if="$i18n.locale === 'en'">
           <h3>Development of the Notation</h3>
@@ -129,7 +129,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="center" class="content-section">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h3>Creation of the Explanatory Guide</h3>
@@ -147,7 +147,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="6" lg="5" order-md="last">
         <div v-if="$i18n.locale === 'en'">
           <h3>Development of the Graphic Element System</h3>
@@ -165,7 +165,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" align-h="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" align-h="center" class="content-section">
       <b-col cols="12" md="10" lg="8" class="text-center">
         <div v-if="$i18n.locale === 'en'">
           <h3>Creation of sample scores</h3>
@@ -189,7 +189,7 @@
         </figure>
       </b-col>
     </b-row>
-    <b-row align-v="center" style="margin-top: 100px; margin-bottom: 100px;">
+    <b-row align-v="center" class="content-section">
       <b-col cols="12" md="8" lg="6">
         <div v-if="$i18n.locale === 'en'">
           <h3>Design of a poster showing the benefits of rating</h3>
@@ -249,6 +249,18 @@
         var width = $("#adobe-dc-view").outerWidth();
         var height = width * 10.8333 / 16.25;
         $("#adobe-dc-view").css({ height: height });
+      },
+      checkIfVisible($el){
+        var top_of_element = $el.offset().top;
+        var bottom_of_element = $el.offset().top + $el.outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen - 200 > top_of_element) && (top_of_screen + 200 < bottom_of_element)){
+          $el.addClass("visible");
+        } else {
+          $el.removeClass("visible");
+        }
       }
     },
 
@@ -265,6 +277,12 @@
           content:{ location: { url: "/guide_2021-04-17.pdf" } },
           metaData:{ fileName: "Guide explicatif de la notation musicale graphique" }
         }, { embedMode: "SIZED_CONTAINER", showDownloadPDF: false, showPrintPDF: false, showAnnotationTools: false, showLeftHandPanel: false });
+      });
+
+      $(window).scroll(function(){
+        $(".content-section").each(function(){
+          that.checkIfVisible($(this));
+        });
       });
     }
   }
@@ -354,6 +372,32 @@
   .box-shadow{
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.05);
   }
+
+  .content-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    transition: transform 1s, opacity 1s;
+    -webkit-transition: transform 1s, opacity 1s;
+    -moz-transition: transform 1s, opacity 1s;
+    -o-transition: transform 1s, opacity 1s;
+    -ms-transition: transform 1s, opacity 1s;
+
+    @media(min-width: 768px){
+      margin-top: 300px;
+      margin-bottom: 300px;
+    }
+
+    &:not(.visible){
+      transform: scale(0.98);
+      opacity: 0;
+    }
+    &.visible{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
 
 </style>
 
