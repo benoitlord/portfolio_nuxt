@@ -9,6 +9,7 @@ export default {
   programmation: "Web/Mobile",
   illustration: "Illustration",
   sign: "Signaletic",
+  synthese: "Synthesis Project",
 
   projets: {
     as_des_jeux:{
