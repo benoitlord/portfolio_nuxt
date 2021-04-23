@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Navigation pour ordinateur -->
+    <!-- Navigation -->
     <nav class="navigation fermee" :aria-label="$t('navLabel')">
       <a href="#" @click.stop.prevent="menuClick" class="toggle">
         <font-awesome-icon icon="bars" size="2x" role="presentation" class="menu" />
