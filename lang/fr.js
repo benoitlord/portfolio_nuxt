@@ -3,7 +3,7 @@ export default {
   titre: "Designer graphique et développeur web",
 
   home: "Accueil",
-  miseEnPage: "Mise en page",
+  miseEnPage: "Mise en page/Édition",
   branding: "Images de marque",
   typo: "Typographie",
   programmation: "Web/Mobile",
@@ -12,6 +12,29 @@ export default {
   synthese: "Projet synthèse",
 
   projets: {
+    calendrier:{
+      id: "calendrier",
+      titre: "Calendrier 2022 avec diverses techniques d'impression",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>Le but de ce projet, conduit dans le cours Documents et procédés d'impression, était de réaliser un calendrier pour 2022 dont la particularité était de contenir pour chaque mois une technique d'impression apprise dans le cours. J'ai ainsi appliqué dans ce projet les techniques de création pour ajouter à mon projet du vernis sélectif, un duotone, une découpe (die-cut), 3 types de plis, un ajout imprimé à part, un différent type de papier, de l'effet métallique (foil), des registres, une retouche de couleur et de l'embossage. Les photos incluses dans le calendrier sont également des photos que j'ai prises moi-même de mes deux guitares et que j'ai découpées pour les intégrer dans le projet.</p>",
+      thumbnail: "mep_calendrier_1.jpeg",
+      images: ["mep_calendrier_1.jpeg", "mep_calendrier_2.jpeg", "mep_calendrier_3.jpeg", "mep_calendrier_4.jpeg", "mep_calendrier_5.jpeg", "mep_calendrier_6.jpeg", "mep_calendrier_7.jpeg", "mep_calendrier_8.jpeg", "mep_calendrier_9.jpeg", "mep_calendrier_10.jpeg"],
+      imageDescs: ["Couverture du calendrier", "Mois d'avril", "Exemple de technique&nbsp;: pli sur le mois d'avril", "Moi d'août", "Mois de mai", "Exemple de technique&nbsp;: ajouts sur le mois de mai", "Exemple de technique&nbsp;: plis sur le mois de juin", "Mois de décembre", "Exemple de technique&nbsp;: embossage sur le mois de décembre", "4<sup>ème</sup> de couverture du calendrier"],
+      imagesLayout: ["8", "4", "4", "4", "4", "6", "6", "4", "8", "8"]
+    },
+    affiche_depliant:{
+      id: "affiche_depliant",
+      titre: "Affiche dépliant aide-mémoire pour les guitaristes",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>J'ai réalisé ce projet pour mon cours Projet d'édition interdisciplinaire. Il s'agit d'une affiche-dépliant dont le but est de servir à la fois d'aide-mémoire pour les notes des accords de base en guitare, mais aussi d'affiche décorative, d'où le fait qu'elle est réversible. Elle peut également être pliée en petit format pour être facilement transportée par l'utilisateur.</p>",
+      thumbnail: "mep_affiche-depliant_5.jpeg",
+      thumbnailPortrait: true,
+      images: ["mep_affiche-depliant_1.png", "mep_affiche-depliant_2.png", "mep_affiche-depliant_3.jpeg", "mep_affiche-depliant_4.jpeg", "mep_affiche-depliant_5.jpeg", "mep_affiche-depliant_6.jpeg"],
+      imageDescs: ["Mise en page du recto de l'affiche", "Mise en page du verso de l'affiche", "Couverture de l'affiche imprimée et pliée", "Revers de l'affiche imprimée et pliée", "Affiche imprimée (recto)", "Affiche imprimée (verso)"],
+      imagesLayout: ["6", "6", "7", "5", "6", "6"]
+    },
     as_des_jeux:{
       id: "as_des_jeux",
       titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour L'As de Jeux",
@@ -40,10 +63,11 @@ export default {
       session: "Hiver 2021",
       category: "miseEnPage",
       desc: "<p>Ce livre-accordéon que j'ai créé dans mon cours de projet d'édition interdisciplinaire ce veut un hommage à la chanson <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span> en mettant en vedette les tablatures de guitare ainsi que les paroles de la chanson, le tout dans un style qui rappelle l'aspect de l'album sur lequel la chanson a originalement parue.</p>",
-      thumbnail: "mep_accordeon_5.jpeg",
-      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
-      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
-      imagesLayout: ["4", "8", "12", "4", "8", "6"]
+      thumbnail: "mep_accordeon_6.jpg",
+      thumbnailPortrait: true,
+      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpg"],
+      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Contenu du livre imprimé", "Contenu du livre imprimé", "Couverture du livre imprimé"],
+      imagesLayout: ["4", "8", "12", "12", "12", "6"]
     },
     john_cage:{
       id: "john_cage",
