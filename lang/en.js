@@ -12,10 +12,21 @@ export default {
   synthese: "Synthesis Project",
 
   projets: {
+    calendrier:{
+      id: "calendrier",
+      titre: "2022 Calendar with Multiple Printing Techniques",
+      session: "Winter 2021",
+      category: "miseEnPage",
+      desc: "<p>The goal of this project, conducted in the course Documents and printing processes, was to produce a calendar for 2022, with the particularity to contain for each month a printing technique learned in the course. I thus applied in this project the creation techniques to add to my project spot varnish, a duotone, a die-cut, 3 types of folds, an addition printed separately, a different type of paper, a metallic effect (foil), registers, a color retouching and embossing. The photos included in the calendar are also photos that I took myself of my two guitars and that I cut out to integrate them into the project.</p>",
+      thumbnail: "mep_calendrier_1.jpeg",
+      images: ["mep_calendrier_1.jpeg", "mep_calendrier_2.jpeg", "mep_calendrier_3.jpeg", "mep_calendrier_4.jpeg", "mep_calendrier_5.jpeg", "mep_calendrier_6.jpeg", "mep_calendrier_7.jpeg", "mep_calendrier_8.jpeg", "mep_calendrier_9.jpeg", "mep_calendrier_10.jpeg"],
+      imageDescs: ["Cover of the calendar", "Month of April", "Example of a technique: fold on the month of April", "Month of August", "Month of May", "Example of a technique: additions on the month of May", "Example of a technique: fold on the month of June", "Month of December", "Example of a technique: embossing on the month of December", "Back of the calendar"],
+      imagesLayout: ["8", "4", "4", "4", "4", "6", "6", "4", "8", "8"]
+    },
     affiche_depliant:{
       id: "affiche_depliant",
       titre: "Guitarist Memory Aid Folding Poster",
-      session: "Hiver 2021",
+      session: "Winter 2021",
       category: "miseEnPage",
       desc: "<p>I did this project for my Interdisciplinary Publishing Project course. It is a folding poster whose goal is to serve both as a memory aid for the notes of basic guitar chords, but also as a decorative poster, hence the fact that it is reversible. It can also be folded into a small size for easy transport by the user.</p>",
       thumbnail: "mep_affiche-depliant_5.jpeg",
