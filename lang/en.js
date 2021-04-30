@@ -40,10 +40,11 @@ export default {
       session: "Winter 2021",
       category: "miseEnPage",
       desc: "<p>This accordion book that I created in my interdisciplinary publishing project course is a tribute to the song <em>Back in Black</em> by AC/DC featuring the guitar tabs as well as the lyrics of the song, all in a style reminiscent of the look of the album the song was originally released on.</p>",
-      thumbnail: "mep_accordeon_5.jpeg",
-      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
-      imageDescs: ["Preliminary sketches", "Book layout", "Book layout", "Cover of the printed book", "Content of the printed book", "Content of the printed book"],
-      imagesLayout: ["4", "8", "12", "4", "8", "6"]
+      thumbnail: "mep_accordeon_6.jpg",
+      thumbnailPortrait: true,
+      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpg"],
+      imageDescs: ["Preliminary sketches", "Book layout", "Book layout", "Content of the printed book", "Content of the printed book", "Cover of the printed book"],
+      imagesLayout: ["4", "8", "12", "12", "12", "6"]
     },
     john_cage:{
       id: "john_cage",

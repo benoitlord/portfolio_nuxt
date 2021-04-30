@@ -40,10 +40,11 @@ export default {
       session: "Hiver 2021",
       category: "miseEnPage",
       desc: "<p>Ce livre-accordéon que j'ai créé dans mon cours de projet d'édition interdisciplinaire ce veut un hommage à la chanson <em lang=\"en\">Back in Black</em> d'<span lang=\"en\">AC/DC</span> en mettant en vedette les tablatures de guitare ainsi que les paroles de la chanson, le tout dans un style qui rappelle l'aspect de l'album sur lequel la chanson a originalement parue.</p>",
-      thumbnail: "mep_accordeon_5.jpeg",
-      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpeg"],
-      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Couverture du livre imprimé", "Contenu du livre imprimé", "Contenu du livre imprimé"],
-      imagesLayout: ["4", "8", "12", "4", "8", "6"]
+      thumbnail: "mep_accordeon_6.jpg",
+      thumbnailPortrait: true,
+      images: ["mep_accordeon_1.jpg", "mep_accordeon_2.png", "mep_accordeon_3.png", "mep_accordeon_4.jpeg", "mep_accordeon_5.jpeg", "mep_accordeon_6.jpg"],
+      imageDescs: ["Esquisses préliminaires", "Mise en page du livre", "Mise en page du livre", "Contenu du livre imprimé", "Contenu du livre imprimé", "Couverture du livre imprimé"],
+      imagesLayout: ["4", "8", "12", "12", "12", "6"]
     },
     john_cage:{
       id: "john_cage",
