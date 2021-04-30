@@ -213,19 +213,22 @@
         appearance: none;
         -webkit-appearance: none;
         background-color: $vert;
-        padding: 0px 35px;
+        padding: 0px 25px;
         font-size: 1em;
         font-weight: 500;
         color: black!important;
         text-decoration: none!important;
         position: relative;
-        height: 60px;
-        line-height: 60px;
+        height: 40px;
+        line-height: 40px;
         display: inline-block;
         @include transition(0.2s);
 
         @media (min-width: 576px){
             font-size: 1.3em;
+            height: 60px;
+            line-height: 60px;
+            padding: 0px 35px;
         }
         @media (min-width: 768px){
             font-size: 1.5em;
@@ -234,24 +237,36 @@
         &:before{
             content: "";
             position: absolute;
-            height: 60px;
-            width: 60px;
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
             background-color: $vert;
-            left: -30px;
+            left: -20px;
             top: 0;
             @include transition(0.2s);
+
+            @media (min-width: 576px){
+                width: 60px;
+                height: 60px;
+                left: -30px;
+            }
         }
         &:after{
             content: "";
             position: absolute;
-            height: 60px;
-            width: 60px;
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
             background-color: $vert;
-            right: -30px;
+            right: -20px;
             top: 0;
             @include transition(0.2s);
+
+            @media (min-width: 576px){
+                width: 60px;
+                height: 60px;
+                left: -30px;
+            }
         }
         &:hover, &:focus{
             color: black!important;
