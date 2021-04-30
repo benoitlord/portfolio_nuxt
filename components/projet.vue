@@ -123,7 +123,7 @@
       .overlay{
         flex: 0 0 auto;
         width: 100%;
-        height: 220px;
+        height: 300px;
         background-color: rgba(0, 0, 0, 0.1);
         z-index: 1;
         @include transition(0.3s);
@@ -182,7 +182,9 @@
 
   .projet:not(.portrait){
     .thumbnail{
-      width: 115%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .projet.portrait{
@@ -212,6 +214,8 @@
 
     .thumbnail{
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
