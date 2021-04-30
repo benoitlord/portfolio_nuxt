@@ -12,6 +12,18 @@ export default {
   synthese: "Projet synthèse",
 
   projets: {
+    affiche_depliant:{
+      id: "affiche_depliant",
+      titre: "Affiche dépliant aide-mémoire pour les guitaristes",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>J'ai réalisé ce projet pour mon cours Projet d'édition interdisciplinaire. Il s'agit d'une affiche dépliant dont le but est de servir à la fois d'aide-mémoire pour les notes des accords de base en guitare, mais aussi d'affiche décorative, d'où le fait qu'elle est réversible. Elle peut également être pliée en petit format pour être facilement transportée par l'utilisateur.</p>",
+      thumbnail: "mep_affiche-depliant_5.jpeg",
+      thumbnailPortrait: true,
+      images: ["mep_affiche-depliant_1.png", "mep_affiche-depliant_2.png", "mep_affiche-depliant_3.jpeg", "mep_affiche-depliant_4.jpeg", "mep_affiche-depliant_5.jpeg", "mep_affiche-depliant_6.jpeg"],
+      imageDescs: ["Mise en page du recto de l'affiche", "Mise en page du verso de l'affiche", "Couverture de l'affiche imprimée pliée", "Revers de l'affiche imprimée pliée", "Affiche imprimée (recto)", "Affiche imprimée (verso)"],
+      imagesLayout: ["6", "6", "7", "5", "6", "6"]
+    },
     as_des_jeux:{
       id: "as_des_jeux",
       titre: "Dépliant «&ThinSpace;pop-up&ThinSpace;» fictif pour L'As de Jeux",

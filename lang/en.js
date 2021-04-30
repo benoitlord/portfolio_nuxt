@@ -12,6 +12,18 @@ export default {
   synthese: "Synthesis Project",
 
   projets: {
+    affiche_depliant:{
+      id: "affiche_depliant",
+      titre: "Guitarist Memory Aid Folding Poster",
+      session: "Hiver 2021",
+      category: "miseEnPage",
+      desc: "<p>I did this project for my Interdisciplinary Publishing Project course. It is a folding poster whose goal is to serve both as a memory aid for the notes of basic guitar chords, but also as a decorative poster, hence the fact that it is reversible. It can also be folded into a small size for easy transport by the user.</p>",
+      thumbnail: "mep_affiche-depliant_5.jpeg",
+      thumbnailPortrait: true,
+      images: ["mep_affiche-depliant_1.png", "mep_affiche-depliant_2.png", "mep_affiche-depliant_3.jpeg", "mep_affiche-depliant_4.jpeg", "mep_affiche-depliant_5.jpeg", "mep_affiche-depliant_6.jpeg"],
+      imageDescs: ["Layout of the poster front", "Layout of the poster back", "Cover of the printed, folded poster", "Back of the printed, folded poster", "Printed poster (front)", "Printed poster (back)"],
+      imagesLayout: ["6", "6", "7", "5", "6", "6"]
+    },
     as_des_jeux:{
       id: "as_des_jeux",
       titre: "Fictitious &ldquo;pop-up&rdquo; Leaflet for <span lang\"fr\">L'As de Jeux</span>",
