@@ -3,7 +3,7 @@ export default {
   titre: "Designer graphique et développeur web",
 
   home: "Accueil",
-  miseEnPage: "Mise en page",
+  miseEnPage: "Mise en page/Édition",
   branding: "Images de marque",
   typo: "Typographie",
   programmation: "Web/Mobile",

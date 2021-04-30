@@ -381,7 +381,7 @@
   }
 
   .bulle_2{
-    width: 125px;
+    width: 180px;
     right: 90px;
     top: 190px;
     
@@ -535,7 +535,7 @@
   }
 
   html[lang="en"] .bulle_2{
-    width: 80px;
+    width: 135px;
   }
   html[lang="en"] .bulle_3{
     width: 90px;
