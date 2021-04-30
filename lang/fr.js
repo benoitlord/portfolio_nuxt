@@ -17,10 +17,10 @@ export default {
       titre: "Calendrier 2022 avec diverses techniques d'impression",
       session: "Hiver 2021",
       category: "miseEnPage",
-      desc: "<p>Le but de ce projet, conduit dans le cours Documents et procédés d'impression, était de réaliser un calendrier pour 2022 dont la particularité était de contenir pour chaque mois une technique d'impression apprise dans le cours. J'ai ainsi appliqué dans ce projet les techniques de création pour ajouter à mon projet du vernis sélectif, un duotone, une découpe (die-cut), 3 types de plis, un ajout imprimé à part, un différent type de papier, de l'effet métallique (foil), des registres, une retouche de couleur et de l'embossage. Les photos incluses dans le calendrier sont également des photos que j'ai prise moi-même de mes deux guitares et que j'ai découpées pour les intégrer dans le projet.</p>",
+      desc: "<p>Le but de ce projet, conduit dans le cours Documents et procédés d'impression, était de réaliser un calendrier pour 2022 dont la particularité était de contenir pour chaque mois une technique d'impression apprise dans le cours. J'ai ainsi appliqué dans ce projet les techniques de création pour ajouter à mon projet du vernis sélectif, un duotone, une découpe (die-cut), 3 types de plis, un ajout imprimé à part, un différent type de papier, de l'effet métallique (foil), des registres, une retouche de couleur et de l'embossage. Les photos incluses dans le calendrier sont également des photos que j'ai prises moi-même de mes deux guitares et que j'ai découpées pour les intégrer dans le projet.</p>",
       thumbnail: "mep_calendrier_1.jpeg",
       images: ["mep_calendrier_1.jpeg", "mep_calendrier_2.jpeg", "mep_calendrier_3.jpeg", "mep_calendrier_4.jpeg", "mep_calendrier_5.jpeg", "mep_calendrier_6.jpeg", "mep_calendrier_7.jpeg", "mep_calendrier_8.jpeg", "mep_calendrier_9.jpeg", "mep_calendrier_10.jpeg"],
-      imageDescs: ["Couverture du calendrier", "Mois d'avril", "Exemple de technique&nbsp;: plis sur le mois de mai", "Moi d'août", "Mois de mai", "Exemple de technique&nbsp;: ajouts sur le mois de mai", "Exemple de technique&nbsp;: plis sur le mois de juin", "Mois de décembre", "Exemple de technique&nbsp;: embossage sur le mois de décembre", "4<sup>ème</sup> de couverture du calendrier"],
+      imageDescs: ["Couverture du calendrier", "Mois d'avril", "Exemple de technique&nbsp;: pli sur le mois d'avril", "Moi d'août", "Mois de mai", "Exemple de technique&nbsp;: ajouts sur le mois de mai", "Exemple de technique&nbsp;: plis sur le mois de juin", "Mois de décembre", "Exemple de technique&nbsp;: embossage sur le mois de décembre", "4<sup>ème</sup> de couverture du calendrier"],
       imagesLayout: ["8", "4", "4", "4", "4", "6", "6", "4", "8", "8"]
     },
     affiche_depliant:{
@@ -28,11 +28,11 @@ export default {
       titre: "Affiche dépliant aide-mémoire pour les guitaristes",
       session: "Hiver 2021",
       category: "miseEnPage",
-      desc: "<p>J'ai réalisé ce projet pour mon cours Projet d'édition interdisciplinaire. Il s'agit d'une affiche dépliant dont le but est de servir à la fois d'aide-mémoire pour les notes des accords de base en guitare, mais aussi d'affiche décorative, d'où le fait qu'elle est réversible. Elle peut également être pliée en petit format pour être facilement transportée par l'utilisateur.</p>",
+      desc: "<p>J'ai réalisé ce projet pour mon cours Projet d'édition interdisciplinaire. Il s'agit d'une affiche-dépliant dont le but est de servir à la fois d'aide-mémoire pour les notes des accords de base en guitare, mais aussi d'affiche décorative, d'où le fait qu'elle est réversible. Elle peut également être pliée en petit format pour être facilement transportée par l'utilisateur.</p>",
       thumbnail: "mep_affiche-depliant_5.jpeg",
       thumbnailPortrait: true,
       images: ["mep_affiche-depliant_1.png", "mep_affiche-depliant_2.png", "mep_affiche-depliant_3.jpeg", "mep_affiche-depliant_4.jpeg", "mep_affiche-depliant_5.jpeg", "mep_affiche-depliant_6.jpeg"],
-      imageDescs: ["Mise en page du recto de l'affiche", "Mise en page du verso de l'affiche", "Couverture de l'affiche imprimée pliée", "Revers de l'affiche imprimée pliée", "Affiche imprimée (recto)", "Affiche imprimée (verso)"],
+      imageDescs: ["Mise en page du recto de l'affiche", "Mise en page du verso de l'affiche", "Couverture de l'affiche imprimée et pliée", "Revers de l'affiche imprimée et pliée", "Affiche imprimée (recto)", "Affiche imprimée (verso)"],
       imagesLayout: ["6", "6", "7", "5", "6", "6"]
     },
     as_des_jeux:{
