@@ -7,6 +7,8 @@ export default {
 
   generate: {
     routes: [
+      'en/portfolio/calendrier',
+      'en/portfolio/affiche_depliant',
       'en/portfolio/as_des_jeux',
       'en/portfolio/ordi',
       'en/portfolio/accordeon',
@@ -32,6 +34,8 @@ export default {
       'en/portfolio/parking_challenge',
       'en/portfolio/carte',
       
+      'fr/portfolio/calendrier',
+      'fr/portfolio/affiche_depliant',
       'fr/portfolio/as_des_jeux',
       'fr/portfolio/ordi',
       'fr/portfolio/accordeon',
