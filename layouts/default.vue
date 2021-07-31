@@ -20,7 +20,7 @@
             <social name="behance" link="https://www.behance.net/benoitlord98"></social>
             <social name="linkedin" link="http://www.linkedin.com/in/benoit-lord"></social>
             <social name="facebook-f" link="https://www.facebook.com/tiben234"></social>
-            <social name="envelope" :notBrand="true" link="mailto:info@benoit-lord.ca"></social>
+            <social name="envelope" :notBrand="true" link="mailto:benoitlord98@outlook.com"></social>
           </b-col>
       </b-row>
       <b-row align-h="center">
