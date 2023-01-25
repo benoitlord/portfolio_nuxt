@@ -229,7 +229,7 @@
       return {
         title: this.$i18n.t("pageTitle") + " - Benoit Lord, " + this.$i18n.t("titre"),
         script: [
-          { src: "https://documentcloud.adobe.com/view-sdk/main.js" }
+          { src: "https://documentservices.adobe.com/view-sdk/viewer.js" }
         ]
       }
     },
